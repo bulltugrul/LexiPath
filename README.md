@@ -2,12 +2,7 @@
 
 Açıklanabilir İngilizce kelime öğretimi: **Denetimli cevap tahmini (LR12)**, **Denetimsiz performans örüntüsü (K-Means, k=4)** ve **hedefe özgü öğretim döngüsü**.
 
-## Grup Üyeleri
-- **Eren Hasan Katırcıoğlu** — `240201037`
-- **Mehmet Ertuğrul Ünal** — `240201010`
-- **Hasan Yunus Zengin** — `240201038`
-- **Ömer Gökalp** — `240201053`
-- **Mustafa Kemal Bozkurt** — `240201018`
+
 
 ---
 
