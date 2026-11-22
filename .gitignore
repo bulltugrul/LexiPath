@@ -16,6 +16,5 @@ data/raw/
 tmp/
 archive/
 
-# Paketlenmiş teslim ZIP arşivi ve iç sunum prova notları
+# Paketlenmiş teslim ZIP arşivi (kaynak dosyalar ve PDF raporlar zaten depoda)
 output/submission/
-team_notes/

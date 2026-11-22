@@ -1,0 +1,37 @@
+27 KASIM 2026, 14:40 - B-YUNUS EMRE
+
+Her üye önce şu 7 dakikalık akışı tek başına anlatmalı:
+1. Problem: kelimeyi tanıma, yardımsız yazma ve sesi resimle eşleştirme ayrı hedefler.
+2. İki görev: LR gelecekteki hedefin doğru olasılığını, K-Means geçici benzerlik grubunu üretir.
+3. 12 LR alanını beş geçmiş çifti + kelime/biçim olarak açıkla. (doğru+1)/(sayı+2).
+4. Aynı alıştırmanın cevap etiketi kendi tahminine girmez; geçmiş sonrasında güncellenir.
+5. LR sıralamaya yardımcı, gerçek yanıtlar öğretim ihtiyacını belirler.
+6. Resimli öğretim -> destekli deneme -> üç başka kelime -> yardımsız kontrol.
+7. Dinleyerek yazma ortak kontrolü, ses-resimden farklıdır; 6+6 şartı ve Grup 3 örneği.
+8. Konu oranları: doğru/toplam, kelime/tur ve aşama ayrı. Gecikmeli sonuç yoksa bekler.
+9. Dört sonuç kararını ve yalnız ilgili hedefin sürümünü yenilemeyi örnekle anlat.
+10. DEV'de log loss 0,4004; AUC 0,7758 doğruluk yüzdesi değildir. Gerçek öğretim etkisi ölçülmedi.
+
+HOCA SORARSA
+- Neden LR? Basit oranlarla karşılaştırmada kaynak DEV'de daha iyi; 12 alan açıklanabilir.
+- Neden K-Means? Grup etiketi yok; gerçek iki oran benzerliğinden gruplar çıkarır.
+- k=4 neden? TRAIN'de 2/3/4 içinden en yüksek silhouette; 4 kalıcı insan tipi demek değil.
+- Görselde hangi ML? Görüntü tanıma yok. LR tekrar hedefini önceliklendirir; görsel destek
+  ve sonrası kontrol öğrenci-modeli zincirine bağlanır. Seçenekli sonuçları yanlış şemayla vermeyiz.
+- Öğrenme yüzdesi? Belirli konu/hedef/aşamadaki yardımsız doğru oranı operasyonel göstergedir;
+  gecikmeli kanıt ayrı, model olasılığı ayrı. Bütün İngilizceyi bilme oranı değil.
+- Süre neden özellik değil? Kaynak çok kelimeli görev ve yerel tek kelime süresi eşdeğer değil.
+- Eğitim canlı mı? Hayır; ağırlıklar sabit, geçmiş güncellenir. joblib yalnız paket modeline yüklenir.
+- Prompt-tuning makalesini uyguladınız mı? Hayır; PLKT yöntemli araştırma bağlam kaynağıdır.
+  Bu midterm çözümü yönergedeki supervised/unsupervised tasarıma uygun LR/K-Means uygulamasıdır.
+
+KÜÇÜK KOD DEĞİŞİKLİĞİ PROVASI (önce ayrı kopya)
+- Açıklama metni: pilot.py support_explanation veya web/static/pilot.js.
+- Dinleme/metin özetine yeni sütun: learning_evidence.py + ilgili frontend tablosu.
+- Bekleme süresi: pilot.py DELAY_SECONDS. Sunumdaki kısa süre gerçek 24 saat deneyi diye sunulmaz.
+- Yeni kelime: katalog, iki biçim kaynak desteği ve ses dosyasını birlikte kontrol et.
+- Pencere 6 veya k değişikliği: profilleri ve K-Means'i yeniden eğitmek gerekir; sabiti tek başına değiştirme.
+- Yeni LR özelliği: eğitim ve canlı özellik çıkarımını birlikte değiştirip TRAIN/DEV ile değerlendir.
+
+Gönderimde beş üyenin adı ve numarası bulunmalı. Bu rehber/ZIP öğretmenin
+bağlantısına kendiliğinden gönderilmez; grup adına tek kişi yüklemelidir.

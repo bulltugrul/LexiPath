@@ -1,0 +1,33 @@
+DİYAGRAMI BİR DAKİKADA AÇIKLAMA
+
+Bu diyagramda iki öğrenen blok var. Üstteki lojistik regresyon denetimli:
+eğitimde modele geçmişten çıkarılmış x özellikleriyle birlikte, tahmin etmeye
+çalıştığı cevabın gerçek doğru/yanlış etiketi y veriliyor. Amaç bu bilinen
+etikete uygun olasılık üretmek. Canlı kullanımda yeni cevabın sonucu henüz
+bilinmiyor; model yalnız önceki geçmişten p_correct hesaplıyor.
+
+Alttaki K-Means denetimsiz: modele öğrencinin son altı metin ve son altı
+dinleyerek yazma sonuçlarından oluşan iki oran veriliyor. Öğrencinin hangi
+gruba ait olması gerektiği söylenmiyor. Model yakın profillerden merkezler
+öğreniyor; yeni profili en yakın merkeze atıyor.
+
+İki blok da geçmiş doğru/yanlış bilgisinden yararlanıyor. Fark, veride herhangi
+bir etiket bulunup bulunmaması değil, öğrenilen görev için hedef etiketinin
+verilip verilmemesi. LR'nin hedefi cevap doğruluğu ve etiketi var. K-Means'in
+hedefi profil grubu; beklenen grup etiketi yok. Sonradan verilen Grup 1-4
+numaraları modelin atamalarıdır, öğretmenin verdiği gerçek sınıf etiketleri değildir.
+
+Bu iki çıktıyı da öğrenildi kararıyla karıştırmıyoruz. LR tekrar sırasına yardımcı,
+K-Means örüntü ve çalışma önerisine bağlam sağlıyor. Öğretim ihtiyacını ve
+gecikmeli hatırlamayı gerçek, ayrı kontrol kayıtlarından belirliyoruz.
+
+BEKLENEN ÜÇ SORU
+1. Etiketli cevaplardan oran hesaplamak K-Means'i supervised yapar mı?
+   Hayır. Kümeleme eğitimine beklenen grup y'si verilmiyor; yalnız profil X'i var.
+2. LR doğru olasılığı %90 ise öğrenci kelimeyi %90 öğrendi mi?
+   Hayır. Bu belirli görevin tahmini; yardımsız ve gecikmeli kanıt ayrıca ölçülür.
+3. Yeni öğrencide 4 metin ve 4 dinleme varsa grup çıkar mı?
+   Hayır. İki biçimde altışar gerçek kayıt beklenir. Kaydı uydurup oranı sıfır yapmayız.
+
+Kutular ML görevleri; tercih, resimli öğretim, doğru cevap karşılaştırması,
+24 saat kapısı ve dört sonuç geçişi açık uygulama kurallarıdır.

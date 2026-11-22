@@ -1,0 +1,13 @@
+Data Mining Midterm - LexiPath
+
+Grup üyeleri:
+Eren Hasan Katırcıoğlu - 240201037
+Mehmet Ertuğrul Ünal - 240201010
+Hasan Yunus Zengin - 240201038
+Ömer Gökalp - 240201053
+Mustafa Kemal Bozkurt - 240201018
+
+Ek: LexiPath_Midterm.zip
+Arşiv; Python kaynak kodu, açıklamalı Rapor_TR.pdf ve Rapor_EN.pdf, eğitilmiş LR12 ve K-Means,
+veri/çıktı şemaları, deney sonuçları, ses-görsel varlıkları, çalıştırma ve
+yeniden üretim yönergelerini içerir.
