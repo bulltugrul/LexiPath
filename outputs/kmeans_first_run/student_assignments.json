@@ -1,0 +1,2402 @@
+[
+  {
+    "display_id": "S001",
+    "learner_id": "+0UEF02n",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S002",
+    "learner_id": "+JslKM5V",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S003",
+    "learner_id": "+T2RgPr8",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S004",
+    "learner_id": "+W/YStmo",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S005",
+    "learner_id": "/4aZwDo2",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S006",
+    "learner_id": "/mG9qkmV",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S007",
+    "learner_id": "/y8ebAAW",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S008",
+    "learner_id": "0K9nd6pH",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.3333333333333333
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S009",
+    "learner_id": "0RlduQ4x",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S010",
+    "learner_id": "0iH0HRTm",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S011",
+    "learner_id": "0mnl2bU9",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.3333333333333333,
+      "listen_target_accuracy": 0.3333333333333333
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S012",
+    "learner_id": "0pBrqvD8",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S013",
+    "learner_id": "0q4FQpGm",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S014",
+    "learner_id": "1pfoUPyM",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S015",
+    "learner_id": "206x1hcp",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.3333333333333333
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S016",
+    "learner_id": "26+Po1Lb",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S017",
+    "learner_id": "39sCfj6U",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.16666666666666666
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S018",
+    "learner_id": "3FA/VTZN",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S019",
+    "learner_id": "3SxM6Ybn",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S020",
+    "learner_id": "3qzY2Mis",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S021",
+    "learner_id": "3w7S6+H4",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S022",
+    "learner_id": "43FFWweW",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.3333333333333333,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S023",
+    "learner_id": "4BChYVf1",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S024",
+    "learner_id": "4JqPPT5X",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S025",
+    "learner_id": "4KGQQqyM",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S026",
+    "learner_id": "4UMJMsQF",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S027",
+    "learner_id": "4dSA0lBZ",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S028",
+    "learner_id": "5dktOZD1",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S029",
+    "learner_id": "5ha7SvEL",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S030",
+    "learner_id": "6PS3iIUv",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S031",
+    "learner_id": "6VzoUWmt",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S032",
+    "learner_id": "7+o0XULb",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.3333333333333333,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S033",
+    "learner_id": "7C7JNmGn",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S034",
+    "learner_id": "7KM3gW/7",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.3333333333333333
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S035",
+    "learner_id": "7o6lejcQ",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S036",
+    "learner_id": "8CoXw1jQ",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S037",
+    "learner_id": "8HqCa0/+",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S038",
+    "learner_id": "8Iw+27Cp",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S039",
+    "learner_id": "8pkB6Ili",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S040",
+    "learner_id": "9LN4DIOw",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S041",
+    "learner_id": "9WGWu8ST",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.3333333333333333
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S042",
+    "learner_id": "9XPjddX8",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S043",
+    "learner_id": "9rClg2jc",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S044",
+    "learner_id": "AW0qI2uF",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.3333333333333333
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S045",
+    "learner_id": "AnYjSFb2",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S046",
+    "learner_id": "AwxR13Qh",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S047",
+    "learner_id": "B8vXN3sw",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S048",
+    "learner_id": "CEHPT37s",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S049",
+    "learner_id": "CIkaaszP",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S050",
+    "learner_id": "CeBQBAGG",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S051",
+    "learner_id": "DxHpf4bt",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S052",
+    "learner_id": "E69WW1x+",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S053",
+    "learner_id": "EU5QSCrI",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S054",
+    "learner_id": "Ehcpy2rz",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S055",
+    "learner_id": "Em8ECUAM",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S056",
+    "learner_id": "Ep9KxMwt",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S057",
+    "learner_id": "Et6R04Ta",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S058",
+    "learner_id": "EzLgvsUG",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S059",
+    "learner_id": "F6G+L3k3",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S060",
+    "learner_id": "FrymDcgw",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.3333333333333333,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S061",
+    "learner_id": "GQIvkMxv",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S062",
+    "learner_id": "HesjbyMw",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S063",
+    "learner_id": "ILScAg2f",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S064",
+    "learner_id": "IdhqWeEL",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S065",
+    "learner_id": "JMlMCpoF",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S066",
+    "learner_id": "JPj8T0HN",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S067",
+    "learner_id": "JUgwROZz",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S068",
+    "learner_id": "Ja1WEMqy",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.0
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S069",
+    "learner_id": "JlhENMEd",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S070",
+    "learner_id": "KEVwNfbF",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S071",
+    "learner_id": "KHcz7IOa",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S072",
+    "learner_id": "KHeD25xE",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S073",
+    "learner_id": "KOiv8NOJ",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.16666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S074",
+    "learner_id": "KeZ/87mx",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S075",
+    "learner_id": "KjD0Ij8X",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S076",
+    "learner_id": "KuM078ur",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S077",
+    "learner_id": "L0G/AAcB",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.3333333333333333
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S078",
+    "learner_id": "L0M2P9UP",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S079",
+    "learner_id": "LBUxuX4s",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.3333333333333333,
+      "listen_target_accuracy": 0.3333333333333333
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S080",
+    "learner_id": "LOe4LyNj",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S081",
+    "learner_id": "LQY6rbWK",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S082",
+    "learner_id": "M/x0KG9G",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S083",
+    "learner_id": "MEWfuqkv",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S084",
+    "learner_id": "MWbqwTlI",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S085",
+    "learner_id": "MXjwP/ab",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S086",
+    "learner_id": "MfQIJDc+",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S087",
+    "learner_id": "MlzBolFW",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S088",
+    "learner_id": "N9oWyqzm",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S089",
+    "learner_id": "Ob86+hKv",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S090",
+    "learner_id": "OkaqqBbM",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S091",
+    "learner_id": "OtR6H/sV",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S092",
+    "learner_id": "OttJEbJd",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S093",
+    "learner_id": "Ouw8LeDc",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S094",
+    "learner_id": "P/SLkmOk",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S095",
+    "learner_id": "P/wE79fx",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S096",
+    "learner_id": "P6WCh0v8",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S097",
+    "learner_id": "PRrHd5n/",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S098",
+    "learner_id": "PxpjFwoN",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S099",
+    "learner_id": "QH5GFjTA",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S100",
+    "learner_id": "QH7IbBSG",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S101",
+    "learner_id": "RRIhjuo4",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S102",
+    "learner_id": "Rs7O/U3Q",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S103",
+    "learner_id": "Rx04FADV",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S104",
+    "learner_id": "SOFeV0RK",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S105",
+    "learner_id": "T5wxhUe1",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S106",
+    "learner_id": "TJxjHO0+",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S107",
+    "learner_id": "Tk3fI7Ul",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S108",
+    "learner_id": "Tn0egO65",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.0
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S109",
+    "learner_id": "UhEumSwB",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.3333333333333333,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S110",
+    "learner_id": "UlTy4+qM",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S111",
+    "learner_id": "VLYaO3Mn",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.3333333333333333,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S112",
+    "learner_id": "Vm+vEHif",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S113",
+    "learner_id": "W/SuizAu",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S114",
+    "learner_id": "WF5b39DE",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S115",
+    "learner_id": "WWxzgN/A",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S116",
+    "learner_id": "XZP0X98R",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S117",
+    "learner_id": "YA4HGsSJ",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.3333333333333333
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S118",
+    "learner_id": "YPG2jrU5",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S119",
+    "learner_id": "YPPE2tx2",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S120",
+    "learner_id": "YV5DLo3R",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S121",
+    "learner_id": "Yleql574",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S122",
+    "learner_id": "ZDCKqjHW",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.0
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S123",
+    "learner_id": "ZbRqd36c",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S124",
+    "learner_id": "Zd0GSl81",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S125",
+    "learner_id": "a9yhh5mk",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S126",
+    "learner_id": "aEoxawKo",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S127",
+    "learner_id": "aI1TZBKQ",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S128",
+    "learner_id": "aRLKlrhE",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S129",
+    "learner_id": "agLN6h8P",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S130",
+    "learner_id": "bZlErvD3",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S131",
+    "learner_id": "buT4K047",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S132",
+    "learner_id": "buhVAdaw",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S133",
+    "learner_id": "c3UwLrTx",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.3333333333333333,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S134",
+    "learner_id": "dovCxB8x",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S135",
+    "learner_id": "dyRL+yUM",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S136",
+    "learner_id": "dyiXQaG3",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S137",
+    "learner_id": "e/oQlQtk",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S138",
+    "learner_id": "e4RCTLPT",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S139",
+    "learner_id": "ebGjdOkH",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.3333333333333333
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S140",
+    "learner_id": "fOCL/y39",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S141",
+    "learner_id": "flrXXylX",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S142",
+    "learner_id": "goyqqpad",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S143",
+    "learner_id": "h7+pO+fj",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S144",
+    "learner_id": "hKnJjTu3",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S145",
+    "learner_id": "hLLmiR5N",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S146",
+    "learner_id": "i+e1HhUt",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S147",
+    "learner_id": "i4C+IblL",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S148",
+    "learner_id": "iERI7JqK",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S149",
+    "learner_id": "irsYUFjp",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S150",
+    "learner_id": "jkYdfjaq",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S151",
+    "learner_id": "ktDqXJ6k",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.0
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S152",
+    "learner_id": "l56SUWe1",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S153",
+    "learner_id": "lcDVuHMT",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S154",
+    "learner_id": "m1d1GWtF",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S155",
+    "learner_id": "mDb/Tm8A",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S156",
+    "learner_id": "mjEIB5e+",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S157",
+    "learner_id": "n6ItCSge",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S158",
+    "learner_id": "nQwWh9PA",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S159",
+    "learner_id": "o55y7Yrx",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S160",
+    "learner_id": "ob7aBsY1",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S161",
+    "learner_id": "pOhVhnOT",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.3333333333333333,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S162",
+    "learner_id": "pVB0SZAH",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S163",
+    "learner_id": "pdIFGUwP",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S164",
+    "learner_id": "phcBNMCQ",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S165",
+    "learner_id": "pogwli35",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S166",
+    "learner_id": "pzRymRKK",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S167",
+    "learner_id": "q1mC0Q5S",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S168",
+    "learner_id": "qHeE6fzS",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.16666666666666666,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S169",
+    "learner_id": "qHnOzt/0",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S170",
+    "learner_id": "qIxHuyma",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S171",
+    "learner_id": "qdqnh5I+",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S172",
+    "learner_id": "qeZFlJ/s",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S173",
+    "learner_id": "r5ZNlf9N",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S174",
+    "learner_id": "rMf1UcLM",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S175",
+    "learner_id": "rQ/7OEgt",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S176",
+    "learner_id": "rSHgBb3r",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S177",
+    "learner_id": "rsiafk6+",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S178",
+    "learner_id": "sHrq5W9e",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S179",
+    "learner_id": "sJE2emBF",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S180",
+    "learner_id": "ska3Wq1W",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S181",
+    "learner_id": "tpxJS9g2",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S182",
+    "learner_id": "uYciKl1f",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S183",
+    "learner_id": "uclL4O8D",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S184",
+    "learner_id": "v+JtF21l",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S185",
+    "learner_id": "v/dvD4Bw",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S186",
+    "learner_id": "v5/+pekD",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S187",
+    "learner_id": "v9BkoELw",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S188",
+    "learner_id": "vrSUblHf",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S189",
+    "learner_id": "vtckJNjQ",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.3333333333333333
+    },
+    "model_label": 0,
+    "display_group": 1,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S190",
+    "learner_id": "wDm94c4i",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.3333333333333333,
+      "listen_target_accuracy": 0.6666666666666666
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S191",
+    "learner_id": "wYk3vmQk",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S192",
+    "learner_id": "wtpFXpA0",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S193",
+    "learner_id": "x84TOuUI",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S194",
+    "learner_id": "xV7u3KP+",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.5
+    },
+    "model_label": 3,
+    "display_group": 3,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S195",
+    "learner_id": "xYDEo3QN",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S196",
+    "learner_id": "yOXkPWyz",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S197",
+    "learner_id": "zD9WwnlD",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S198",
+    "learner_id": "zYqPS7py",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.3333333333333333,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S199",
+    "learner_id": "zdAK1reI",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.6666666666666666,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 1,
+    "display_group": 2,
+    "observations_per_format": 6
+  },
+  {
+    "display_id": "S200",
+    "learner_id": "zq6nNI0d",
+    "status": "provisional",
+    "features": {
+      "text_target_accuracy": 0.8333333333333334,
+      "listen_target_accuracy": 1.0
+    },
+    "model_label": 2,
+    "display_group": 4,
+    "observations_per_format": 6
+  }
+]

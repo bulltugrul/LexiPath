@@ -1,0 +1,329 @@
+{
+  "constant_train": [
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "records": 23583,
+      "mean_prediction": 0.835720913092974,
+      "observed_correct": 0.8144850103888395
+    }
+  ],
+  "learner_history": [
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "records": 138,
+      "mean_prediction": 0.5513347139447241,
+      "observed_correct": 0.6159420289855072
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "records": 1703,
+      "mean_prediction": 0.6826421565373624,
+      "observed_correct": 0.6940692894891368
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "records": 5339,
+      "mean_prediction": 0.761004377701829,
+      "observed_correct": 0.749765873759131
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "records": 11844,
+      "mean_prediction": 0.854497432364216,
+      "observed_correct": 0.829871664978048
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "records": 4559,
+      "mean_prediction": 0.9225146328591697,
+      "observed_correct": 0.9012941434525115
+    }
+  ],
+  "word_train": [
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "records": 56,
+      "mean_prediction": 0.13538428728748278,
+      "observed_correct": 0.25
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.3,
+      "records": 56,
+      "mean_prediction": 0.24042859418535478,
+      "observed_correct": 0.44642857142857145
+    },
+    {
+      "lower": 0.3,
+      "upper": 0.4,
+      "records": 142,
+      "mean_prediction": 0.34085889242851486,
+      "observed_correct": 0.4788732394366197
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "records": 482,
+      "mean_prediction": 0.45712821811168536,
+      "observed_correct": 0.520746887966805
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "records": 1227,
+      "mean_prediction": 0.5486149270082424,
+      "observed_correct": 0.6006519967400163
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "records": 1943,
+      "mean_prediction": 0.6478868709030451,
+      "observed_correct": 0.6757591353576943
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "records": 3856,
+      "mean_prediction": 0.7559734286662031,
+      "observed_correct": 0.7463692946058091
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "records": 7114,
+      "mean_prediction": 0.8519909668186614,
+      "observed_correct": 0.8334270452628619
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "records": 8707,
+      "mean_prediction": 0.9236681384222203,
+      "observed_correct": 0.9179970138968646
+    }
+  ],
+  "word_format_train": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "records": 3,
+      "mean_prediction": 0.06951871657754011,
+      "observed_correct": 0.3333333333333333
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "records": 57,
+      "mean_prediction": 0.15887341374183478,
+      "observed_correct": 0.22807017543859648
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.3,
+      "records": 96,
+      "mean_prediction": 0.25113287383442584,
+      "observed_correct": 0.3854166666666667
+    },
+    {
+      "lower": 0.3,
+      "upper": 0.4,
+      "records": 259,
+      "mean_prediction": 0.3524660669651052,
+      "observed_correct": 0.528957528957529
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "records": 618,
+      "mean_prediction": 0.45549839315728785,
+      "observed_correct": 0.5501618122977346
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "records": 1254,
+      "mean_prediction": 0.5459474898161052,
+      "observed_correct": 0.5829346092503987
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "records": 2146,
+      "mean_prediction": 0.6532820805687,
+      "observed_correct": 0.6747437092264679
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "records": 3424,
+      "mean_prediction": 0.7542850530428522,
+      "observed_correct": 0.759929906542056
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "records": 7129,
+      "mean_prediction": 0.8522661386947739,
+      "observed_correct": 0.8320942628699677
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "records": 8597,
+      "mean_prediction": 0.9290090606521785,
+      "observed_correct": 0.9267186227753867
+    }
+  ],
+  "learner_word_history": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "records": 8,
+      "mean_prediction": 0.056014723501136544,
+      "observed_correct": 0.0
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "records": 33,
+      "mean_prediction": 0.1543574270846998,
+      "observed_correct": 0.3939393939393939
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.3,
+      "records": 260,
+      "mean_prediction": 0.2413140882007666,
+      "observed_correct": 0.46923076923076923
+    },
+    {
+      "lower": 0.3,
+      "upper": 0.4,
+      "records": 881,
+      "mean_prediction": 0.33428271025822415,
+      "observed_correct": 0.6163450624290578
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "records": 266,
+      "mean_prediction": 0.41900573586574036,
+      "observed_correct": 0.650375939849624
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "records": 946,
+      "mean_prediction": 0.5206461092061563,
+      "observed_correct": 0.7082452431289641
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "records": 3405,
+      "mean_prediction": 0.6593801128862957,
+      "observed_correct": 0.7779735682819383
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "records": 3574,
+      "mean_prediction": 0.7528145870835717,
+      "observed_correct": 0.7506994963626189
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "records": 7198,
+      "mean_prediction": 0.8505382949778849,
+      "observed_correct": 0.815643234231731
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "records": 7012,
+      "mean_prediction": 0.9367090461014392,
+      "observed_correct": 0.9247005134055905
+    }
+  ],
+  "logistic": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "records": 6,
+      "mean_prediction": 0.09233764893258911,
+      "observed_correct": 0.0
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "records": 49,
+      "mean_prediction": 0.16103852830689833,
+      "observed_correct": 0.20408163265306123
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.3,
+      "records": 134,
+      "mean_prediction": 0.25469221661684266,
+      "observed_correct": 0.3283582089552239
+    },
+    {
+      "lower": 0.3,
+      "upper": 0.4,
+      "records": 316,
+      "mean_prediction": 0.3533425542517128,
+      "observed_correct": 0.3829113924050633
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "records": 653,
+      "mean_prediction": 0.45358636054764073,
+      "observed_correct": 0.5283307810107197
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "records": 1270,
+      "mean_prediction": 0.5546270798431768,
+      "observed_correct": 0.5448818897637795
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "records": 2030,
+      "mean_prediction": 0.6533523532338856,
+      "observed_correct": 0.6561576354679803
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "records": 3305,
+      "mean_prediction": 0.7551670632252544,
+      "observed_correct": 0.7358547655068078
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "records": 6348,
+      "mean_prediction": 0.8558906574140214,
+      "observed_correct": 0.848456206679269
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "records": 9472,
+      "mean_prediction": 0.9370397652240919,
+      "observed_correct": 0.933910472972973
+    }
+  ]
+}

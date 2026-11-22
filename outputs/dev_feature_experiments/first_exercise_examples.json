@@ -1,0 +1,553 @@
+[
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "WaBaxqi701",
+      "instance_id": "WaBaxqi70101",
+      "day": 1.452
+    },
+    "features": {
+      "target_word": "good",
+      "format": "reverse_translate",
+      "prior_target_count": 403,
+      "prior_accuracy_smoothed": 0.945679012345679,
+      "prior_word_count": 8,
+      "prior_word_accuracy_smoothed": 0.9,
+      "prior_format_target_count": 301,
+      "prior_format_accuracy_smoothed": 0.9438943894389439,
+      "prior_word_format_count": 5,
+      "prior_word_format_accuracy_smoothed": 0.8571428571428571,
+      "prior_recent_target_count": 27,
+      "prior_recent_accuracy_smoothed": 0.9310344827586207
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.9788102173748303,
+      "format_history": 0.9827462224854515,
+      "recent_history": 0.9779046917137252,
+      "format_and_recent": 0.9815864955549083
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "WaBaxqi701",
+      "instance_id": "WaBaxqi70102",
+      "day": 1.452
+    },
+    "features": {
+      "target_word": "night",
+      "format": "reverse_translate",
+      "prior_target_count": 403,
+      "prior_accuracy_smoothed": 0.945679012345679,
+      "prior_word_count": 0,
+      "prior_word_accuracy_smoothed": 0.5,
+      "prior_format_target_count": 301,
+      "prior_format_accuracy_smoothed": 0.9438943894389439,
+      "prior_word_format_count": 0,
+      "prior_word_format_accuracy_smoothed": 0.5,
+      "prior_recent_target_count": 27,
+      "prior_recent_accuracy_smoothed": 0.9310344827586207
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.7990738554024498,
+      "format_history": 0.8172471944617382,
+      "recent_history": 0.7982148777170294,
+      "format_and_recent": 0.8196316821736872
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "WaBaxqi702",
+      "instance_id": "WaBaxqi70201",
+      "day": 1.452
+    },
+    "features": {
+      "target_word": "over",
+      "format": "reverse_translate",
+      "prior_target_count": 405,
+      "prior_accuracy_smoothed": 0.9459459459459459,
+      "prior_word_count": 1,
+      "prior_word_accuracy_smoothed": 0.6666666666666666,
+      "prior_format_target_count": 303,
+      "prior_format_accuracy_smoothed": 0.9442622950819672,
+      "prior_word_format_count": 1,
+      "prior_word_format_accuracy_smoothed": 0.6666666666666666,
+      "prior_recent_target_count": 25,
+      "prior_recent_accuracy_smoothed": 0.9259259259259259
+    },
+    "actual_correct": 0,
+    "predictions": {
+      "original": 0.897192890157013,
+      "format_history": 0.9000071662942232,
+      "recent_history": 0.930109675859438,
+      "format_and_recent": 0.9356693879720583
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "WaBaxqi702",
+      "instance_id": "WaBaxqi70202",
+      "day": 1.452
+    },
+    "features": {
+      "target_word": "decades",
+      "format": "reverse_translate",
+      "prior_target_count": 405,
+      "prior_accuracy_smoothed": 0.9459459459459459,
+      "prior_word_count": 0,
+      "prior_word_accuracy_smoothed": 0.5,
+      "prior_format_target_count": 303,
+      "prior_format_accuracy_smoothed": 0.9442622950819672,
+      "prior_word_format_count": 0,
+      "prior_word_format_accuracy_smoothed": 0.5,
+      "prior_recent_target_count": 25,
+      "prior_recent_accuracy_smoothed": 0.9259259259259259
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.8041420647888833,
+      "format_history": 0.8074165262126244,
+      "recent_history": 0.8173510161679578,
+      "format_and_recent": 0.8234318704489633
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "D2s3uC2001",
+      "instance_id": "D2s3uC200101",
+      "day": 1.467
+    },
+    "features": {
+      "target_word": "the",
+      "format": "reverse_translate",
+      "prior_target_count": 407,
+      "prior_accuracy_smoothed": 0.9437652811735942,
+      "prior_word_count": 27,
+      "prior_word_accuracy_smoothed": 0.9310344827586207,
+      "prior_format_target_count": 305,
+      "prior_format_accuracy_smoothed": 0.9413680781758957,
+      "prior_word_format_count": 19,
+      "prior_word_format_accuracy_smoothed": 0.9523809523809523,
+      "prior_recent_target_count": 26,
+      "prior_recent_accuracy_smoothed": 0.8928571428571429
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.9645737613221438,
+      "format_history": 0.969907185500757,
+      "recent_history": 0.9698632295395175,
+      "format_and_recent": 0.9741967767960131
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "D2s3uC2001",
+      "instance_id": "D2s3uC200102",
+      "day": 1.467
+    },
+    "features": {
+      "target_word": "author",
+      "format": "reverse_translate",
+      "prior_target_count": 407,
+      "prior_accuracy_smoothed": 0.9437652811735942,
+      "prior_word_count": 0,
+      "prior_word_accuracy_smoothed": 0.5,
+      "prior_format_target_count": 305,
+      "prior_format_accuracy_smoothed": 0.9413680781758957,
+      "prior_word_format_count": 0,
+      "prior_word_format_accuracy_smoothed": 0.5,
+      "prior_recent_target_count": 26,
+      "prior_recent_accuracy_smoothed": 0.8928571428571429
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.8876684032877802,
+      "format_history": 0.8828495857512028,
+      "recent_history": 0.8917549488818419,
+      "format_and_recent": 0.8892689624255282
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "D2s3uC2002",
+      "instance_id": "D2s3uC200201",
+      "day": 1.467
+    },
+    "features": {
+      "target_word": "my",
+      "format": "reverse_translate",
+      "prior_target_count": 409,
+      "prior_accuracy_smoothed": 0.9440389294403893,
+      "prior_word_count": 15,
+      "prior_word_accuracy_smoothed": 0.9411764705882353,
+      "prior_format_target_count": 307,
+      "prior_format_accuracy_smoothed": 0.941747572815534,
+      "prior_word_format_count": 12,
+      "prior_word_format_accuracy_smoothed": 0.9285714285714286,
+      "prior_recent_target_count": 26,
+      "prior_recent_accuracy_smoothed": 0.8928571428571429
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.9644741797540165,
+      "format_history": 0.9679911740093275,
+      "recent_history": 0.9682218810487718,
+      "format_and_recent": 0.9721634699374561
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "D2s3uC2002",
+      "instance_id": "D2s3uC200202",
+      "day": 1.467
+    },
+    "features": {
+      "target_word": "father",
+      "format": "reverse_translate",
+      "prior_target_count": 409,
+      "prior_accuracy_smoothed": 0.9440389294403893,
+      "prior_word_count": 0,
+      "prior_word_accuracy_smoothed": 0.5,
+      "prior_format_target_count": 307,
+      "prior_format_accuracy_smoothed": 0.941747572815534,
+      "prior_word_format_count": 0,
+      "prior_word_format_accuracy_smoothed": 0.5,
+      "prior_recent_target_count": 26,
+      "prior_recent_accuracy_smoothed": 0.8928571428571429
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.8733588847523188,
+      "format_history": 0.8718255389735845,
+      "recent_history": 0.8820535767884561,
+      "format_and_recent": 0.8811702105212393
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "D2s3uC2002",
+      "instance_id": "D2s3uC200203",
+      "day": 1.467
+    },
+    "features": {
+      "target_word": "is",
+      "format": "reverse_translate",
+      "prior_target_count": 409,
+      "prior_accuracy_smoothed": 0.9440389294403893,
+      "prior_word_count": 29,
+      "prior_word_accuracy_smoothed": 0.9354838709677419,
+      "prior_format_target_count": 307,
+      "prior_format_accuracy_smoothed": 0.941747572815534,
+      "prior_word_format_count": 22,
+      "prior_word_format_accuracy_smoothed": 0.9583333333333334,
+      "prior_recent_target_count": 26,
+      "prior_recent_accuracy_smoothed": 0.8928571428571429
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.963301134444689,
+      "format_history": 0.9671936355152647,
+      "recent_history": 0.9677860397035675,
+      "format_and_recent": 0.9719713068446911
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "D2s3uC2002",
+      "instance_id": "D2s3uC200204",
+      "day": 1.467
+    },
+    "features": {
+      "target_word": "the",
+      "format": "reverse_translate",
+      "prior_target_count": 409,
+      "prior_accuracy_smoothed": 0.9440389294403893,
+      "prior_word_count": 28,
+      "prior_word_accuracy_smoothed": 0.9333333333333333,
+      "prior_format_target_count": 307,
+      "prior_format_accuracy_smoothed": 0.941747572815534,
+      "prior_word_format_count": 20,
+      "prior_word_format_accuracy_smoothed": 0.9545454545454546,
+      "prior_recent_target_count": 26,
+      "prior_recent_accuracy_smoothed": 0.8928571428571429
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.9647534382057994,
+      "format_history": 0.9700135753555241,
+      "recent_history": 0.9700022047707803,
+      "format_and_recent": 0.9742855491274469
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "D2s3uC2002",
+      "instance_id": "D2s3uC200205",
+      "day": 1.467
+    },
+    "features": {
+      "target_word": "director",
+      "format": "reverse_translate",
+      "prior_target_count": 409,
+      "prior_accuracy_smoothed": 0.9440389294403893,
+      "prior_word_count": 0,
+      "prior_word_accuracy_smoothed": 0.5,
+      "prior_format_target_count": 307,
+      "prior_format_accuracy_smoothed": 0.941747572815534,
+      "prior_word_format_count": 0,
+      "prior_word_format_accuracy_smoothed": 0.5,
+      "prior_recent_target_count": 26,
+      "prior_recent_accuracy_smoothed": 0.8928571428571429
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.9296212904480797,
+      "format_history": 0.9282813052260995,
+      "recent_history": 0.9359654620678158,
+      "format_and_recent": 0.9371755993168337
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "D2s3uC2003",
+      "instance_id": "D2s3uC200301",
+      "day": 1.467
+    },
+    "features": {
+      "target_word": "i",
+      "format": "reverse_translate",
+      "prior_target_count": 414,
+      "prior_accuracy_smoothed": 0.9447115384615384,
+      "prior_word_count": 30,
+      "prior_word_accuracy_smoothed": 0.96875,
+      "prior_format_target_count": 312,
+      "prior_format_accuracy_smoothed": 0.9426751592356688,
+      "prior_word_format_count": 20,
+      "prior_word_format_accuracy_smoothed": 0.9545454545454546,
+      "prior_recent_target_count": 27,
+      "prior_recent_accuracy_smoothed": 0.9310344827586207
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.9766996984813328,
+      "format_history": 0.9794276967934098,
+      "recent_history": 0.9807229909439682,
+      "format_and_recent": 0.9829096138566082
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "D2s3uC2003",
+      "instance_id": "D2s3uC200302",
+      "day": 1.467
+    },
+    "features": {
+      "target_word": "love",
+      "format": "reverse_translate",
+      "prior_target_count": 414,
+      "prior_accuracy_smoothed": 0.9447115384615384,
+      "prior_word_count": 2,
+      "prior_word_accuracy_smoothed": 0.75,
+      "prior_format_target_count": 312,
+      "prior_format_accuracy_smoothed": 0.9426751592356688,
+      "prior_word_format_count": 1,
+      "prior_word_format_accuracy_smoothed": 0.6666666666666666,
+      "prior_recent_target_count": 27,
+      "prior_recent_accuracy_smoothed": 0.9310344827586207
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.9621403720170211,
+      "format_history": 0.9604314091904174,
+      "recent_history": 0.9692496460311976,
+      "format_and_recent": 0.9682904571671653
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "D2s3uC2003",
+      "instance_id": "D2s3uC200303",
+      "day": 1.467
+    },
+    "features": {
+      "target_word": "my",
+      "format": "reverse_translate",
+      "prior_target_count": 414,
+      "prior_accuracy_smoothed": 0.9447115384615384,
+      "prior_word_count": 16,
+      "prior_word_accuracy_smoothed": 0.9444444444444444,
+      "prior_format_target_count": 312,
+      "prior_format_accuracy_smoothed": 0.9426751592356688,
+      "prior_word_format_count": 13,
+      "prior_word_format_accuracy_smoothed": 0.9333333333333333,
+      "prior_recent_target_count": 27,
+      "prior_recent_accuracy_smoothed": 0.9310344827586207
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.9647935786649483,
+      "format_history": 0.9683519690671717,
+      "recent_history": 0.9702572174069203,
+      "format_and_recent": 0.9739998399959278
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "D2s3uC2003",
+      "instance_id": "D2s3uC200304",
+      "day": 1.467
+    },
+    "features": {
+      "target_word": "career",
+      "format": "reverse_translate",
+      "prior_target_count": 414,
+      "prior_accuracy_smoothed": 0.9447115384615384,
+      "prior_word_count": 0,
+      "prior_word_accuracy_smoothed": 0.5,
+      "prior_format_target_count": 312,
+      "prior_format_accuracy_smoothed": 0.9426751592356688,
+      "prior_word_format_count": 0,
+      "prior_word_format_accuracy_smoothed": 0.5,
+      "prior_recent_target_count": 27,
+      "prior_recent_accuracy_smoothed": 0.9310344827586207
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.6883755974072464,
+      "format_history": 0.698432805393395,
+      "recent_history": 0.7176486088904033,
+      "format_and_recent": 0.7179226763808003
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "IEJh5jNX01",
+      "instance_id": "IEJh5jNX0101",
+      "day": 1.47
+    },
+    "features": {
+      "target_word": "where",
+      "format": "reverse_translate",
+      "prior_target_count": 418,
+      "prior_accuracy_smoothed": 0.9452380952380952,
+      "prior_word_count": 7,
+      "prior_word_accuracy_smoothed": 0.8888888888888888,
+      "prior_format_target_count": 316,
+      "prior_format_accuracy_smoothed": 0.9433962264150944,
+      "prior_word_format_count": 5,
+      "prior_word_format_accuracy_smoothed": 0.8571428571428571,
+      "prior_recent_target_count": 27,
+      "prior_recent_accuracy_smoothed": 0.9310344827586207
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.9634220536285442,
+      "format_history": 0.9660905794510501,
+      "recent_history": 0.9684045357890133,
+      "format_and_recent": 0.9719550475728644
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "IEJh5jNX01",
+      "instance_id": "IEJh5jNX0102",
+      "day": 1.47
+    },
+    "features": {
+      "target_word": "is",
+      "format": "reverse_translate",
+      "prior_target_count": 418,
+      "prior_accuracy_smoothed": 0.9452380952380952,
+      "prior_word_count": 30,
+      "prior_word_accuracy_smoothed": 0.9375,
+      "prior_format_target_count": 316,
+      "prior_format_accuracy_smoothed": 0.9433962264150944,
+      "prior_word_format_count": 23,
+      "prior_word_format_accuracy_smoothed": 0.96,
+      "prior_recent_target_count": 27,
+      "prior_recent_accuracy_smoothed": 0.9310344827586207
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.9636058888243751,
+      "format_history": 0.9674617053504077,
+      "recent_history": 0.9698070072917491,
+      "format_and_recent": 0.9737147342928442
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "IEJh5jNX01",
+      "instance_id": "IEJh5jNX0103",
+      "day": 1.47
+    },
+    "features": {
+      "target_word": "my",
+      "format": "reverse_translate",
+      "prior_target_count": 418,
+      "prior_accuracy_smoothed": 0.9452380952380952,
+      "prior_word_count": 17,
+      "prior_word_accuracy_smoothed": 0.9473684210526315,
+      "prior_format_target_count": 316,
+      "prior_format_accuracy_smoothed": 0.9433962264150944,
+      "prior_word_format_count": 14,
+      "prior_word_format_accuracy_smoothed": 0.9375,
+      "prior_recent_target_count": 27,
+      "prior_recent_accuracy_smoothed": 0.9310344827586207
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.9650604054904539,
+      "format_history": 0.9686376232171586,
+      "recent_history": 0.9704616417859762,
+      "format_and_recent": 0.9742283620848001
+    }
+  },
+  {
+    "trace": {
+      "learner_id": "+0UEF02n",
+      "exercise_id": "IEJh5jNX01",
+      "instance_id": "IEJh5jNX0104",
+      "day": 1.47
+    },
+    "features": {
+      "target_word": "secretary",
+      "format": "reverse_translate",
+      "prior_target_count": 418,
+      "prior_accuracy_smoothed": 0.9452380952380952,
+      "prior_word_count": 0,
+      "prior_word_accuracy_smoothed": 0.5,
+      "prior_format_target_count": 316,
+      "prior_format_accuracy_smoothed": 0.9433962264150944,
+      "prior_word_format_count": 0,
+      "prior_word_format_accuracy_smoothed": 0.5,
+      "prior_recent_target_count": 27,
+      "prior_recent_accuracy_smoothed": 0.9310344827586207
+    },
+    "actual_correct": 1,
+    "predictions": {
+      "original": 0.9358157818565964,
+      "format_history": 0.9395444617870834,
+      "recent_history": 0.9450893045205571,
+      "format_and_recent": 0.9500301728321685
+    }
+  }
+]

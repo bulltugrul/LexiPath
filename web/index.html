@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LexiPath</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23147780'/%3E%3Cpath d='M20 15v32h25' stroke='white' stroke-width='6' fill='none'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="LexiPath ana ekran">
+        <span class="brand-mark">L<span>·</span></span><span>LexiPath</span>
+      </a>
+      <p class="sidebar-caption">Küçük adımlar.<br>Daha çok kelime.</p>
+      <div class="journey" aria-label="Çalışma adımları">
+        <div data-step="topics"><span>1</span><p>İlgi alanların<small>Konularını seç</small></p></div>
+        <div data-step="diagnostic"><span>2</span><p>Başlangıç çalışması<small>12 kısa soru</small></p></div>
+        <div data-step="practice"><span>3</span><p>Sana uygun tekrar<small>6 soruluk turlar</small></p></div>
+        <div data-step="progress"><span>4</span><p>Gelişimin<small>Cevaplarından gözlemler</small></p></div>
+      </div>
+      <div class="sidebar-bottom"><span class="local-icon">⌂</span><p>Bu bilgisayarda çalışır<small>Kayıtların yerel olarak saklanır.</small></p></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <span class="edition">İngilizce · başlangıç</span>
+        <nav aria-label="Üst gezinme">
+          <a class="quiet-button" href="/pilot">Dört kelimelik pilot</a>
+          <button class="quiet-button" id="how-button" type="button">Nasıl çalışır?</button>
+          <button class="quiet-button" id="home-button" type="button" hidden>Çalışmaya dön</button>
+          <button class="outline-button" id="new-button" type="button">Yeni öğrenci</button>
+        </nav>
+      </header>
+      <main id="screen" tabindex="-1"><div class="loading">Çalışma alanın hazırlanıyor…</div></main>
+      <footer class="page-footer">Kelime ve dinleme çalışması · İlk prototip</footer>
+    </div>
+  </div>
+  <div id="error-message" class="error-toast" role="alert" hidden></div>
+</body>
+</html>

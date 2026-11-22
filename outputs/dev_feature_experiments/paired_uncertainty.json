@@ -1,0 +1,54 @@
+{
+  "resampling_unit": "learner with all DEV exercises and targets together",
+  "learners": 200,
+  "draws": 2000,
+  "seed": 42,
+  "exploratory_not_multiplicity_corrected_or_final_test": true,
+  "comparisons": {
+    "original__minus__format_history": {
+      "reference": "original",
+      "candidate": "format_history",
+      "log_loss_improvement": 0.013628572761189908,
+      "percentile_95_interval": [
+        0.007776709017074454,
+        0.02047805646987237
+      ]
+    },
+    "original__minus__recent_history": {
+      "reference": "original",
+      "candidate": "recent_history",
+      "log_loss_improvement": 0.002314044484445511,
+      "percentile_95_interval": [
+        0.0007242909655246307,
+        0.004021885703392046
+      ]
+    },
+    "original__minus__format_and_recent": {
+      "reference": "original",
+      "candidate": "format_and_recent",
+      "log_loss_improvement": 0.01589731014412567,
+      "percentile_95_interval": [
+        0.009693527539145824,
+        0.023074347886854522
+      ]
+    },
+    "format_history__minus__format_and_recent": {
+      "reference": "format_history",
+      "candidate": "format_and_recent",
+      "log_loss_improvement": 0.002268737382935765,
+      "percentile_95_interval": [
+        0.0005797443668129934,
+        0.00404950775828556
+      ]
+    },
+    "recent_history__minus__format_and_recent": {
+      "reference": "recent_history",
+      "candidate": "format_and_recent",
+      "log_loss_improvement": 0.013583265659680164,
+      "percentile_95_interval": [
+        0.007638604638906119,
+        0.0205181333207007
+      ]
+    }
+  }
+}

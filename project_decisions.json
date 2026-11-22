@@ -1,0 +1,218 @@
+{
+  "status": "LexiPath final bilingual 33-page reports; executed 7-cell notebook; frozen LR12 and K-Means; cleaned submission",
+  "prototype": {
+    "url": "http://127.0.0.1:8765",
+    "launcher": "Baslat.cmd",
+    "catalog_words": 48,
+    "topics": [
+      "animals",
+      "food",
+      "daily"
+    ],
+    "audio": "Prepared local English WAV recordings; typed answers",
+    "storage": "Local SQLite completed-answer history",
+    "runtime_training": false,
+    "diagnostic_topic_scope": "Fixed initial plan covers all three topics; preferences filter subsequent practice",
+    "next_question": "Recompute candidate probabilities from completed history after each answer",
+    "profile_refresh": "After each completed answer; withhold until six observations per format",
+    "validation": [
+      "outputs/prototype12_qa/api_check.json",
+      "outputs/prototype12_qa/feature_parity.json",
+      "outputs/prototype12_qa/browser_check.json"
+    ],
+    "limitation": "Source SLAM predictive results do not validate performance or teaching benefit on the custom Turkish-prompt single-word exercises",
+    "logistic_version": "lr12-format-recent10-v1",
+    "logistic_model": "outputs/dev_feature_experiments/format_and_recent_model.joblib",
+    "logistic_raw_features": 12,
+    "probability_visible_before_answer": "Practice only; diagnostic question and feedback hide probability",
+    "answer_history_trace": "Frozen pre-answer probability and before/after counts/rates; ten-exercise LR window",
+    "legacy_records": "Completed attempts and historical predictions preserved; pending question probability refreshed with new question id",
+    "visual_practice": {
+      "bank_words": 8,
+      "selection": "LR ranks erroneous eligible vocabulary by predicted text correctness",
+      "outcomes": "Separate visual records; queued native text/listen follow-up updates both model histories",
+      "visual_probability_claim": false
+    }
+  },
+  "domain": "Beginner English vocabulary and simple sentences with Turkish instructions",
+  "dev_feature_experiments": {
+    "status": "Three fixed feature-group candidates fitted on TRAIN and compared on DEV; original production model preserved",
+    "output": "outputs/dev_feature_experiments",
+    "original_raw_feature_count": 6,
+    "format_history_extra_features": [
+      "prior_format_target_count",
+      "prior_format_accuracy_smoothed",
+      "prior_word_format_count",
+      "prior_word_format_accuracy_smoothed"
+    ],
+    "recent_history_extra_features": [
+      "prior_recent_target_count",
+      "prior_recent_accuracy_smoothed"
+    ],
+    "recent_window_completed_exercises": 10,
+    "candidate_raw_feature_counts": {
+      "format_history": 10,
+      "recent_history": 8,
+      "format_and_recent": 12
+    },
+    "minimum_dev_log_loss_candidate": "format_and_recent",
+    "original_dev_log_loss": 0.41628013773562844,
+    "candidate_dev_log_loss": 0.40038282759150273,
+    "relative_log_loss_reduction": 0.03818897108711391,
+    "candidate_dev_auc": 0.7758032307966918,
+    "candidate_dev_accuracy": 0.8289445787219607,
+    "candidate_dev_error_recall_at_0_5": 0.20937142857142857,
+    "candidate_model": "outputs/dev_feature_experiments/format_and_recent_model.joblib",
+    "test_opened_or_reevaluated": false,
+    "interpretation": "DEV evidence favors both groups, with most gain from format history and a smaller incremental recent-history gain. Exploratory, not final or new-student validation; unseen-word ranking remains additive.",
+    "prototype_model_changed_during_experiment": false,
+    "integrated_candidate": "format_and_recent",
+    "integrated_into_prototype": true
+  },
+  "dev_baseline_comparison": {
+    "status": "Completed on 23583 DEV targets from the same 200 learners; original frozen model preserved",
+    "output": "outputs/dev_baseline_comparison",
+    "baselines": [
+      "constant TRAIN rate",
+      "learner history",
+      "pooled TRAIN word history",
+      "pooled TRAIN word-format history",
+      "learner-word history with learner-rate fallback"
+    ],
+    "primary_metric": "log loss",
+    "strongest_tested_simple_by_dev_log_loss": "pooled TRAIN word-format history",
+    "lr_log_loss": 0.41628013773562844,
+    "strongest_simple_log_loss": 0.4367535997392615,
+    "relative_log_loss_reduction": 0.046876458524567476,
+    "accuracy_gain_percentage_points_vs_that_baseline": 0.597888309375405,
+    "test_reevaluated": false,
+    "new_model_trained": false,
+    "interpretation": "DEV evidence of contribution over these fixed simple rules; modest threshold accuracy gain, low error recall; not validation on new learners or custom app exercises"
+  },
+  "modalities": {
+    "text": "Short answer for one expected English word",
+    "audio": "Prepared English recording and typed target word",
+    "visual": "Topic preference selection; not computer vision"
+  },
+  "initial_diagnostic": {
+    "text": 6,
+    "listen": 6
+  },
+  "practice_round": {
+    "text": 3,
+    "listen": 3,
+    "review": 4,
+    "new": 2,
+    "review_order": "Lower predicted correctness first within eligible topic pool",
+    "new_order": "Higher predicted correctness first",
+    "cooldown": "Two other questions before repeating a word",
+    "max_word_appearances_per_round": 2,
+    "second_error": "Explain and defer to the next session",
+    "missing_pool": "Use the other eligible pool and disclose the reason",
+    "cluster_affects_question_selection": false,
+    "visual_followup_priority": "Within eligible review pool; preserve cooldown/max-count/second-error constraints; rank queued candidates by LR"
+  },
+  "supervised": {
+    "algorithm": "LogisticRegression",
+    "target": "One token correctness, correct=1-source_error",
+    "duration_used_as_feature": false,
+    "history_scope": "Only prior completed reverse_translate and listen interactions",
+    "smoothing": "(past_correct+1)/(past_count+2)",
+    "active_raw_feature_count": 12,
+    "recent_window_completed_exercises": 10
+  },
+  "unsupervised": {
+    "algorithm": "KMeans with k-means++ initialization",
+    "features": [
+      "text_target_accuracy",
+      "listen_target_accuracy"
+    ],
+    "minimum_completed_exercises_per_format": 6,
+    "profile_window": "Last 6 completed exercises per format; provisional profile",
+    "source_target_rule": "First alphabetic noun or proper noun, otherwise first alphabetic token; no use of correctness in target selection",
+    "candidate_k": [
+      2,
+      3,
+      4
+    ],
+    "selected_k": 4,
+    "minimum_cluster_size": 5,
+    "selection": "Highest silhouette among valid candidates; smaller k on exact tie; do not force a result",
+    "labels": "Observed performance patterns; not learning styles or CEFR levels"
+  },
+  "next_scope": [
+    "Real-student delayed retention and teaching-effect validation; source-to-local calibration remains unverified"
+  ],
+  "pilot": {
+    "url": "http://127.0.0.1:8765/pilot",
+    "words": [
+      "cat",
+      "dog",
+      "apple",
+      "book"
+    ],
+    "skills": [
+      "writing",
+      "recognition",
+      "listening"
+    ],
+    "stages": [
+      "measurement",
+      "teaching",
+      "assisted",
+      "assisted_feedback",
+      "independent",
+      "waiting",
+      "delayed",
+      "complete",
+      "support_required",
+      "extra_check"
+    ],
+    "delay_seconds": 86400,
+    "minimum_other_words_before_recheck": 3,
+    "records_separate_from_main_app": true,
+    "lr": "Unassisted text and listening-writing predictions; writing-remediation ordering",
+    "kmeans": "Last 6 text + 6 actual listening-writing; source reference group when available; no question selection effect",
+    "real_delayed_retention_observed": false,
+    "support_policy": {
+      "unit": "word+skill",
+      "first_error": "explain and retry same target",
+      "second_error": "pause only this target across cycles",
+      "supported_success": "not independent evidence",
+      "invalid_or_stale_submission": "no attempt consumed",
+      "all_paused": "support_required; no delayed timer",
+      "paused_control_targets": "excluded",
+      "spacing_fallback": "visible-answer ungraded other word when whole word paused; excluded from models",
+      "delayed_four_way_transitions": "implemented",
+      "target_evidence_versioning": "per word+skill; only retaught targets reset; other evidence/deadlines retained"
+    },
+    "control_policy": {
+      "correct_correct": "retained at delayed control",
+      "correct_wrong": "reteach",
+      "wrong_correct": "extra unassisted check; correct confirms separately, wrong reteaches",
+      "wrong_wrong": "reteach",
+      "missing_delayed": "pending; independent wrong may be retaught before delay",
+      "delay_anchor": "target independent control block finish +24h; unrelated target deadlines preserved",
+      "extra_check_native_history": "unassisted writing only",
+      "legacy_upgrade": "metadata only; preserve raw answer records"
+    },
+    "common_control": {
+      "version": 1,
+      "skill": "listen_write",
+      "native_format": "listen",
+      "placement": "four after initial writing; four after first independent block",
+      "initial_tasks": 16,
+      "scope": "separate common control; not fourth mastery target",
+      "skip": "words with paused writing goal",
+      "later_retry_or_delayed": "not appended",
+      "old_runs": "legacy plan preserved; new pilot required"
+    }
+  },
+  "final_evidence": {
+    "module": "learning_evidence.py",
+    "main": "topic x format x diagnostic/practice with counts, word/round/time evidence",
+    "pilot": "current target-epoch outcomes; independent/delayed/extra separate",
+    "guidance": "individual last-six comparison plus source-center context; explicit explanatory rule"
+  },
+  "name": "LexiPath"
+}

@@ -1,0 +1,20 @@
+{
+  "exercises_read": 44174,
+  "no_alphabetic_target": 0,
+  "source_split": "TRAIN only",
+  "total_learners": 200,
+  "eligible_learners": 200,
+  "insufficient_learners": 0,
+  "distinct_profiles": 29,
+  "features": [
+    "text_target_accuracy",
+    "listen_target_accuracy"
+  ],
+  "observations_per_eligible_learner": {
+    "text": 6,
+    "listen": 6
+  },
+  "max_distinct_profiles_with_six_binary_observations_per_format": 49,
+  "duplicate_learner_rows_retained": true,
+  "model_fitted": false
+}

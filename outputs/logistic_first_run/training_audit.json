@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "raw_features": [
+    "target_word",
+    "format",
+    "prior_target_count",
+    "prior_accuracy_smoothed",
+    "prior_word_count",
+    "prior_word_accuracy_smoothed"
+  ],
+  "forbidden_inputs_absent": [
+    "learner_id",
+    "instance_id",
+    "exercise_id",
+    "day",
+    "elapsed_seconds",
+    "current_correct"
+  ],
+  "scaler_fit_matches_train_only": true,
+  "encoder_vocabulary_matches_train_only": true,
+  "in_memory_model_scaler_and_vocabulary_unchanged_on_heldout": true,
+  "current_exercise_labels_used_only_after_all_features_saved": true,
+  "heldout_protocol": "Fixed model; predict each exercise from prior completed exercises; after submission reveal its labels for subsequent history. DEV starts from TRAIN history; TEST starts from TRAIN+DEV history. This is sequential-feedback evaluation, not a reproduction of the original blind shared-task leaderboard.",
+  "model_parameters_fixed_before_dev_test": {
+    "C": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 1000,
+    "tol": 0.0001,
+    "random_state": 42
+  },
+  "class_weight": null,
+  "classification_threshold_fixed": 0.5,
+  "baseline_probability_fit_on_train_only": 0.8357209130929741,
+  "convergence_warnings": [],
+  "other_fit_warnings": [],
+  "iterations": [
+    157
+  ],
+  "fit_seconds": 1.1335799999997107,
+  "encoded_features": 1376,
+  "model_file_sha256": "6446d68071dcd95101774135c2c67e3302b5dd451c7c1d94ef5f2fabc1d72dc7",
+  "versions": {
+    "python": "3.13.2",
+    "scikit_learn": "1.9.1",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1"
+  },
+  "kmeans_trained": false
+}

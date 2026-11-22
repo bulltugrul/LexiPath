@@ -1,0 +1,147 @@
+İlk lojistik regresyon deneyi ve sonuçların anlamı
+
+Bu deney ne yapıyor
+
+Bir öğrencinin geçmiş cevapları, hedef kelime ve alıştırma biçimi kullanılarak
+o kelimeyi doğru cevaplama olasılığı tahmin ediliyor. correct=1 doğru cevaptır.
+Bu çıktı İngilizce seviyesi, öğrenme yüzdesi veya CEFR değerlendirmesi değildir.
+
+Veri ve değerlendirme
+
+Resmî kaynak: https://doi.org/10.7910/DVN/8SWHNO, sürüm 4.0.
+Arşivin tamamı resmî MD5 değeriyle doğrulandı. Sabit seçimle 200 öğrenci alındı.
+Yalnız metinden çeviri ve dinleme biçimleri tutuldu.
+
+Eğitim:      44.174 alıştırma, 151.967 hedef kelime kaydı.
+Doğrulama:   6.537 alıştırma,  23.583 hedef kelime kaydı.
+Test:        6.369 alıştırma,  22.693 hedef kelime kaydı.
+
+Bölümler aynı öğrencilerin zaman içinde ilerleyen kayıtlarıdır. Bu, yeni bir
+öğrenci grubuna genelleme deneyi değildir. Alıştırma ve zaman kontrolleri geçti.
+
+Eğitimde kullanılan altı ham özellik
+
+1. Hedef kelime.
+2. Alıştırma biçimi: metin veya dinleme.
+3. Önceki hedef kelime kayıtlarının sayısı.
+4. Geçmiş doğruluğun dengelenmiş oranı.
+5. Bu hedef kelimeyle daha önceki karşılaşma sayısı.
+6. Bu kelimedeki geçmiş doğruluğun dengelenmiş oranı.
+
+Dengeleme hesabı: (geçmiş doğru sayısı + 1) / (geçmiş kayıt sayısı + 2).
+Kayıt yoksa özellik 0,5 olur. Bu, öğrencinin yarısını bildiği anlamına gelmez.
+
+Kelime ve biçim kategorik kodlanır, sayısal özellikler eğitim verisiyle
+ölçeklenir. Öğrenci kimliği, soru kimliği, zaman damgası, cevaplama süresi ve
+mevcut cevabın sonucu model girdisi değildir. Kimlik yalnız geçmişi bulur.
+
+Aynı alıştırmadaki bütün kelimelerin girdileri cevap öncesi geçmişten üretilir.
+Alıştırmanın tüm sonuçları ancak bundan sonra geçmişe eklenir. Etiket değiştirme,
+öğrenci geçmişlerinin ayrılığı ve yasak girdiler için üç kontrol geçti.
+
+Modelin eğitimi
+
+Girdilerden ağırlıklı bir skor hesaplanır. Sigmoid bu skoru 0–1 aralığında doğru
+cevap olasılığına çevirir. Gizli katman veya ReLU yoktur.
+
+Öğrenilen ağırlıklar log-loss ve L2 düzenlileştirme ile belirlenir. Kullanılan
+optimizasyon yöntemi L-BFGS, C=1, en fazla 1000 iterasyondur. Model 157 optimizer
+iterasyonunda yakınsadı; bunlar 157 epoch anlamına gelmez. Yakınsama uyarısı yok.
+Kategoriler açıldıktan sonra 1376 özellik sütunu bulunuyor; hâlâ tek doğrusal
+skor ve sigmoid kullanan bir modeldir.
+
+Model, kodlayıcı ve ölçekleyici yalnız TRAIN ile fit edildi. DEV veya TEST'e
+bakarak parametre/eşik seçilmedi. İlk sınıflandırma eşiği baştan 0,50 seçildi.
+Sınıfların ağırlıkları değiştirilmedi.
+
+Geri bildirim protokolü
+
+DEV başladığında TRAIN geçmişi biliniyor. Bir DEV alıştırması için önce tahmin
+girdisi hazırlanıyor; tamamlandıktan sonra sonucu sonraki geçmişe ekleniyor.
+TEST de TRAIN+DEV geçmişinden başlıyor ve aynı kuralı izliyor. Bu sırada modelin
+ağırlıkları ve dönüşümleri değişmiyor; bellek üzerindeki kontroller de bunu
+doğruladı. Bu, uygulamadaki cevap→geri bildirim akışına uygun sıralı ölçümdür.
+Özgün yarışmanın kör TEST liderlik tablosunu birebir yeniden üretmiyoruz.
+
+Karşılaştırma yöntemi
+
+Basit yöntem herkese, her kelimede eğitimdeki doğru cevap oranını verir:
+0,835720913. Bu olasılık 0,50'nin üstünde olduğu için bütün cevapları doğru
+olarak sınıflandırır. TEST'te cevapların %81,25'i gerçekten doğru olduğundan
+hiçbir öğrenciyi ayırt etmeden %81,25 doğruluğa ulaşır.
+
+TEST sonuçları
+
+Ölçüm                         Sabit yöntem       Lojistik regresyon
+Doğruluk, eşik 0,50            %81,25             %81,84
+ROC-AUC                       0,5000             0,7476
+Log-loss                      0,4845             0,4206
+Brier                         0,1529             0,1320
+Gerçek hataları yakalama       %0                 %15,04
+
+Doğruluk: Doğru/yanlış sınıf kararlarının ne kadarı isabetli? İyileşme yaklaşık
+0,59 yüzde puanıdır. Veride çoğunluk doğru olduğundan tek başına yeterli ölçü
+değildir.
+
+ROC-AUC: Doğru ve yanlış cevapları verilen olasılıklara göre ne kadar iyi
+ayırt edip sıralayabiliyoruz? 0,5 ayrıştırma olmayan sabit yöntemdir; 1 kusursuz
+sıralamadır. 0,7476, %74,76 sınıflandırma doğruluğu demek değildir.
+
+Log-loss: Gerçek sonuçlarla olasılıkların uyumunu ölçer; güvenli fakat yanlış
+tahminleri daha çok cezalandırır. Düşük değer daha iyidir. Sabit yönteme göre
+yaklaşık %13,19 azaldı. Bu, bütün kullanıcı ve sorularda güvenilirlik garantisi
+değildir.
+
+Brier: Olasılık ile 0/1 sonuç arasındaki karesel farkın ortalamasıdır. Daha düşük
+değer daha iyidir. Yaklaşık %13,64 azaldı.
+
+Hata yakalama sınırı
+
+TEST'teki 4.255 gerçek hatanın 640'ı, 0,50 eşiğiyle hata olarak işaretlendi.
+3.615 hata kaçırıldı. Ayrıca 507 doğru cevap yanlış olacak diye işaretlendi.
+Bu nedenle modeli güçlü bir ikili hata alarmı diye sunamayız. Soru seçerken
+kullandığımız olasılık/risk sıralaması, eşik 0,50 sınıf kararından farklıdır.
+Bu ilk sonuçtan sonra TEST'e göre eşik ayarlamadık.
+
+Doğrulama bölümünden açıklayıcı örnekler
+
+Kelime       Doğru olasılığı       Gerçek sonuç
+loves        %34,24                Yanlış
+to           %64,92                Yanlış
+opened       %47,91                Doğru
+love         %90,22                Doğru
+
+Bunlar farklı öğrenci/kayıtlardan dört seçilmiş açıklama örneğidir; örneklerin
+başarı oranı bir performans ölçümü değildir. %64,92 olasılık verilen cevabın
+yanlış çıkabilmesi, olasılığın kesin hüküm olmadığını gösterir.
+
+Grafik nasıl okunur
+
+Solda ROC: model eğrisi sabit yöntemin köşegeninden yukarıda.
+Ortada olasılık uyumu: tahmin gruplarının gözlenen doğrulukları köşegene yakın.
+Sağda sınıf kararları: kaçırılan hatalar ve yanlış alarmlar ayrıca görünür.
+
+Sınırlar ve sonraki aşama
+
+Kaynak öğrenciler İspanyolca biliyor; uygulama Türkçe yönlendirmeli olacak.
+Kaynakta hedef kelimeler çoğunlukla çok kelimeli cevapların parçası. Uygulamada
+tek kelimelik cevap isteyeceğiz. Bu sonuçlar uygulamaya aktarım başarısını veya
+öğrenme kazancını kanıtlamıyor. TEST'te 152 kelime kaydının kelimesi eğitim
+sözlüğünde yoktu; kodlayıcı bunları hata vermeden işledi, fakat o kelimelere özel
+ağırlık öğrenmiş sayılmayız.
+
+K-Means henüz eğitilmedi. Bu dosya yalnız ilk lojistik regresyon deneyini
+anlatıyor. Sonuçları açıklayabildikten sonra iki boyutlu öğrenci profillerinin
+kümelemesine geçilecek.
+
+Yeniden eğitim gerektirmeden inceleme
+
+metrics.json: tüm ölçümler ve biçim bazında sonuçlar.
+training_audit.json: girdiler, kontroller ve değerlendirme protokolü.
+prediction_examples.json: dört örneğin gerçek geçmiş girdileri ve olasılıkları.
+logistic_model.joblib: kaydedilmiş model ve ön işlemleri.
+src/features.py: geçmiş özellikleri ve cevap sonrası güncelleme.
+src/train_logistic.py: ön işleme, eğitim, ölçüm ve grafikler.
+
+Başvuru: https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+Ölçümler: https://scikit-learn.org/stable/modules/model_evaluation.html

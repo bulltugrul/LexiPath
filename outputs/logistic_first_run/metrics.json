@@ -1,0 +1,449 @@
+{
+  "baseline_description": "The observed TRAIN correctness rate assigned to every future token",
+  "positive_label": "correct=1",
+  "evaluation_scope": "Later records of the same 200 learners, two retained formats only",
+  "model_selection": "One fixed C=1 L2 logistic model, no tuning, no class reweighting, TEST evaluated once",
+  "metrics": {
+    "train": {
+      "constant_baseline": {
+        "records": 151967,
+        "accuracy_at_0_5": 0.8357209130929741,
+        "roc_auc_correct_positive": 0.5,
+        "log_loss": 0.4466979465575044,
+        "brier_score": 0.1372914685120197,
+        "error_recall_at_0_5": 0.0,
+        "error_precision_at_0_5": 0.0,
+        "confusion_rows_actual_cols_predicted_order_error_correct": [
+          [
+            0,
+            24965
+          ],
+          [
+            0,
+            127002
+          ]
+        ],
+        "actual_errors": 24965,
+        "caught_errors": 0,
+        "missed_errors": 24965,
+        "correct_answers_flagged_as_errors": 0
+      },
+      "logistic": {
+        "records": 151967,
+        "accuracy_at_0_5": 0.8442030177604348,
+        "roc_auc_correct_positive": 0.7661394947115028,
+        "log_loss": 0.37894907258181254,
+        "brier_score": 0.11611094352007381,
+        "error_recall_at_0_5": 0.1457640696975766,
+        "error_precision_at_0_5": 0.6076139589246953,
+        "confusion_rows_actual_cols_predicted_order_error_correct": [
+          [
+            3639,
+            21326
+          ],
+          [
+            2350,
+            124652
+          ]
+        ],
+        "actual_errors": 24965,
+        "caught_errors": 3639,
+        "missed_errors": 21326,
+        "correct_answers_flagged_as_errors": 2350
+      },
+      "unseen_word_records": 0,
+      "by_format": {
+        "reverse_translate": {
+          "constant_baseline": {
+            "records": 93378,
+            "accuracy_at_0_5": 0.8472016963310416,
+            "roc_auc_correct_positive": 0.5,
+            "log_loss": 0.42802183511226977,
+            "brier_score": 0.12958279044860668,
+            "error_recall_at_0_5": 0.0,
+            "error_precision_at_0_5": 0.0,
+            "confusion_rows_actual_cols_predicted_order_error_correct": [
+              [
+                0,
+                14268
+              ],
+              [
+                0,
+                79110
+              ]
+            ],
+            "actual_errors": 14268,
+            "caught_errors": 0,
+            "missed_errors": 14268,
+            "correct_answers_flagged_as_errors": 0
+          },
+          "logistic": {
+            "records": 93378,
+            "accuracy_at_0_5": 0.8531345713123005,
+            "roc_auc_correct_positive": 0.7606245120893405,
+            "log_loss": 0.36577935200397926,
+            "brier_score": 0.11086445033958657,
+            "error_recall_at_0_5": 0.12692738996355482,
+            "error_precision_at_0_5": 0.5902868318122555,
+            "confusion_rows_actual_cols_predicted_order_error_correct": [
+              [
+                1811,
+                12457
+              ],
+              [
+                1257,
+                77853
+              ]
+            ],
+            "actual_errors": 14268,
+            "caught_errors": 1811,
+            "missed_errors": 12457,
+            "correct_answers_flagged_as_errors": 1257
+          }
+        },
+        "listen": {
+          "constant_baseline": {
+            "records": 58589,
+            "accuracy_at_0_5": 0.8174230657631979,
+            "roc_auc_correct_positive": 0.5,
+            "log_loss": 0.4764635669731646,
+            "brier_score": 0.14957740853839635,
+            "error_recall_at_0_5": 0.0,
+            "error_precision_at_0_5": 0.0,
+            "confusion_rows_actual_cols_predicted_order_error_correct": [
+              [
+                0,
+                10697
+              ],
+              [
+                0,
+                47892
+              ]
+            ],
+            "actual_errors": 10697,
+            "caught_errors": 0,
+            "missed_errors": 10697,
+            "correct_answers_flagged_as_errors": 0
+          },
+          "logistic": {
+            "records": 58589,
+            "accuracy_at_0_5": 0.8299680827459079,
+            "roc_auc_correct_positive": 0.7714073296917691,
+            "log_loss": 0.3999387151446982,
+            "brier_score": 0.12447270153279871,
+            "error_recall_at_0_5": 0.17088903430868468,
+            "error_precision_at_0_5": 0.6258130777131119,
+            "confusion_rows_actual_cols_predicted_order_error_correct": [
+              [
+                1828,
+                8869
+              ],
+              [
+                1093,
+                46799
+              ]
+            ],
+            "actual_errors": 10697,
+            "caught_errors": 1828,
+            "missed_errors": 8869,
+            "correct_answers_flagged_as_errors": 1093
+          }
+        }
+      }
+    },
+    "dev": {
+      "constant_baseline": {
+        "records": 23583,
+        "accuracy_at_0_5": 0.8144850103888395,
+        "roc_auc_correct_positive": 0.5,
+        "log_loss": 0.4812429838880184,
+        "brier_score": 0.15155014180439105,
+        "error_recall_at_0_5": 0.0,
+        "error_precision_at_0_5": 0.0,
+        "confusion_rows_actual_cols_predicted_order_error_correct": [
+          [
+            0,
+            4375
+          ],
+          [
+            0,
+            19208
+          ]
+        ],
+        "actual_errors": 4375,
+        "caught_errors": 0,
+        "missed_errors": 4375,
+        "correct_answers_flagged_as_errors": 0
+      },
+      "logistic": {
+        "records": 23583,
+        "accuracy_at_0_5": 0.8194886146800662,
+        "roc_auc_correct_positive": 0.7521900815136551,
+        "log_loss": 0.41628013773562844,
+        "brier_score": 0.13080415245932647,
+        "error_recall_at_0_5": 0.14582857142857142,
+        "error_precision_at_0_5": 0.5509499136442142,
+        "confusion_rows_actual_cols_predicted_order_error_correct": [
+          [
+            638,
+            3737
+          ],
+          [
+            520,
+            18688
+          ]
+        ],
+        "actual_errors": 4375,
+        "caught_errors": 638,
+        "missed_errors": 3737,
+        "correct_answers_flagged_as_errors": 520
+      },
+      "unseen_word_records": 87,
+      "by_format": {
+        "reverse_translate": {
+          "constant_baseline": {
+            "records": 13965,
+            "accuracy_at_0_5": 0.8340852130325814,
+            "roc_auc_correct_positive": 0.5,
+            "log_loss": 0.44935878562966625,
+            "brier_score": 0.13838974594766223,
+            "error_recall_at_0_5": 0.0,
+            "error_precision_at_0_5": 0.0,
+            "confusion_rows_actual_cols_predicted_order_error_correct": [
+              [
+                0,
+                2317
+              ],
+              [
+                0,
+                11648
+              ]
+            ],
+            "actual_errors": 2317,
+            "caught_errors": 0,
+            "missed_errors": 2317,
+            "correct_answers_flagged_as_errors": 0
+          },
+          "logistic": {
+            "records": 13965,
+            "accuracy_at_0_5": 0.8365914786967419,
+            "roc_auc_correct_positive": 0.7544462965147714,
+            "log_loss": 0.3894443617958107,
+            "brier_score": 0.12031693934298852,
+            "error_recall_at_0_5": 0.12904618040569701,
+            "error_precision_at_0_5": 0.5310834813499112,
+            "confusion_rows_actual_cols_predicted_order_error_correct": [
+              [
+                299,
+                2018
+              ],
+              [
+                264,
+                11384
+              ]
+            ],
+            "actual_errors": 2317,
+            "caught_errors": 299,
+            "missed_errors": 2018,
+            "correct_answers_flagged_as_errors": 264
+          }
+        },
+        "listen": {
+          "constant_baseline": {
+            "records": 9618,
+            "accuracy_at_0_5": 0.7860262008733624,
+            "roc_auc_correct_positive": 0.5,
+            "log_loss": 0.5275377259006913,
+            "brier_score": 0.17065857683654095,
+            "error_recall_at_0_5": 0.0,
+            "error_precision_at_0_5": 0.0,
+            "confusion_rows_actual_cols_predicted_order_error_correct": [
+              [
+                0,
+                2058
+              ],
+              [
+                0,
+                7560
+              ]
+            ],
+            "actual_errors": 2058,
+            "caught_errors": 0,
+            "missed_errors": 2058,
+            "correct_answers_flagged_as_errors": 0
+          },
+          "logistic": {
+            "records": 9618,
+            "accuracy_at_0_5": 0.7946558536078187,
+            "roc_auc_correct_positive": 0.7429137679259157,
+            "log_loss": 0.4552447469058877,
+            "brier_score": 0.1460312195387255,
+            "error_recall_at_0_5": 0.16472303206997085,
+            "error_precision_at_0_5": 0.5697478991596638,
+            "confusion_rows_actual_cols_predicted_order_error_correct": [
+              [
+                339,
+                1719
+              ],
+              [
+                256,
+                7304
+              ]
+            ],
+            "actual_errors": 2058,
+            "caught_errors": 339,
+            "missed_errors": 1719,
+            "correct_answers_flagged_as_errors": 256
+          }
+        }
+      }
+    },
+    "test": {
+      "constant_baseline": {
+        "records": 22693,
+        "accuracy_at_0_5": 0.8124972458467369,
+        "roc_auc_correct_positive": 0.5,
+        "log_loss": 0.484476536107008,
+        "brier_score": 0.15288481005856805,
+        "error_recall_at_0_5": 0.0,
+        "error_precision_at_0_5": 0.0,
+        "confusion_rows_actual_cols_predicted_order_error_correct": [
+          [
+            0,
+            4255
+          ],
+          [
+            0,
+            18438
+          ]
+        ],
+        "actual_errors": 4255,
+        "caught_errors": 0,
+        "missed_errors": 4255,
+        "correct_answers_flagged_as_errors": 0
+      },
+      "logistic": {
+        "records": 22693,
+        "accuracy_at_0_5": 0.8183580839906579,
+        "roc_auc_correct_positive": 0.7475963463286431,
+        "log_loss": 0.4205517900043826,
+        "brier_score": 0.13203050239802447,
+        "error_recall_at_0_5": 0.15041128084606345,
+        "error_precision_at_0_5": 0.5579773321708805,
+        "confusion_rows_actual_cols_predicted_order_error_correct": [
+          [
+            640,
+            3615
+          ],
+          [
+            507,
+            17931
+          ]
+        ],
+        "actual_errors": 4255,
+        "caught_errors": 640,
+        "missed_errors": 3615,
+        "correct_answers_flagged_as_errors": 507
+      },
+      "unseen_word_records": 152,
+      "by_format": {
+        "reverse_translate": {
+          "constant_baseline": {
+            "records": 13515,
+            "accuracy_at_0_5": 0.835072142064373,
+            "roc_auc_correct_positive": 0.5,
+            "log_loss": 0.4477533205490994,
+            "brier_score": 0.13772708051624025,
+            "error_recall_at_0_5": 0.0,
+            "error_precision_at_0_5": 0.0,
+            "confusion_rows_actual_cols_predicted_order_error_correct": [
+              [
+                0,
+                2229
+              ],
+              [
+                0,
+                11286
+              ]
+            ],
+            "actual_errors": 2229,
+            "caught_errors": 0,
+            "missed_errors": 2229,
+            "correct_answers_flagged_as_errors": 0
+          },
+          "logistic": {
+            "records": 13515,
+            "accuracy_at_0_5": 0.8375878653348132,
+            "roc_auc_correct_positive": 0.7355523388911029,
+            "log_loss": 0.3973315694231429,
+            "brier_score": 0.12244435813154922,
+            "error_recall_at_0_5": 0.13369223867205024,
+            "error_precision_at_0_5": 0.5302491103202847,
+            "confusion_rows_actual_cols_predicted_order_error_correct": [
+              [
+                298,
+                1931
+              ],
+              [
+                264,
+                11022
+              ]
+            ],
+            "actual_errors": 2229,
+            "caught_errors": 298,
+            "missed_errors": 1931,
+            "correct_answers_flagged_as_errors": 264
+          }
+        },
+        "listen": {
+          "constant_baseline": {
+            "records": 9178,
+            "accuracy_at_0_5": 0.7792547395946829,
+            "roc_auc_correct_positive": 0.5,
+            "log_loss": 0.5385530514987206,
+            "brier_score": 0.17520521916344495,
+            "error_recall_at_0_5": 0.0,
+            "error_precision_at_0_5": 0.0,
+            "confusion_rows_actual_cols_predicted_order_error_correct": [
+              [
+                0,
+                2026
+              ],
+              [
+                0,
+                7152
+              ]
+            ],
+            "actual_errors": 2026,
+            "caught_errors": 0,
+            "missed_errors": 2026,
+            "correct_answers_flagged_as_errors": 0
+          },
+          "logistic": {
+            "records": 9178,
+            "accuracy_at_0_5": 0.7900414033558509,
+            "roc_auc_correct_positive": 0.7562033331787434,
+            "log_loss": 0.4547445641551185,
+            "brier_score": 0.14614651239599927,
+            "error_recall_at_0_5": 0.1688055281342547,
+            "error_precision_at_0_5": 0.5846153846153846,
+            "confusion_rows_actual_cols_predicted_order_error_correct": [
+              [
+                342,
+                1684
+              ],
+              [
+                243,
+                6909
+              ]
+            ],
+            "actual_errors": 2026,
+            "caught_errors": 342,
+            "missed_errors": 1684,
+            "correct_answers_flagged_as_errors": 243
+          }
+        }
+      }
+    }
+  }
+}

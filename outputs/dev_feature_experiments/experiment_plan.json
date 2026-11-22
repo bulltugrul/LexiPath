@@ -1,0 +1,88 @@
+{
+  "variants": {
+    "original": {
+      "name": "Mevcut model",
+      "raw_features": [
+        "target_word",
+        "format",
+        "prior_target_count",
+        "prior_accuracy_smoothed",
+        "prior_word_count",
+        "prior_word_accuracy_smoothed"
+      ]
+    },
+    "format_history": {
+      "name": "+ Biçime özel geçmiş",
+      "raw_features": [
+        "target_word",
+        "format",
+        "prior_target_count",
+        "prior_accuracy_smoothed",
+        "prior_word_count",
+        "prior_word_accuracy_smoothed",
+        "prior_format_target_count",
+        "prior_format_accuracy_smoothed",
+        "prior_word_format_count",
+        "prior_word_format_accuracy_smoothed"
+      ]
+    },
+    "recent_history": {
+      "name": "+ Yakın dönem",
+      "raw_features": [
+        "target_word",
+        "format",
+        "prior_target_count",
+        "prior_accuracy_smoothed",
+        "prior_word_count",
+        "prior_word_accuracy_smoothed",
+        "prior_recent_target_count",
+        "prior_recent_accuracy_smoothed"
+      ]
+    },
+    "format_and_recent": {
+      "name": "+ İki grup birlikte",
+      "raw_features": [
+        "target_word",
+        "format",
+        "prior_target_count",
+        "prior_accuracy_smoothed",
+        "prior_word_count",
+        "prior_word_accuracy_smoothed",
+        "prior_format_target_count",
+        "prior_format_accuracy_smoothed",
+        "prior_word_format_count",
+        "prior_word_format_accuracy_smoothed",
+        "prior_recent_target_count",
+        "prior_recent_accuracy_smoothed"
+      ]
+    }
+  },
+  "recent_window_completed_exercises": 10,
+  "recent_rate": "(correct targets in previous up-to-10 completed exercises + 1)/(targets in those exercises + 2)",
+  "format_scope": "Prior learner-format and learner-word-format target counts and Laplace rates",
+  "empty_history": "Count=0, smoothed rate=0.5 for every new feature group",
+  "classifier_parameters": {
+    "C": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 1000,
+    "tol": 0.0001,
+    "random_state": 42
+  },
+  "same_default_l2_as_original": true,
+  "preprocessing": "TRAIN-only OneHotEncoder for word/format, StandardScaler for all numeric features",
+  "primary_metric": "DEV log loss (lower is better)",
+  "secondary_metrics": [
+    "Brier",
+    "AUC",
+    "accuracy at 0.5",
+    "error recall and precision at 0.5",
+    "10-bin calibration diagnostic"
+  ],
+  "threshold_fixed": 0.5,
+  "no_hyperparameter_window_or_threshold_search": true,
+  "fit_split": "train",
+  "evaluation_split": "dev",
+  "test_not_opened": true,
+  "selection": "Report minimum DEV log loss; inspect paired uncertainty and prefer simpler interpretation if added gain is unclear. No automatic production promotion.",
+  "original_file_sha256": "6446d68071dcd95101774135c2c67e3302b5dd451c7c1d94ef5f2fabc1d72dc7"
+}

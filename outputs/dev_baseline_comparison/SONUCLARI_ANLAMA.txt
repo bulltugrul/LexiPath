@@ -1,0 +1,151 @@
+DEV'DE BASİT YÖNTEMLERLE KARŞILAŞTIRMA — 22 KASIM 2026
+
+1. SONUÇ NE?
+Mevcut altı özellikli lojistik regresyon, bu karşılaştırmadaki beş basit yöntemin
+hepsinden daha düşük olasılık kaybı (log loss) ve Brier skoru, daha yüksek AUC
+ve %50 karar eşiğinde doğruluk üretti. Bu DEV sonuçları modelin katkısını
+destekliyor. Büyük bir doğruluk sıçraması veya projenin tamamen doğrulandığı
+sonucuna varmıyoruz.
+
+2. NEYİ SABİT TUTTUK?
+200 öğrencinin sonraki 6.537 DEV alıştırmasındaki 23.583 kelime hedefi kullanıldı.
+19.208 hedef doğru, 4.375 hedef yanlış: gözlenen doğru oranı %81,45.
+Model yeniden eğitilmedi, kalibre edilmedi; uygulama ve K-Means değiştirilmedi.
+TEST verisi bu çalıştırmada açılmadı ve TEST tahmini yapılmadı.
+Eski modelin DEV metrikleri 1e-12 toleransla aynı üretildi. Model dosyası ve
+bellekteki işlem hattı değişmedi. Dört temel sınır kontrolü geçti.
+
+DEV, aynı öğrencilerin TRAIN'den sonraki kayıtlarıdır. Her yönteme aynı anda
+aynı cevap öncesi bilgi verilir. Bir alıştırmanın tüm kelimeleri puanlanır;
+ancak alıştırma tamamlandıktan sonra gerçek etiketler öğrencinin geçmişine
+eklenir. Böylece önceki DEV cevapları sonraki DEV sorularında kullanılabilir.
+Bu, sıralı geri bildirim protokolüdür; orijinal kör yarışma koşulu değildir.
+Kelimenin tüm öğrencilerdeki havuz sayaçları yalnız TRAIN'dendir ve DEV'de sabittir.
+
+3. BASİT YÖNTEMLER NE YAPIYOR?
+A) Sabit TRAIN oranı: her hedefe aynı 0,83572 olasılığı verir.
+B) Öğrencinin genel geçmişi: (önceki doğru hedef + 1)/(önceki hedef + 2).
+   Öğrenciye göre değişir, aynı anda tüm aday kelimelere aynı olasılığı verir.
+C) Kelimenin TRAIN geçmişi: o kelimenin tüm TRAIN öğrencilerindeki
+   (doğru + 1)/(gözlem + 2) oranı. TRAIN'de yoksa A'ya döner.
+D) Kelime + biçim TRAIN geçmişi: aynı hesabı kelime ve metin/dinleme çifti
+   için yapar. O çift yoksa C'ye döner. Öğrenciye göre değişmez.
+E) Öğrenci + kelime geçmişi: yalnız ilgili öğrencinin o kelimedeki önceki
+   (doğru + 1)/(gözlem + 2) oranı. Kelimeyi görmediyse B'ye döner.
+F) Lojistik regresyon: TRAIN'de öğrendiği kelime, biçim ve geçmiş özelliklerinin
+   ağırlıklarını birlikte kullanır. Altı ham özellikli eski modeldir.
+
++1/+2 düzeltmesi, bir doğru cevaptan hemen %100 veya bir yanlıştan %0 çıkarılmasını
+önler. Bu düzeltmenin miktarı DEV'e göre ayarlanmadı. Yalnız test edilen bu
+formüllere karşı sonuç çıkarabiliriz; mümkün olan bütün basit yöntemleri elemedik.
+
+4. KARŞILAŞTIRMA TABLOSU
+Yöntem                  Doğruluk     AUC       Log loss    Brier     Hata yakalama
+Sabit TRAIN             %81,45       0,5000    0,48124     0,15155    %0,00
+Öğrenci genel geçmişi   %81,45       0,6257    0,46709     0,14709    %0,00
+Kelime TRAIN            %81,53       0,7006    0,44177     0,13905    %8,64
+Kelime + biçim TRAIN    %81,35       0,7140    0,43675     0,13773    %11,54
+Öğrenci + kelime        %80,37       0,6601    0,47014     0,15093    %13,65
+Lojistik regresyon      %81,95       0,7522    0,41628     0,13080    %14,58
+Doğruluk ve hata yakalama için eşik: p_correct >= 0,50 ise "doğru".
+En güçlü basit yöntem, DEV log loss ölçütünde D'dir; her ölçütte aynı basit
+yöntem birinci değildir. Örneğin C'nin doğruluğu D'den biraz daha yüksektir.
+
+5. BU SAYILAR NE ANLAMA GELİYOR?
+Doğruluk: eşikle üretilen doğru/yanlış kararlarının ne kadarı tuttu?
+  Sabit yöntem her cevaba doğru dediği için zaten %81,45 elde ediyor.
+  Sınıf dengesizliği nedeniyle tek başına yüksek görünmesi yeterli değil.
+
+Log loss: tahmin edilen olasılıkla gerçek sonuç arasındaki uyumsuzluğu cezalandırır.
+  Kesin konuşup yanılmanın cezası büyüktür; düşük daha iyidir.
+  Örneğin gerçekten doğru cevapta %90 tahmin, %60 tahminden daha düşük kayıp alır.
+  Gerçekten yanlış cevapta ise %90 doğru tahmini daha ağır ceza alır.
+  Biz olasılık gösterip adayları sıraladığımız için bu ölçüt ana karşılaştırmadır.
+
+Brier: (doğru olasılığı - 0/1 gerçek sonuç)^2 değerlerinin ortalaması.
+  Düşük daha iyidir; olasılık kalitesini farklı bir kayıpla kontrol eder.
+
+AUC: rastgele seçilen bir doğru hedefi bir yanlış hedeften daha yüksek doğru
+  olasılığıyla sıralama gücünü ölçer; eşitlik yarım katkı alır. 0,5 ayırım yok,
+  1 kusursuz ayırım. 0,7522, %75,22 sınıflandırma doğruluğu anlamına gelmez.
+  Bu havuzdaki AUC, her öğrencinin kendi aday kelimeleri arasındaki sıralamanın
+  veya yeni kelime önerilerinin doğruluğunun doğrudan ölçümü değildir.
+
+Hata yakalama: gerçekten yanlış olanların ne kadarı önceden "yanlış" işaretlendi?
+  Eşik seçimine bağlıdır. Eşik bu çalışmada değiştirilmedi.
+
+6. MODELİN EN GÜÇLÜ BASİT YÖNTEME KATKISI
+D ile LR karşılaştırması:
+  Log loss: 0,43675 -> 0,41628. Göreli azalma %4,69.
+  Brier: 0,13773 -> 0,13080. Göreli azalma %5,03.
+  AUC: 0,7140 -> 0,7522. Artış yaklaşık 0,0382.
+  Doğruluk: %81,35 -> %81,95. Artış 0,60 yüzde puan, 141 ek doğru karar.
+  Yakalanan yanlış: 505 -> 638, yani 133 ek yanlış hedef yakalandı.
+  Yanlış alarm (doğru cevaba yanlış deme): 528 -> 520, yani 8 daha az.
+  Buna rağmen LR 4.375 yanlışın 3.737'sini kaçırıyor: zayıflık devam ediyor.
+  %4,69 kayıp azalması, doğrulukta %4,69 puan artış demek değildir.
+
+Aynı öğrencinin birçok hedefi birbirinden bağımsız sayılmadı. 200 öğrenci,
+tüm kayıtları birlikte korunarak 2.000 kez yeniden örneklendi (seed 42).
+D kaybı - LR kaybı için ortalama fark 0,02047, keşif amaçlı %95 yüzdelik
+aralığı [0,01445; 0,02660]. Pozitif fark daha düşük LR kaybı demektir.
+Bu aralığın sıfırın üzerinde kalması bu örneklemde farkı destekler; yeni veri
+dağılımına, yeni öğrencilere veya öğretim etkisine garanti değildir.
+
+7. NEREDE İŞE YARIYOR?
+Metin: D log loss 0,39886, LR 0,38944.
+Dinleme: D log loss 0,49178, LR 0,45524. Bu karşılaştırmada fark dinlemede daha büyük.
+Öğrencinin kelimeyi ilk görüşü (5.600 hedef): D 0,58950, LR 0,55925.
+Önceki kelime sayısı 1–2 (4.298 hedef): D 0,50283, LR 0,47568.
+Önceki kelime sayısı >=3 (13.685 hedef): D 0,35350, LR 0,33912.
+Bu "ilk görüş", modelin TRAIN'de kelimeyi hiç görmemesi değil; ilgili öğrencinin
+o kelimeyle önceki kaydının olmamasıdır. Bu, yeni öğrenci genellemesi deneyi değildir.
+
+Öğrenci + kelime yönteminin daha kişisel olması otomatik üstünlük sağlamadı.
+Özellikle 1–2 geçmişli grupta kaybı 0,58729; genel öğrenci geçmişinin kaybı 0,51829.
+Az gözlemli oranın oynaklığı ve +1/+2 düzeltmesinin 0,5'e çekmesi olası açıklamalardır;
+bu çalışma bunların nedensel etkisini ayrı deneylerle ölçmedi.
+
+8. OLASILIKLARA NE KADAR GÜVENELİM?
+LR'nin %80–90 olasılık aralığında 6.348 DEV hedefi var. Ortalama tahmin %85,59,
+gözlenen doğru oranı %84,85. %90–100 aralığında 9.472 hedefte bunlar %93,70 ve %93,39.
+Bunlar kalabalık aralıklarda makul uyuma işaret ediyor. Tüm aralıkları birleştiren
+10 eşit genişlikli, kayıt sayısıyla ağırlıklı mutlak uyum farkı LR için yaklaşık
+0,00973 (0,97 yüzde puan), D için 0,01684 (1,68 yüzde puan).
+Bu tek sayıyla "her olasılık güvenilir" denmez. Örneğin %40–50 aralığında 653
+kayıtta ortalama tahmin %45,36 iken gerçek doğru oranı %52,83. %0–10 aralığında
+yalnız 6 kayıt var; orada sağlam yorum yapamayız. Bunlar kalibrasyon tanısıdır,
+yeniden kalibrasyon eğitimi yapılmadı. Bu uyum Türkçe prototip sorularında doğrulanmadı.
+
+9. İKİ SOMUT ÖRNEK
+Kaydedilen gerçek DEV örneğinde "a" için öğrencinin 10 eski hedefi ve düzeltilmiş
+kelime oranı %41,67; genel öğrenci oranı %85,68. D %85,65, LR %73,03 tahmin ediyor.
+Cevap gerçekten yanlış. LR riski daha yüksek görüyor ama %50 eşiğinde ikisi de
+"doğru" derdi. Daha iyi olasılık ile doğru sınıf kararı farklı kavramlardır.
+
+"wear" dinleme örneğinde öğrencinin kelime geçmişi yok. D %57,14, LR %47,33
+tahmin ediyor; cevap gerçekten doğru. Burada basit yöntem daha iyi çıktı ve
+LR eşikte yanlış karar verdi. Model her örnekte üstün değildir.
+Bu örnekler yöntemlerin ayrışmasını anlatmak için seçildi; ortalama başarı
+bu seçilmiş örneklerden değil tüm 23.583 hedeften hesaplandı.
+
+10. HOCAYA SÖYLEYEBİLECEĞİMİZ SAVUNULABİLİR SONUÇ
+"Modeli yalnız sabit oranla değil, öğrencinin ve kelimenin geçmiş oranlarıyla
+da karşılaştırdık. Aynı zamansal DEV kayıtlarında en iyi basit olasılık yöntemine
+göre log loss yaklaşık %4,7 azaldı, AUC 0,714'ten 0,752'ye çıktı. Doğruluk farkı
+yaklaşık 0,60 yüzde puandı. Modelin katkısı ölçüldü; hata yakalama kapasitesi
+ve kendi uygulamamıza aktarım konusunda sınırlılıklar sürüyor."
+
+Bu sonuç kontrollü özellik geliştirmesine geçmek için gerekçe sağlar; altı
+özellikli sürüm karşılaştırma referansı olarak korunmalıdır. Bu görev kapsamında
+yeni özellik, algoritma, arayüz veya soru havuzu eklenmedi.
+
+DOSYALAR
+comparison.json: tüm metrikler, yöntem kuralları, alt gruplar.
+dev_predictions.csv: aynı sıradaki her hedefin özellikleri, gerçek sonucu ve altı tahmin.
+paired_uncertainty.json: öğrenci bazında eşleştirilmiş belirsizlik hesabı.
+calibration.json: her yöntemin aralıkları, tahminleri, sonuçları ve kayıt sayıları.
+prediction_examples.json: dört açıklama örneği.
+audit.json: veri, sabit model ve aynı eski DEV sonucu kontrolleri.
+dev_karsilastirma.png ve dev_olasilik_uyumu.png: grafikler.
+src/compare_dev_baselines.py: yeniden eğitim yapmayan karşılaştırma kodu.

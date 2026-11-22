@@ -1,0 +1,50 @@
+{
+  "source_doi": "https://doi.org/10.7910/DVN/8SWHNO",
+  "archive_md5_verified": true,
+  "seed": 42,
+  "selected_learners": 200,
+  "formats_kept": [
+    "listen",
+    "reverse_translate"
+  ],
+  "official_partitions_preserved": true,
+  "chronology_violations": [],
+  "exercise_overlap_between_partitions": false,
+  "duration_is_log_only_not_a_model_feature": true,
+  "model_trained": false,
+  "summary": {
+    "train": {
+      "learners": 200,
+      "exercises": 44174,
+      "targets": 151967,
+      "errors": 24965,
+      "accuracy": 0.8357209130929741,
+      "formats": {
+        "listen": 17944,
+        "reverse_translate": 26230
+      }
+    },
+    "dev": {
+      "learners": 200,
+      "exercises": 6537,
+      "targets": 23583,
+      "errors": 4375,
+      "accuracy": 0.8144850103888395,
+      "formats": {
+        "reverse_translate": 3800,
+        "listen": 2737
+      }
+    },
+    "test": {
+      "learners": 200,
+      "exercises": 6369,
+      "targets": 22693,
+      "errors": 4255,
+      "accuracy": 0.8124972458467369,
+      "formats": {
+        "listen": 2693,
+        "reverse_translate": 3676
+      }
+    }
+  }
+}

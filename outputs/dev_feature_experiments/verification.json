@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "source_replay_targets": 23583,
+  "numeric_history_values_checked_against_raw_completed_exercises": 235830,
+  "checks_all_previous_history_and_recent_last_ten_exercises": true,
+  "actual_labels_and_source_target_order_match": true,
+  "reported_metrics_match_csv_independent_arithmetic": {
+    "original": true,
+    "format_history": true,
+    "recent_history": true,
+    "format_and_recent": true
+  },
+  "original_model_hash_unchanged": true,
+  "feature_boundary_unit_tests_passed": 6
+}

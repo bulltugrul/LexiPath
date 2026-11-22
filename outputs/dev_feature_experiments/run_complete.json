@@ -1,0 +1,6 @@
+{
+  "completed": true,
+  "new_candidate_models": 3,
+  "minimum_dev_log_loss_variant": "format_and_recent",
+  "production_model_changed": false
+}

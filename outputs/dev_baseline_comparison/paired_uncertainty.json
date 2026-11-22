@@ -1,0 +1,44 @@
+{
+  "resampling_unit": "learner (all exercises/tokens retained together)",
+  "learners": 200,
+  "draws": 2000,
+  "seed": 42,
+  "exploratory_dev_interval_not_final_test": true,
+  "comparisons": {
+    "constant_train": {
+      "baseline_minus_lr_log_loss": 0.06496284615238991,
+      "percentile_95_interval": [
+        0.05671748770945144,
+        0.07337871005392566
+      ]
+    },
+    "learner_history": {
+      "baseline_minus_lr_log_loss": 0.050813623024338936,
+      "percentile_95_interval": [
+        0.043859677259662,
+        0.057533470705644775
+      ]
+    },
+    "word_train": {
+      "baseline_minus_lr_log_loss": 0.025489865410556534,
+      "percentile_95_interval": [
+        0.01924376964205035,
+        0.03230353983596927
+      ]
+    },
+    "word_format_train": {
+      "baseline_minus_lr_log_loss": 0.020473462003633043,
+      "percentile_95_interval": [
+        0.014451356985157957,
+        0.026600093388109078
+      ]
+    },
+    "learner_word_history": {
+      "baseline_minus_lr_log_loss": 0.053857785811327615,
+      "percentile_95_interval": [
+        0.04823906173548865,
+        0.05969221155377639
+      ]
+    }
+  }
+}

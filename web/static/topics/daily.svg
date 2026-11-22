@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc"><title id="title">Günlük yaşam</title><desc id="desc">Açık bir kitap, mavi sırt çantası ve kalemle günlük yaşam eşyaları.</desc>
+<rect width="640" height="400" rx="32" fill="#edf7f5"/><circle cx="514" cy="91" r="53" fill="#d5ebe5"/><circle cx="108" cy="117" r="34" fill="#fce2b9"/>
+<ellipse cx="325" cy="336" rx="226" ry="19" fill="#cfdfdd"/>
+<path d="M344 160V133Q343 96 379 96Q416 96 416 133V161" fill="none" stroke="#35657f" stroke-width="13"/>
+<path d="M317 170Q315 132 356 132H405Q445 133 449 173L462 306Q463 329 439 331H320Q297 330 300 304Z" fill="#548fae"/>
+<path d="M322 185Q320 153 354 152H406Q428 152 430 181L441 300H316Z" fill="#69a8be"/>
+<rect x="326" y="235" width="104" height="79" rx="18" fill="#38718f"/><path d="M338 253H417" stroke="#b5d5df" stroke-width="5" stroke-linecap="round"/>
+<path d="M352 254V269" stroke="#efb375" stroke-width="6" stroke-linecap="round"/>
+<path d="M115 244Q179 218 248 242Q295 218 345 241V319Q291 303 247 325Q177 303 115 321Z" fill="#d47a66"/>
+<path d="M126 228Q185 211 247 236V310Q184 288 126 308Z" fill="#fffcf4"/>
+<path d="M247 236Q293 211 334 229V307Q288 289 247 310Z" fill="#f4eddb"/>
+<path d="M247 237V311" stroke="#d1c8b3" stroke-width="3"/>
+<g stroke="#bbc8c4" stroke-width="4" stroke-linecap="round"><path d="M143 245Q184 234 227 250M143 262Q184 251 227 267M143 279Q184 268 227 284M266 250Q295 236 317 245M266 267Q295 253 317 262M266 284Q295 270 317 279"/></g>
+<g transform="rotate(24 495 251)"><rect x="482" y="166" width="24" height="135" rx="3" fill="#efb16d"/><rect x="482" y="166" width="24" height="22" rx="3" fill="#df897b"/><path d="M482 301H506L494 326Z" fill="#dfc8a2"/><path d="M489 316H499L494 326Z" fill="#446372"/></g></svg>

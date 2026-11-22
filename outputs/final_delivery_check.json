@@ -1,0 +1,29 @@
+{
+  "archive_integrity": "passed",
+  "manifest_hashes": "passed",
+  "reports_match_external_copies": true,
+  "isolated_extract": "temporary directory; automatically removed",
+  "fresh_empty_store": true,
+  "catalog_words": 48,
+  "visual_routes_checked": 8,
+  "audio_and_image": "passed",
+  "diagram": "passed",
+  "full_pilot_measurement_and_independent": "passed",
+  "native_records": {
+    "text": 8,
+    "listen": 8
+  },
+  "group": 3,
+  "records_in_archive": false,
+  "internal_team_notes_in_archive": false,
+  "application_dependencies": "existing pinned environment reused for extracted copy",
+  "fresh_internet_pip_install_verified": false,
+  "automated_tests_in_workspace": 56,
+  "pdf_pages": {
+    "TR": 33,
+    "EN": 33
+  },
+  "pdf_visual_review": "Both final reports rendered and inspected",
+  "real_24h_learning_measured": false,
+  "teacher_submission_performed": false
+}

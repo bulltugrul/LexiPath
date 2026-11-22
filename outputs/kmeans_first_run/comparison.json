@@ -1,0 +1,144 @@
+{
+  "source": "Only TRAIN learner snapshots; no DEV or TEST files used",
+  "learners": 200,
+  "distinct_profiles": 29,
+  "features": [
+    "text_target_accuracy",
+    "listen_target_accuracy"
+  ],
+  "parameters": {
+    "init": "k-means++",
+    "n_init": 10,
+    "random_state": 42,
+    "max_iter": 300,
+    "tol": 0.0001
+  },
+  "minimum_cluster_size": 5,
+  "selection_rule": "Highest mean silhouette among valid k=2,3,4; smaller k on exact tie",
+  "selected_k": 4,
+  "candidates": [
+    {
+      "k": 2,
+      "valid": true,
+      "reasons": [],
+      "selected": false,
+      "silhouette": 0.3885962879307117,
+      "inertia_scaled": 252.60406816493162,
+      "actual_clusters": 2,
+      "smallest_cluster": 77,
+      "iterations": 7,
+      "groups": [
+        {
+          "display_group": 1,
+          "model_label": 1,
+          "students": 77,
+          "center_original_scale": {
+            "text_target_accuracy": 0.5627705627705626,
+            "listen_target_accuracy": 0.7770562770562771
+          }
+        },
+        {
+          "display_group": 2,
+          "model_label": 0,
+          "students": 123,
+          "center_original_scale": {
+            "text_target_accuracy": 0.9173441734417345,
+            "listen_target_accuracy": 0.7628726287262872
+          }
+        }
+      ],
+      "fit_warnings": []
+    },
+    {
+      "k": 3,
+      "valid": true,
+      "reasons": [],
+      "selected": false,
+      "silhouette": 0.4569143064104988,
+      "inertia_scaled": 141.48636160450903,
+      "actual_clusters": 3,
+      "smallest_cluster": 40,
+      "iterations": 4,
+      "groups": [
+        {
+          "display_group": 1,
+          "model_label": 2,
+          "students": 40,
+          "center_original_scale": {
+            "text_target_accuracy": 0.8583333333333334,
+            "listen_target_accuracy": 0.3958333333333331
+          }
+        },
+        {
+          "display_group": 2,
+          "model_label": 0,
+          "students": 68,
+          "center_original_scale": {
+            "text_target_accuracy": 0.5539215686274508,
+            "listen_target_accuracy": 0.8308823529411765
+          }
+        },
+        {
+          "display_group": 3,
+          "model_label": 1,
+          "students": 92,
+          "center_original_scale": {
+            "text_target_accuracy": 0.9148550724637681,
+            "listen_target_accuracy": 0.8840579710144928
+          }
+        }
+      ],
+      "fit_warnings": []
+    },
+    {
+      "k": 4,
+      "valid": true,
+      "reasons": [],
+      "selected": true,
+      "silhouette": 0.4737807162905037,
+      "inertia_scaled": 107.2380260772515,
+      "actual_clusters": 4,
+      "smallest_cluster": 18,
+      "iterations": 6,
+      "groups": [
+        {
+          "display_group": 1,
+          "model_label": 0,
+          "students": 18,
+          "center_original_scale": {
+            "text_target_accuracy": 0.6481481481481481,
+            "listen_target_accuracy": 0.29629629629629634
+          }
+        },
+        {
+          "display_group": 2,
+          "model_label": 1,
+          "students": 64,
+          "center_original_scale": {
+            "text_target_accuracy": 0.5625,
+            "listen_target_accuracy": 0.8567708333333334
+          }
+        },
+        {
+          "display_group": 3,
+          "model_label": 3,
+          "students": 42,
+          "center_original_scale": {
+            "text_target_accuracy": 0.9365079365079365,
+            "listen_target_accuracy": 0.5436507936507937
+          }
+        },
+        {
+          "display_group": 4,
+          "model_label": 2,
+          "students": 76,
+          "center_original_scale": {
+            "text_target_accuracy": 0.9100877192982457,
+            "listen_target_accuracy": 0.9298245614035088
+          }
+        }
+      ],
+      "fit_warnings": []
+    }
+  ]
+}

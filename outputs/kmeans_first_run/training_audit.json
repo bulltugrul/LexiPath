@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "sklearn_version": "1.9.1",
+  "input_files": [
+    "train_profiles.json",
+    "profile_preparation_report.json"
+  ],
+  "profile_file_sha256": "4f6c63d6c2ccb43b272678965893498cb915c4b3600fd906f43eaac8ab5c9d24",
+  "profile_source": "TRAIN only, as checked in profile_preparation_report.json",
+  "duration_ids_preferences_not_model_features": true,
+  "provided_cluster_labels": false,
+  "duplicate_rows_retained": true,
+  "scaler_fit_only_on_train_profiles": true,
+  "scaler_mean": [
+    0.7808333333333333,
+    0.7683333333333334
+  ],
+  "scaler_scale": [
+    0.2010925022084226,
+    0.23734058977670794
+  ],
+  "silhouette_coordinates": "Same StandardScaler space as KMeans fit",
+  "centers_reported_in_original_rate_scale": true,
+  "profiles_are_provisional": true,
+  "logistic_model_and_results_unchanged": true,
+  "logistic_digests": {
+    "outputs\\logistic_first_run\\logistic_model.joblib": "6446d68071dcd95101774135c2c67e3302b5dd451c7c1d94ef5f2fabc1d72dc7",
+    "outputs\\logistic_first_run\\metrics.json": "9866dd03bf51315728434f629b97baf3c84166c29884812acda21a59ed9778db"
+  },
+  "kmeans_model_reload_verified": true,
+  "test_evaluated_again": false
+}

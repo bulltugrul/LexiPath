@@ -1,0 +1,70 @@
+DÖRT KELİMELİK ÖĞRENME PİLOTU
+
+Başlat: Baslat.cmd -> http://127.0.0.1:8765/pilot
+Kelimeler: cat, dog, apple, book. Yazma, yazı-resim tanıma ve ses-resim
+eşleştirme ayrı hedeflerdir. Pilotun kayıt dosyası ana uygulamadan ayrıdır.
+
+AKIŞ
+1. Yeni pilot ilk ölçüm: dört yazma, dört dinleyerek yazma ortak kontrolü,
+   dört tanıma, dört ses-resim. Yazma önce gelir;
+   ilk 16 tamamlanmadan doğru cevap, tahmin veya sonuç tablosu gösterilmez.
+2. Gerçek yanlışlar ilgili kelime+hedefin öğretim ihtiyacını belirler.
+   LR yalnız yazma desteği gereken kelimeleri sıralamaya yardımcı olur.
+3. Hedefe özgü öğretim: yazmada harfler, tanımada kelime-resim-anlam,
+   dinlemede ses-resim bağlantısı. Kartı açmak başarı değildir.
+4. Destekli deneme: ilk yanlışta açıklamalı aynı hedefte tekrar; ikinci
+   yanlışta yalnız o hedef duraklar. Doğru cevap yalnız destekli başarıdır.
+   Geri bildirimden devam düğmesiyle çıkılır. Duraklayan hedef kendiliğinden açılmaz.
+5. Yardımsız kontrol: ilk turda açık hedefler; yeniden öğretim turunda yalnız
+   yenilenen hedefler. Öğretim sonrası yazmaya dönmeden üç başka kelimeyle
+   aralık korunur. Eksik aralık için görünür cevaplı, puansız yardımcı kelimeler
+   kullanılabilir. Bunlar bağımsız kanıt veya model gözlemi değildir.
+   İlk yardımsız kontrolün sonuna dört dinleyerek yazma eklenir. Yazma hedefi
+   duraklayan kelime atlanır. Ortak sonuçlar ayrı tabloda, üç hedefin dışında kalır.
+6. Her hedefin kendi yardımsız kontrol bloğu bitişinden 24 saat sonra gecikmeli
+   kontrolü açılır. Başka hedefin yeniden öğretimi mevcut süreyi sıfırlamaz.
+   Yalnız süresi dolan hedefler sorulur; diğerleri bekler. Sunucu erken isteği reddeder.
+7. Dört sonuç: doğru/doğru hatırladı; doğru/yanlış yeniden öğretim;
+   yanlış/doğru ek bağımsız kontrol; yanlış/yanlış yeniden öğretim.
+   Gecikmeli sonuç yoksa gecikmeli kanıt bekler. Yardımsız yanlışta istenirse
+   gecikmeli ölçüm beklenmeden yalnız o hedef yeniden öğretilebilir.
+8. Ek bağımsız kontrol, doğru cevap açıklanmadan yapılır. Sonuç üçüncü ayrı
+   kanıttır: doğruysa ek kontrolde doğruladı; yanlışsa ilgili hedef yeniden öğretime
+   adaydır. Eski sonuçlar doğruya çevrilmez; yeni gecikmeli başarı iddiası kurulmaz.
+9. Yeniden öğretim yalnız ilgili hedefin sürümünü değiştirir. Diğer hedeflerin
+   geçerli kanıtı ve zamanı korunur. Eski kayıtlar silinmez, yeni öğretimin
+   başarısı diye kullanılmaz. Ayrıntı: Rapor_TR.pdf (kontrol kararları).
+
+MODELLER
+LR12, yardımsız yazma ve dinleyerek yazma sorularını cevap öncesi tahmin eder;
+pilot kontrolünde olasılık görünmez. Gerçek cevap sonra geçmişe girer. Üç hedefin
+öğrenildi kararı gerçek kontrollerle verilir. Destekli/resim seçenekli/puansız
+cevaplar model geçmişine girmez. Ortak görev skill=listen_write, format=listen'dir.
+K-Means, son 6 metin + 6 gerçek dinleyerek-yazma kaydı oluşunca kaynak merkezlere
+göre geçici grup atar. İlk 4+4 yetmez; iki blok sonunda en çok 8+8 oluşabilir.
+Ses-resim kaydı listen yerine kullanılamaz. Grup, soru seçimini değiştirmez.
+Eski 12 soruluk kayıtlar korunur; yeni sorular için Yeni pilot açılır.
+Ayrıntı: Rapor_TR.pdf (ortak kontrol). Modeller yeniden eğitilmedi.
+
+KAYITLAR
+data/prototype/PROTOTYPE_students_pilot.sqlite3 ana dosyadan ayrıdır.
+records: stage, cycle, target_epoch, batch_id, word, skill, correct, at,
+assisted, native_history_used; uygun yazmada model_before ve history_after.
+İlk ölçüm başlangıç kanıtıdır; kontrol sürümü hedefe özeldir.
+target_due hedefin zaman koşulunu, target_epochs geçerli sürümünü tutar.
+Eski kayıtlara uyum, ham yanıtları değiştirmeden ek alanlarla sağlanır.
+Kontrol tamamlanmadan o bloğun anlık sonuçları ve dışa aktarım açılmaz.
+Kontrol sırasında İngilizce yazılışları ipucu vermesin diye sonuç tablosu
+gizlenir; korunmuş eski kanıtlar blok bitince yeniden görünür.
+waiting/complete/support_required ekranında ayrılmış JSON kayıtları indirilebilir.
+Yeni pilot eskisini silmez; URL'deki run işaretiyle aynı pilota dönülebilir.
+
+DOĞRULAMA VE SINIR
+56 test geçti; 29'u pilot ve hedef kanıtına özeldir. Dört sonuç ve hedefe
+özgü yeniden öğretim tarayıcıda sentetik veride kontrol edildi. Saat simülasyonu
+testlere/izole test verisine aittir; gerçek öğrenci gecikmeli öğrenme kazanımı değildir.
+Seçeneklerde şans başarısı mümkündür. Gecikmeli hatırlama çalışma ölçütüdür;
+kalıcı öğrenme, CEFR veya bütün İngilizceye genelleme garantisi değildir.
+Son ürün güncellemesi: model yeterliliği değerlendirildi; ortak kontrol, kanıt
+özeti, bireysel örüntü önerisi ve güncel diyagram tamamlandı. Açıklamalı rapor
+ve teslim paketi output klasöründedir. Gerçek öğrenci kazanımı hâlâ ölçülmedi.

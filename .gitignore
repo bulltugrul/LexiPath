@@ -1,0 +1,21 @@
+# Sanal ortam ve Python önbelleği
+.venv/
+__pycache__/
+*.py[cod]
+
+# Yerel öğrenci veritabanları, yedekler ve sunucu günlükleri
+*.sqlite3
+*.sqlite3-journal
+*.db
+*.log
+data/prototype/backups/
+data/demo/
+
+# Ham veri arşivi ve geçici çalışma klasörleri
+data/raw/
+tmp/
+archive/
+
+# Paketlenmiş teslim ZIP arşivi ve iç sunum prova notları
+output/submission/
+team_notes/

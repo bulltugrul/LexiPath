@@ -1,0 +1,7 @@
+{
+  "completed": true,
+  "selected_k": 4,
+  "source": "TRAIN profiles only",
+  "test_evaluated_again": false,
+  "notes": "Completed after fixing a missing import in a post-fit audit check; candidate metrics reproduced exactly with unchanged settings."
+}

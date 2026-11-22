@@ -1,0 +1,495 @@
+{
+  "learner": {
+    "id": "7b76712aa26143f09b6e5add34dcea2f",
+    "name": "Ayşe · Sentetik konu özeti",
+    "topics": [
+      "animals",
+      "food",
+      "daily"
+    ]
+  },
+  "visual": null,
+  "model": {
+    "version": "lr12-format-recent10-v1",
+    "raw_features": 12
+  },
+  "notice": null,
+  "stage": "summary",
+  "diagnostic_complete": true,
+  "session": {
+    "id": "143ea5bb4175411da83724a21d03eb67",
+    "kind": "practice",
+    "round_number": 2,
+    "position": 6,
+    "total": 6,
+    "completed": true,
+    "correct": 4,
+    "categories": {
+      "review": 4,
+      "new": 2
+    },
+    "wrong_words": [
+      "horse",
+      "computer"
+    ]
+  },
+  "question": null,
+  "feedback": null,
+  "progress": {
+    "total": 24,
+    "correct": 17,
+    "evidence": {
+      "areas": [
+        {
+          "topic_id": "animals",
+          "topic": "Hayvanlar",
+          "format": "listen",
+          "phase": "alıştırma",
+          "correct": 0,
+          "count": 2,
+          "rate": 0.0,
+          "words": 1,
+          "rounds": 2,
+          "first_at": "2026-11-22T18:46:37.714715+00:00",
+          "last_at": "2026-11-22T18:46:37.743997+00:00"
+        },
+        {
+          "topic_id": "animals",
+          "topic": "Hayvanlar",
+          "format": "listen",
+          "phase": "tanılama",
+          "correct": 1,
+          "count": 2,
+          "rate": 0.5,
+          "words": 2,
+          "rounds": 1,
+          "first_at": "2026-11-22T18:46:37.669806+00:00",
+          "last_at": "2026-11-22T18:46:37.695209+00:00"
+        },
+        {
+          "topic_id": "animals",
+          "topic": "Hayvanlar",
+          "format": "reverse_translate",
+          "phase": "alıştırma",
+          "correct": 2,
+          "count": 2,
+          "rate": 1.0,
+          "words": 1,
+          "rounds": 2,
+          "first_at": "2026-11-22T18:46:37.728795+00:00",
+          "last_at": "2026-11-22T18:46:37.760143+00:00"
+        },
+        {
+          "topic_id": "animals",
+          "topic": "Hayvanlar",
+          "format": "reverse_translate",
+          "phase": "tanılama",
+          "correct": 2,
+          "count": 2,
+          "rate": 1.0,
+          "words": 2,
+          "rounds": 1,
+          "first_at": "2026-11-22T18:46:37.657252+00:00",
+          "last_at": "2026-11-22T18:46:37.682335+00:00"
+        },
+        {
+          "topic_id": "daily",
+          "topic": "Günlük yaşam",
+          "format": "listen",
+          "phase": "alıştırma",
+          "correct": 1,
+          "count": 2,
+          "rate": 0.5,
+          "words": 2,
+          "rounds": 2,
+          "first_at": "2026-11-22T18:46:37.724272+00:00",
+          "last_at": "2026-11-22T18:46:37.764759+00:00"
+        },
+        {
+          "topic_id": "daily",
+          "topic": "Günlük yaşam",
+          "format": "listen",
+          "phase": "tanılama",
+          "correct": 1,
+          "count": 2,
+          "rate": 0.5,
+          "words": 2,
+          "rounds": 1,
+          "first_at": "2026-11-22T18:46:37.678046+00:00",
+          "last_at": "2026-11-22T18:46:37.703464+00:00"
+        },
+        {
+          "topic_id": "daily",
+          "topic": "Günlük yaşam",
+          "format": "reverse_translate",
+          "phase": "alıştırma",
+          "correct": 3,
+          "count": 3,
+          "rate": 1.0,
+          "words": 3,
+          "rounds": 2,
+          "first_at": "2026-11-22T18:46:37.709330+00:00",
+          "last_at": "2026-11-22T18:46:37.749704+00:00"
+        },
+        {
+          "topic_id": "daily",
+          "topic": "Günlük yaşam",
+          "format": "reverse_translate",
+          "phase": "tanılama",
+          "correct": 2,
+          "count": 2,
+          "rate": 1.0,
+          "words": 2,
+          "rounds": 1,
+          "first_at": "2026-11-22T18:46:37.665695+00:00",
+          "last_at": "2026-11-22T18:46:37.690559+00:00"
+        },
+        {
+          "topic_id": "food",
+          "topic": "Yiyecek ve içecekler",
+          "format": "listen",
+          "phase": "alıştırma",
+          "correct": 1,
+          "count": 2,
+          "rate": 0.5,
+          "words": 2,
+          "rounds": 2,
+          "first_at": "2026-11-22T18:46:37.733507+00:00",
+          "last_at": "2026-11-22T18:46:37.755608+00:00"
+        },
+        {
+          "topic_id": "food",
+          "topic": "Yiyecek ve içecekler",
+          "format": "listen",
+          "phase": "tanılama",
+          "correct": 1,
+          "count": 2,
+          "rate": 0.5,
+          "words": 2,
+          "rounds": 1,
+          "first_at": "2026-11-22T18:46:37.661457+00:00",
+          "last_at": "2026-11-22T18:46:37.686479+00:00"
+        },
+        {
+          "topic_id": "food",
+          "topic": "Yiyecek ve içecekler",
+          "format": "reverse_translate",
+          "phase": "alıştırma",
+          "correct": 1,
+          "count": 1,
+          "rate": 1.0,
+          "words": 1,
+          "rounds": 1,
+          "first_at": "2026-11-22T18:46:37.738404+00:00",
+          "last_at": "2026-11-22T18:46:37.738404+00:00"
+        },
+        {
+          "topic_id": "food",
+          "topic": "Yiyecek ve içecekler",
+          "format": "reverse_translate",
+          "phase": "tanılama",
+          "correct": 2,
+          "count": 2,
+          "rate": 1.0,
+          "words": 2,
+          "rounds": 1,
+          "first_at": "2026-11-22T18:46:37.673867+00:00",
+          "last_at": "2026-11-22T18:46:37.699351+00:00"
+        }
+      ],
+      "timeline": [
+        {
+          "round_id": "552023bc1b4a4a62875f0989bf3f789b",
+          "phase": "tanılama",
+          "format": "reverse_translate",
+          "correct": 6,
+          "count": 6,
+          "rate": 1.0,
+          "words": 6,
+          "rounds": 1,
+          "first_at": "2026-11-22T18:46:37.657252+00:00",
+          "last_at": "2026-11-22T18:46:37.699351+00:00"
+        },
+        {
+          "round_id": "552023bc1b4a4a62875f0989bf3f789b",
+          "phase": "tanılama",
+          "format": "listen",
+          "correct": 3,
+          "count": 6,
+          "rate": 0.5,
+          "words": 6,
+          "rounds": 1,
+          "first_at": "2026-11-22T18:46:37.661457+00:00",
+          "last_at": "2026-11-22T18:46:37.703464+00:00"
+        },
+        {
+          "round_id": "5abccf9340c3454e9d78485cf7497b2a",
+          "phase": "alıştırma",
+          "format": "reverse_translate",
+          "correct": 3,
+          "count": 3,
+          "rate": 1.0,
+          "words": 3,
+          "rounds": 1,
+          "first_at": "2026-11-22T18:46:37.709330+00:00",
+          "last_at": "2026-11-22T18:46:37.728795+00:00"
+        },
+        {
+          "round_id": "5abccf9340c3454e9d78485cf7497b2a",
+          "phase": "alıştırma",
+          "format": "listen",
+          "correct": 1,
+          "count": 3,
+          "rate": 0.3333333333333333,
+          "words": 3,
+          "rounds": 1,
+          "first_at": "2026-11-22T18:46:37.714715+00:00",
+          "last_at": "2026-11-22T18:46:37.733507+00:00"
+        },
+        {
+          "round_id": "143ea5bb4175411da83724a21d03eb67",
+          "phase": "alıştırma",
+          "format": "reverse_translate",
+          "correct": 3,
+          "count": 3,
+          "rate": 1.0,
+          "words": 3,
+          "rounds": 1,
+          "first_at": "2026-11-22T18:46:37.738404+00:00",
+          "last_at": "2026-11-22T18:46:37.760143+00:00"
+        },
+        {
+          "round_id": "143ea5bb4175411da83724a21d03eb67",
+          "phase": "alıştırma",
+          "format": "listen",
+          "correct": 1,
+          "count": 3,
+          "rate": 0.3333333333333333,
+          "words": 3,
+          "rounds": 1,
+          "first_at": "2026-11-22T18:46:37.743997+00:00",
+          "last_at": "2026-11-22T18:46:37.764759+00:00"
+        }
+      ],
+      "repeated_words": [],
+      "interpretation": "Oranlar bu görevlerdeki gözlenen doğru/toplamdır. Konu yeterliliği için hüküm verilmez; kayıt, kelime ve tur sayıları birlikte gösterilir."
+    },
+    "guidance": {
+      "basis": "observed_last_six_and_nearest_source_center",
+      "text": "Bu kayıtlarda dinleyerek yazma daha düşük. Ses kaydını dinleyip kelimeyi yardımsız yazma çalışmasına ek zaman ayırmayı düşün.",
+      "observed": {
+        "text_target_accuracy": 1.0,
+        "listen_target_accuracy": 0.3333333333333333
+      },
+      "reference_center": {
+        "text_target_accuracy": 0.9365079365079365,
+        "listen_target_accuracy": 0.5436507936507937
+      },
+      "note": "Öneri bir açıklama kuralıdır. Her biçimde yalnız 6 cevap var; bir cevap oranı 16,7 puan değiştirir. Grubun öğretim etkisi ölçülmedi."
+    },
+    "rate": 0.7083333333333334,
+    "modes": {
+      "text": {
+        "count": 12,
+        "correct": 12,
+        "rate": 1.0
+      },
+      "listen": {
+        "count": 12,
+        "correct": 5,
+        "rate": 0.4166666666666667
+      }
+    },
+    "profile": {
+      "status": "provisional",
+      "counts": {
+        "reverse_translate": 6,
+        "listen": 6
+      },
+      "features": {
+        "text_target_accuracy": 1.0,
+        "listen_target_accuracy": 0.3333333333333333
+      },
+      "group": {
+        "number": 3,
+        "reference_students": 42,
+        "reference_center": {
+          "text_target_accuracy": 0.9365079365079365,
+          "listen_target_accuracy": 0.5436507936507937
+        }
+      }
+    },
+    "chart": [
+      {
+        "index": 1,
+        "rate": 1.0,
+        "timestamp": "2026-11-22T18:46:37.657252+00:00"
+      },
+      {
+        "index": 2,
+        "rate": 0.5,
+        "timestamp": "2026-11-22T18:46:37.661457+00:00"
+      },
+      {
+        "index": 3,
+        "rate": 0.6666666666666666,
+        "timestamp": "2026-11-22T18:46:37.665695+00:00"
+      },
+      {
+        "index": 4,
+        "rate": 0.75,
+        "timestamp": "2026-11-22T18:46:37.669806+00:00"
+      },
+      {
+        "index": 5,
+        "rate": 0.8,
+        "timestamp": "2026-11-22T18:46:37.673867+00:00"
+      },
+      {
+        "index": 6,
+        "rate": 0.6666666666666666,
+        "timestamp": "2026-11-22T18:46:37.678046+00:00"
+      },
+      {
+        "index": 7,
+        "rate": 0.7142857142857143,
+        "timestamp": "2026-11-22T18:46:37.682335+00:00"
+      },
+      {
+        "index": 8,
+        "rate": 0.75,
+        "timestamp": "2026-11-22T18:46:37.686479+00:00"
+      },
+      {
+        "index": 9,
+        "rate": 0.7777777777777778,
+        "timestamp": "2026-11-22T18:46:37.690559+00:00"
+      },
+      {
+        "index": 10,
+        "rate": 0.7,
+        "timestamp": "2026-11-22T18:46:37.695209+00:00"
+      },
+      {
+        "index": 11,
+        "rate": 0.7272727272727273,
+        "timestamp": "2026-11-22T18:46:37.699351+00:00"
+      },
+      {
+        "index": 12,
+        "rate": 0.75,
+        "timestamp": "2026-11-22T18:46:37.703464+00:00"
+      },
+      {
+        "index": 13,
+        "rate": 0.7692307692307693,
+        "timestamp": "2026-11-22T18:46:37.709330+00:00"
+      },
+      {
+        "index": 14,
+        "rate": 0.7142857142857143,
+        "timestamp": "2026-11-22T18:46:37.714715+00:00"
+      },
+      {
+        "index": 15,
+        "rate": 0.7333333333333333,
+        "timestamp": "2026-11-22T18:46:37.719290+00:00"
+      },
+      {
+        "index": 16,
+        "rate": 0.75,
+        "timestamp": "2026-11-22T18:46:37.724272+00:00"
+      },
+      {
+        "index": 17,
+        "rate": 0.7647058823529411,
+        "timestamp": "2026-11-22T18:46:37.728795+00:00"
+      },
+      {
+        "index": 18,
+        "rate": 0.7222222222222222,
+        "timestamp": "2026-11-22T18:46:37.733507+00:00"
+      },
+      {
+        "index": 19,
+        "rate": 0.7368421052631579,
+        "timestamp": "2026-11-22T18:46:37.738404+00:00"
+      },
+      {
+        "index": 20,
+        "rate": 0.7,
+        "timestamp": "2026-11-22T18:46:37.743997+00:00"
+      },
+      {
+        "index": 21,
+        "rate": 0.7142857142857143,
+        "timestamp": "2026-11-22T18:46:37.749704+00:00"
+      },
+      {
+        "index": 22,
+        "rate": 0.7272727272727273,
+        "timestamp": "2026-11-22T18:46:37.755608+00:00"
+      },
+      {
+        "index": 23,
+        "rate": 0.7391304347826086,
+        "timestamp": "2026-11-22T18:46:37.760143+00:00"
+      },
+      {
+        "index": 24,
+        "rate": 0.7083333333333334,
+        "timestamp": "2026-11-22T18:46:37.764759+00:00"
+      }
+    ],
+    "recent": [
+      {
+        "word": "computer",
+        "format": "listen",
+        "correct": 0,
+        "timestamp": "2026-11-22T18:46:37.764759+00:00"
+      },
+      {
+        "word": "horse",
+        "format": "reverse_translate",
+        "correct": 1,
+        "timestamp": "2026-11-22T18:46:37.760143+00:00"
+      },
+      {
+        "word": "bread",
+        "format": "listen",
+        "correct": 1,
+        "timestamp": "2026-11-22T18:46:37.755608+00:00"
+      },
+      {
+        "word": "key",
+        "format": "reverse_translate",
+        "correct": 1,
+        "timestamp": "2026-11-22T18:46:37.749704+00:00"
+      },
+      {
+        "word": "horse",
+        "format": "listen",
+        "correct": 0,
+        "timestamp": "2026-11-22T18:46:37.743997+00:00"
+      },
+      {
+        "word": "bread",
+        "format": "reverse_translate",
+        "correct": 1,
+        "timestamp": "2026-11-22T18:46:37.738404+00:00"
+      },
+      {
+        "word": "banana",
+        "format": "listen",
+        "correct": 0,
+        "timestamp": "2026-11-22T18:46:37.733507+00:00"
+      },
+      {
+        "word": "horse",
+        "format": "reverse_translate",
+        "correct": 1,
+        "timestamp": "2026-11-22T18:46:37.728795+00:00"
+      }
+    ]
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "original": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "records": 6,
+      "mean_prediction": 0.09233764893258911,
+      "observed_correct": 0.0
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "records": 49,
+      "mean_prediction": 0.16103852830689833,
+      "observed_correct": 0.20408163265306123
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.3,
+      "records": 134,
+      "mean_prediction": 0.25469221661684266,
+      "observed_correct": 0.3283582089552239
+    },
+    {
+      "lower": 0.3,
+      "upper": 0.4,
+      "records": 316,
+      "mean_prediction": 0.3533425542517128,
+      "observed_correct": 0.3829113924050633
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "records": 653,
+      "mean_prediction": 0.45358636054764073,
+      "observed_correct": 0.5283307810107197
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "records": 1270,
+      "mean_prediction": 0.5546270798431768,
+      "observed_correct": 0.5448818897637795
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "records": 2030,
+      "mean_prediction": 0.6533523532338856,
+      "observed_correct": 0.6561576354679803
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "records": 3305,
+      "mean_prediction": 0.7551670632252544,
+      "observed_correct": 0.7358547655068078
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "records": 6348,
+      "mean_prediction": 0.8558906574140214,
+      "observed_correct": 0.848456206679269
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "records": 9472,
+      "mean_prediction": 0.9370397652240919,
+      "observed_correct": 0.933910472972973
+    }
+  ],
+  "format_history": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "records": 7,
+      "mean_prediction": 0.07510192632352307,
+      "observed_correct": 0.0
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "records": 82,
+      "mean_prediction": 0.15685258523969278,
+      "observed_correct": 0.21951219512195122
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.3,
+      "records": 210,
+      "mean_prediction": 0.25449460202424606,
+      "observed_correct": 0.2714285714285714
+    },
+    {
+      "lower": 0.3,
+      "upper": 0.4,
+      "records": 366,
+      "mean_prediction": 0.3561557079014175,
+      "observed_correct": 0.3551912568306011
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "records": 736,
+      "mean_prediction": 0.4558244985046199,
+      "observed_correct": 0.45652173913043476
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "records": 1205,
+      "mean_prediction": 0.5516215448525341,
+      "observed_correct": 0.5327800829875519
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "records": 1943,
+      "mean_prediction": 0.6527352305879747,
+      "observed_correct": 0.649511065362841
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "records": 3027,
+      "mean_prediction": 0.7552327120179736,
+      "observed_correct": 0.7522299306243806
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "records": 6023,
+      "mean_prediction": 0.8567170059782891,
+      "observed_correct": 0.8552216503403619
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "records": 9984,
+      "mean_prediction": 0.939805974302547,
+      "observed_correct": 0.9349959935897436
+    }
+  ],
+  "recent_history": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "records": 9,
+      "mean_prediction": 0.08292424998570153,
+      "observed_correct": 0.1111111111111111
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "records": 63,
+      "mean_prediction": 0.1603682606392794,
+      "observed_correct": 0.20634920634920634
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.3,
+      "records": 147,
+      "mean_prediction": 0.253844319670676,
+      "observed_correct": 0.3333333333333333
+    },
+    {
+      "lower": 0.3,
+      "upper": 0.4,
+      "records": 354,
+      "mean_prediction": 0.3555904957628015,
+      "observed_correct": 0.4293785310734463
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "records": 692,
+      "mean_prediction": 0.4550433140329759,
+      "observed_correct": 0.49421965317919075
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "records": 1201,
+      "mean_prediction": 0.5525336088431977,
+      "observed_correct": 0.5728559533721899
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "records": 2049,
+      "mean_prediction": 0.6536823892151549,
+      "observed_correct": 0.6412884333821376
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "records": 3331,
+      "mean_prediction": 0.7553255381478823,
+      "observed_correct": 0.7463224256979886
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "records": 6152,
+      "mean_prediction": 0.8567516730026642,
+      "observed_correct": 0.8444408322496749
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "records": 9585,
+      "mean_prediction": 0.9383342964703998,
+      "observed_correct": 0.9356285863328117
+    }
+  ],
+  "format_and_recent": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "records": 15,
+      "mean_prediction": 0.07643280814027234,
+      "observed_correct": 0.06666666666666667
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "records": 104,
+      "mean_prediction": 0.15596768420733714,
+      "observed_correct": 0.19230769230769232
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.3,
+      "records": 232,
+      "mean_prediction": 0.2534181146232177,
+      "observed_correct": 0.27155172413793105
+    },
+    {
+      "lower": 0.3,
+      "upper": 0.4,
+      "records": 432,
+      "mean_prediction": 0.35645303605809275,
+      "observed_correct": 0.37037037037037035
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "records": 708,
+      "mean_prediction": 0.45434971768209215,
+      "observed_correct": 0.4675141242937853
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "records": 1191,
+      "mean_prediction": 0.55380547893099,
+      "observed_correct": 0.5449202350965575
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "records": 1909,
+      "mean_prediction": 0.6542895476034382,
+      "observed_correct": 0.6458878994237821
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "records": 3016,
+      "mean_prediction": 0.7549741074932731,
+      "observed_correct": 0.7509946949602122
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "records": 5755,
+      "mean_prediction": 0.8569015245862962,
+      "observed_correct": 0.852997393570808
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "records": 10221,
+      "mean_prediction": 0.9412308432301467,
+      "observed_correct": 0.9369924664905587
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Ana şekiller az yazılı sunum özetidir. ML şeklinde yalnız LR ve K-Means kutuları öğrenen görevlerdir.
+LR etiketli geçmişten sonraki cevap olasılığını, K-Means grup etiketi verilmemiş profillerden benzerlik grubunu üretir.
+12 girdi alanı, çıktı şemaları, 6+6 koşulu ve ayrıntılı öğretim geçişleri raporun tablolarında açıklanır.
+Öğrenci akışı destekleyici senaryodur; ML blok diyagramının yerine geçmez.

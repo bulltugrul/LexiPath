@@ -1,0 +1,49 @@
+{
+  "model_fitted": false,
+  "smoothing_formula": "(past_correct + 1) / (past_attempts + 2)",
+  "note": "Smoothed historical feature values are not model predictions or mastery estimates. Current exercise labels enter history only after the complete exercise.",
+  "examples": [
+    {
+      "source": "real_official_TRAIN",
+      "instance_id": "PEKpkcSZ0201",
+      "exercise_id": "PEKpkcSZ02",
+      "features_before_answer": {
+        "target_word": "what",
+        "format": "listen",
+        "prior_target_count": 0,
+        "prior_accuracy_smoothed": 0.5,
+        "prior_word_count": 0,
+        "prior_word_accuracy_smoothed": 0.5
+      },
+      "target_correct_REVEALED_AFTER_submission": 1
+    },
+    {
+      "source": "real_official_TRAIN",
+      "instance_id": "ab4q8lQW0401",
+      "exercise_id": "ab4q8lQW04",
+      "features_before_answer": {
+        "target_word": "hello",
+        "format": "listen",
+        "prior_target_count": 1,
+        "prior_accuracy_smoothed": 0.6666666666666666,
+        "prior_word_count": 0,
+        "prior_word_accuracy_smoothed": 0.5
+      },
+      "target_correct_REVEALED_AFTER_submission": 1
+    },
+    {
+      "source": "real_official_TRAIN",
+      "instance_id": "ab4q8lQW0501",
+      "exercise_id": "ab4q8lQW05",
+      "features_before_answer": {
+        "target_word": "hello",
+        "format": "reverse_translate",
+        "prior_target_count": 5,
+        "prior_accuracy_smoothed": 0.8571428571428571,
+        "prior_word_count": 1,
+        "prior_word_accuracy_smoothed": 0.6666666666666666
+      },
+      "target_correct_REVEALED_AFTER_submission": 1
+    }
+  ]
+}

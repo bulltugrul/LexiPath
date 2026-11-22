@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="319.32pt" viewBox="0 0 684 319.32" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-22T22:11:19.277156</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 319.32 
+L 684 319.32 
+L 684 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 33.705 149.6808 
+L 203.895 149.6808 
+Q 210.591 149.6808 210.591 143.028 
+L 210.591 87.588 
+Q 210.591 80.9352 203.895 80.9352 
+L 33.705 80.9352 
+Q 27.009 80.9352 27.009 87.588 
+L 27.009 143.028 
+Q 27.009 149.6808 33.705 149.6808 
+z
+" clip-path="url(#p9167e589c7)" style="fill: #eff7f8; stroke: #087e86; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 256.905 149.6808 
+L 427.095 149.6808 
+Q 433.791 149.6808 433.791 143.028 
+L 433.791 87.588 
+Q 433.791 80.9352 427.095 80.9352 
+L 256.905 80.9352 
+Q 250.209 80.9352 250.209 87.588 
+L 250.209 143.028 
+Q 250.209 149.6808 256.905 149.6808 
+z
+" clip-path="url(#p9167e589c7)" style="fill: #eff7f8; stroke: #087e86; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 480.105 149.6808 
+L 650.295 149.6808 
+Q 656.991 149.6808 656.991 143.028 
+L 656.991 87.588 
+Q 656.991 80.9352 650.295 80.9352 
+L 480.105 80.9352 
+Q 473.409 80.9352 473.409 87.588 
+L 473.409 143.028 
+Q 473.409 149.6808 480.105 149.6808 
+z
+" clip-path="url(#p9167e589c7)" style="fill: #eff7f8; stroke: #087e86; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 480.105 260.5608 
+L 650.295 260.5608 
+Q 656.991 260.5608 656.991 253.908 
+L 656.991 198.468 
+Q 656.991 191.8152 650.295 191.8152 
+L 480.105 191.8152 
+Q 473.409 191.8152 473.409 198.468 
+L 473.409 253.908 
+Q 473.409 260.5608 480.105 260.5608 
+z
+" clip-path="url(#p9167e589c7)" style="fill: #eff7f8; stroke: #087e86; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 256.905 260.5608 
+L 427.095 260.5608 
+Q 433.791 260.5608 433.791 253.908 
+L 433.791 198.468 
+Q 433.791 191.8152 427.095 191.8152 
+L 256.905 191.8152 
+Q 250.209 191.8152 250.209 198.468 
+L 250.209 253.908 
+Q 250.209 260.5608 256.905 260.5608 
+z
+" clip-path="url(#p9167e589c7)" style="fill: #eff7f8; stroke: #087e86; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 33.705 260.5608 
+L 203.895 260.5608 
+Q 210.591 260.5608 210.591 253.908 
+L 210.591 198.468 
+Q 210.591 191.8152 203.895 191.8152 
+L 33.705 191.8152 
+Q 27.009 191.8152 27.009 198.468 
+L 27.009 253.908 
+Q 27.009 260.5608 33.705 260.5608 
+z
+" clip-path="url(#p9167e589c7)" style="fill: #eff7f8; stroke: #087e86; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 214.544953 115.308 
+Q 230.398445 115.308 243.680459 115.308 
+" clip-path="url(#p9167e589c7)" style="fill: none; stroke: #087e86; stroke-width: 2.3; stroke-linecap: round"/>
+    <path d="M 234.480459 110.708 
+L 243.680459 115.308 
+L 234.480459 119.908 
+z
+" clip-path="url(#p9167e589c7)" style="fill: #087e86; stroke: #087e86; stroke-width: 2.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 437.744953 115.308 
+Q 453.598445 115.308 466.880459 115.308 
+" clip-path="url(#p9167e589c7)" style="fill: none; stroke: #087e86; stroke-width: 2.3; stroke-linecap: round"/>
+    <path d="M 457.680459 110.708 
+L 466.880459 115.308 
+L 457.680459 119.908 
+z
+" clip-path="url(#p9167e589c7)" style="fill: #087e86; stroke: #087e86; stroke-width: 2.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 565.2 153.34788 
+Q 565.2 170.750316 565.2 185.581275 
+" clip-path="url(#p9167e589c7)" style="fill: none; stroke: #087e86; stroke-width: 2.3; stroke-linecap: round"/>
+    <path d="M 569.8 176.381275 
+L 565.2 185.581275 
+L 560.6 176.381275 
+z
+" clip-path="url(#p9167e589c7)" style="fill: #087e86; stroke: #087e86; stroke-width: 2.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 469.455047 226.188 
+Q 453.601555 226.188 440.319541 226.188 
+" clip-path="url(#p9167e589c7)" style="fill: none; stroke: #087e86; stroke-width: 2.3; stroke-linecap: round"/>
+    <path d="M 449.519541 230.788 
+L 440.319541 226.188 
+L 449.519541 221.588 
+z
+" clip-path="url(#p9167e589c7)" style="fill: #087e86; stroke: #087e86; stroke-width: 2.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 246.255047 226.188 
+Q 230.401555 226.188 217.119541 226.188 
+" clip-path="url(#p9167e589c7)" style="fill: none; stroke: #087e86; stroke-width: 2.3; stroke-linecap: round"/>
+    <path d="M 226.319541 230.788 
+L 217.119541 226.188 
+L 226.319541 221.588 
+z
+" clip-path="url(#p9167e589c7)" style="fill: #087e86; stroke: #087e86; stroke-width: 2.3; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17394a" x="342" y="40.100969" transform="rotate(-0 342 40.100969)">LexiPath | Öğrenme akışı</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17394a" x="118.8" y="121.892063" transform="rotate(-0 118.8 121.892063)">İlk ölçüm</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17394a" x="342" y="121.712063" transform="rotate(-0 342 121.712063)">İhtiyacı belirle</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17394a" x="565.2" y="121.712063" transform="rotate(-0 565.2 121.712063)">Öğretim</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; fill: #17394a" transform="translate(516.411563 219.398625)">Yardımsız</text>
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; fill: #17394a" transform="translate(528.858281 246.398625)">kontrol</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; fill: #17394a" transform="translate(272.946094 219.239719)">24 saat sonra</text>
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; fill: #17394a" transform="translate(305.658281 246.398625)">kontrol</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17394a" x="118.8" y="231.264562" transform="rotate(-0 118.8 231.264562)">Sonuç / tekrar</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9167e589c7">
+   <rect x="7.2" y="7.2" width="669.6" height="304.92"/>
+  </clipPath>
+ </defs>
+</svg>

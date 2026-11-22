@@ -1,0 +1,128 @@
+[
+  {
+    "file": "features.py",
+    "function": "features_before_answer",
+    "start": 24,
+    "end": 34,
+    "explanation": "Genel ve kelime sayıları ile düzeltilmiş oranlar cevap öncesinde hazırlanır. Eksik geçmişteki 0,5 model tahmini değil girdi başlangıcıdır."
+  },
+  {
+    "file": "experimental_features.py",
+    "function": "experimental_features_before_answer",
+    "start": 23,
+    "end": 38,
+    "explanation": "Biçim, kelime-biçim ve son 10 tamamlanmış alıştırma alanları aynı işlevle eğitimde ve canlı tahminde çıkarılır."
+  },
+  {
+    "file": "experimental_features.py",
+    "function": "observe_experimental_exercise",
+    "start": 47,
+    "end": 55,
+    "explanation": "Önce tahminler üretilir, sonra tamamlanmış alıştırma genel/biçim/kelime sayaçlarını ve son-10 deque yapısını günceller."
+  },
+  {
+    "file": "profiles.py",
+    "function": "observe_for_profile",
+    "start": 27,
+    "end": 47,
+    "explanation": "Kaynak alıştırmadan sonuçtan bağımsız bir hedef seçilir. Zaman sırası korunur; her alıştırma en fazla bir profile gözlem verir."
+  },
+  {
+    "file": "tutor_engine.py",
+    "function": "score",
+    "start": 90,
+    "end": 97,
+    "explanation": "Gerçek tamamlanmış geçmiş replay edilir, 12 sütunlu DataFrame model sözleşmesine uyar ve predict_proba sınıf 1 olasılığını verir."
+  },
+  {
+    "file": "tutor_engine.py",
+    "function": "start_session",
+    "start": 135,
+    "end": 154,
+    "explanation": "Tanılama ile öğretim turları ayrıdır. LR puanı aday sırasına katkı verir; tur kompozisyonu, aralık ve tekrar sınırları açık kurallardır."
+  },
+  {
+    "file": "tutor_engine.py",
+    "function": "prepare_visual",
+    "start": 273,
+    "end": 288,
+    "explanation": "Yanlış kaydı olan ve görsel bankasında bulunan kelimeler uygun adaydır. Metin LR tahminiyle önceliklendirilir; görsel olasılık tahmini yapılmaz."
+  },
+  {
+    "file": "pilot.py",
+    "function": "prepare",
+    "start": 105,
+    "end": 129,
+    "explanation": "Yeni 16 soruluk plan ve ayrı ortak dinleyerek-yazma görevleri hazırlanır. Yazma hedefi duraklamış kelimenin ortak görevi atlanır. Eski planlar korunur."
+  },
+  {
+    "file": "pilot.py",
+    "function": "answer",
+    "start": 225,
+    "end": 249,
+    "explanation": "Yazı normalleştirilip tek hedefle karşılaştırılır. listen_write cevabı listen olarak, yazma cevabı reverse_translate olarak geçmişe girer; resimli cevaplar girmez."
+  },
+  {
+    "file": "pilot.py",
+    "function": "continue_support",
+    "start": 189,
+    "end": 208,
+    "explanation": "İlk yanlış aynı hedefi tekrar açar. Başarı veya duraklatma sonrası sıradaki hedefin öğretimine geçilir; destekli başarı bağımsız kanıt olmaz."
+  },
+  {
+    "file": "pilot.py",
+    "function": "decision",
+    "start": 76,
+    "end": 87,
+    "explanation": "Yalnız geçerli hedef sürümünün bağımsız, gecikmeli ve ek kontrol kayıtları okunur. Yanlış/doğru durumu ek kontrol ister; gecikmeli doğru tek başına başarıya çevrilmez."
+  },
+  {
+    "file": "pilot.py",
+    "function": "retry",
+    "start": 334,
+    "end": 355,
+    "explanation": "Yalnız reteach kararındaki hedefler yeni sürüme alınır. Diğer hedeflerin süre ve sonuçları korunur; eski ham kayıtlar silinmez."
+  },
+  {
+    "file": "learning_evidence.py",
+    "function": "pattern_guidance",
+    "start": 5,
+    "end": 18,
+    "explanation": "Bireysel iki oran karşılaştırılır; eşitse yön uydurulmaz. Kaynak merkezin rolü ve son-altı penceresinin sınırı açıklanır."
+  },
+  {
+    "file": "learning_evidence.py",
+    "function": "attempt_summary",
+    "start": 21,
+    "end": 45,
+    "explanation": "Konu, biçim ve tanılama/alıştırma ayrı tutulur. Doğru/toplam, kelime ve tur sayıları birlikte sunulur; yalnız tekrar kanıtı bulunan kelime yorumlanır."
+  },
+  {
+    "file": "tutor_store.py",
+    "function": "change",
+    "start": 42,
+    "end": 56,
+    "explanation": "BEGIN IMMEDIATE ile işlem açılır, kayıt yüklenip güncellenir ve hata durumunda rollback olur. Aynı görevin tekrar gönderimi uygulama düzeyinde reddedilir."
+  },
+  {
+    "file": "app_server.py",
+    "function": "create_app",
+    "start": 14,
+    "end": 38,
+    "explanation": "Modeller ve iki ayrı SQLite store bağlanır. Ana uygulama ve pilot farklı API yollarını kullanır; ses/resim anahtarları kelime adını açık URL içinde taşımaz."
+  },
+  {
+    "file": "run_dev_feature_experiments.py",
+    "function": "main",
+    "start": 120,
+    "end": 144,
+    "explanation": "Yalnız TRAIN ile fit, DEV ile karşılaştırma yapılır. Eski model referans olarak korunur; TEST geliştirmeye açılmaz."
+  },
+  {
+    "file": "train_kmeans.py",
+    "function": "main",
+    "start": 123,
+    "end": 147,
+    "explanation": "Yalnız TRAIN profilleriyle k=2,3,4 karşılaştırılır. Sabit tohum ve tekrar başlangıçlarıyla en yüksek geçerli silhouette seçilir."
+  }
+]

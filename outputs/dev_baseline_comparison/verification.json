@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": {
+    "csv_rows": 23583,
+    "unique_target_ids": true,
+    "dev_target_order_matches_source": true,
+    "constant_train_metrics_match_csv": true,
+    "learner_history_metrics_match_csv": true,
+    "word_train_metrics_match_csv": true,
+    "word_format_train_metrics_match_csv": true,
+    "learner_word_history_metrics_match_csv": true,
+    "logistic_metrics_match_csv": true,
+    "frozen_model_hash_matches": true,
+    "correct_target_count": true,
+    "wrong_target_count": true
+  },
+  "probability_formula_boundary_tests_passed": 4
+}

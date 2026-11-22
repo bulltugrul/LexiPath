@@ -1,0 +1,182 @@
+KONTROLLÜ ÖZELLİK DENEYLERİ — 22 KASIM 2026
+
+1. ANA BULGU
+Biçime özel geçmiş ve yakın dönem performansı eklendiğinde mevcut altı özellikli
+lojistik regresyonun DEV sonuçları iyileşti. En düşük DEV log loss, iki grubun
+birlikte kullanıldığı 12 ham özellikli adayda elde edildi. Aynı algoritma
+korundu; yeni derin ağ, aktivasyon katmanı veya karmaşık model eklenmedi.
+Biçim grubunun katkısı daha büyük; yakın dönemin ek katkısı daha küçük.
+
+2. NEYİ KONTROL ALTINDA TUTTUK?
+Her aday aynı 151.967 TRAIN hedefiyle eğitildi; aynı 23.583 DEV hedefinde ölçüldü.
+DEV 6.537 alıştırma ve 200 öğrenciden geliyor. Bunlar TRAIN'deki öğrencilerin
+daha sonraki kayıtları; yeni öğrencilere genelleme deneyi değil.
+Eski model yeniden eğitilmeden referans olarak yüklendi. Eski altı özellik ve
+tüm DEV tahminleri önceki deneyle aynı üretildi.
+Algoritma, C=1, L2 düzenlileştirme, lbfgs, max_iter=1000, tol=1e-4,
+random_state=42 ve p_correct >= 0,50 sınıf eşiği sabit tutuldu.
+Kelime/biçim kodlayıcıları ve sayısal ölçekleyiciler yalnız TRAIN'de öğrenildi.
+Yeni adaylar sırasıyla 240, 180 ve 243 iterasyonda yakınsadı; uyarı olmadı.
+DEV'de ağırlıklar değiştirilmedi veya kalibrasyon eğitimi yapılmadı.
+TEST açılmadı; pencere uzunluğu, C veya karar eşiği taraması yapılmadı.
+Deney planı eğitim sonuçları hesaplanmadan experiment_plan.json'a yazıldı.
+
+3. ESKİ MODELE NE EKLEDİK?
+Eski modelin 6 ham özelliği:
+  hedef kelime; metin/dinleme biçimi; öğrencinin önceki toplam hedef sayısı;
+  düzeltilmiş genel doğruluğu; kelimenin önceki hedef sayısı;
+  düzeltilmiş öğrenci-kelime doğruluğu.
+
+A — Biçime özel geçmiş, 4 yeni özellik:
+  prior_format_target_count: öğrencinin bu biçimdeki önceki kelime hedefi sayısı.
+  prior_format_accuracy_smoothed: o biçimde (önceki doğru + 1)/(önceki hedef + 2).
+  prior_word_format_count: bu öğrencinin bu kelimeyi bu biçimde önceki görme sayısı.
+  prior_word_format_accuracy_smoothed: bu öğrenci-kelime-biçim geçmişinin
+                                     (önceki doğru + 1)/(önceki hedef + 2) oranı.
+  Örnek: "cat" kelimesini metinde doğru yazması, dinlemede de doğru yapacağı
+  anlamına gelmez. Yeni özellikler bu iki geçmişi birbirinden ayırır.
+
+B — Yakın dönem, 2 yeni özellik:
+  prior_recent_target_count: önceki en çok 10 tamamlanmış alıştırmadaki kelime
+                             hedeflerinin toplam sayısı.
+  prior_recent_accuracy_smoothed: bu alıştırmalardaki
+                                 (doğru hedef toplamı + 1)/(hedef toplamı + 2).
+  Pencere 10 kelime, 10 gün veya 10 dakika değil, 10 tamamlanmış alıştırmadır.
+  SLAM alıştırmaları birden çok kelime içerdiği için hedef sayısı 10'u aşabilir.
+  Bir alıştırmadaki kelimeler hedef olarak ağırlık alır; alıştırma oranlarının
+  eşit ağırlıklı ortalaması hesaplanmaz. Süre yine model girdisi değildir.
+
+Geçmiş yoksa yeni sayaç 0 ve oran 0,5 olur. Az geçmişte mevcut kayıtlar kullanılır;
+10 kayıt dolmadan model tahmini engellenmez. Bu, K-Means'in 6+6 eşiğinden ayrıdır.
+Her alıştırmanın tüm kelimeleri için özellikler cevap öncesinde çıkarılır.
+Sonra alıştırmanın tamamı geçmişe eklenir. Mevcut alıştırmanın başka kelimesinin
+etiketi bile mevcut özelliklere giremez.
+
+4. NEDEN ÜÇ AYRI ADAY EĞİTTİK?
+Referans: 6 ham özellikli eski model.
+A: 6 eski + 4 biçim özelliği = 10 ham özellik.
+B: 6 eski + 2 yakın dönem özelliği = 8 ham özellik.
+A+B: 6 eski + 4 biçim + 2 yakın dönem = 12 ham özellik.
+Bu, özellik gruplarının katkısını ayıran bir karşılaştırmadır. A'daki dört
+özelliği tek tek ayırmadık; hangisinin tek başına ne kadar katkı sağladığı
+bu deneyden çıkarılamaz. Ham özellik sayısı, kodlamadan sonraki sütun sayısı değildir.
+
+5. DEV SONUÇLARI
+Model              Doğruluk    AUC       Log loss    Brier      Hata yakalama
+Eski 6 özellik     %81,95      0,7522    0,41628     0,13080    %14,58
++ Biçim            %82,80      0,7716    0,40265     0,12554    %19,66
++ Yakın dönem      %82,09      0,7570    0,41397     0,13021    %16,18
++ İkisi birlikte   %82,89      0,7758    0,40038     0,12490    %20,94
+
+Log loss ve Brier düşük; AUC ve doğruluk yüksek olunca daha iyi.
+Olasılıkları kullandığımız için ana seçim ölçütümüz DEV log loss.
+AUC bir sınıflandırma doğruluğu yüzdesi değildir. Doğruluk ve hata yakalama
+sabit %50 olasılık eşiğine bağlıdır; soru sıralama doğrudan bu eşikle çalışmaz.
+
+6. GERÇEK İYİLEŞME NE KADAR?
+A'nın eski modele göre log loss azalması %3,27; doğruluk artışı 0,85 yüzde puan.
+B'nin eski modele göre log loss azalması %0,56; doğruluk artışı 0,14 yüzde puan.
+A+B'nin eski modele göre log loss azalması %3,82; doğruluk artışı 0,95 yüzde puan.
+A+B'nin Brier azalması %4,51 ve AUC artışı yaklaşık 0,0236.
+Bu kayıp yüzdeleri, doğrulukta aynı miktarda yüzde puan artış değildir.
+
+Biçim zaten eklendikten sonra yakın dönemi de eklemek:
+  log loss 0,40265 -> 0,40038, ek göreli azalma yaklaşık %0,56;
+  doğruluk %82,80 -> %82,89, yalnız 22 ek doğru karar.
+Dolayısıyla iki ek grup eşit büyüklükte katkı vermedi; kazancın çoğu biçim grubunda.
+
+7. YAKALANAN HATA VE YANLIŞ ALARM DENGESİ
+DEV'de gerçekten yanlış olan 4.375 hedef var.
+Eski model: 638 hata yakaladı, 3.737 hatayı kaçırdı, 520 yanlış alarm verdi.
+A+B:        916 hata yakaladı, 3.459 hatayı kaçırdı, 575 yanlış alarm verdi.
+Yeni aday 278 ek hatayı yakaladı ama 55 ek doğru cevaba da yanlış diyecekti.
+Net doğru karar farkı +223. Hata uyarılarının isabeti %55,09'dan %61,44'e çıktı.
+Bu nedenle yalnız yakalanan hata sayısına bakıp maliyetsiz bir kazanç demeyiz.
+Hataların yaklaşık %79'u hâlâ kaçıyor; "hataları güvenle önceden buluyor" iddiası yok.
+
+8. HANGİ ALANLARDA DAHA ÇOK İYİLEŞTİ?
+Metin:    eski log loss 0,38944; A 0,38111; A+B 0,38082.
+Dinleme:  eski log loss 0,45524; A 0,43392; A+B 0,42878.
+Eski -> A+B doğruluk artışı metinde 0,49, dinlemede 1,61 yüzde puan.
+Bu deneyde daha büyük fark dinlemede görüldü. Bundan genel dil becerisi sonucu çıkmaz.
+
+Öğrencinin kelimeyi ilk görüşü, 5.600 hedef:
+  eski log loss 0,55925; A 0,54351; A+B 0,54313.
+Önceki kelime sayısı 1–2, 4.298 hedef:
+  eski log loss 0,47568; A 0,46186; A+B 0,46183.
+Önceki kelime sayısı >=3, 13.685 hedef:
+  eski log loss 0,33912; A 0,32642; A+B 0,32267.
+Yakın dönemin A'ya ek kazancı ilk iki grupta çok küçük; daha çok geçmişi olan
+grupta daha belirgin. Alt gruplar keşif amaçlı; her alt grup için ayrı güven aralığı
+ve çoklu karşılaştırma düzeltmesi yapılmadı. Her ölçütte A+B en iyi olmak zorunda
+değil: örneğin ilk-görüş grubunda AUC, A'da 0,7305, A+B'de 0,7297.
+
+9. FARK BİRKAÇ ÖĞRENCİDEN Mİ GELİYOR?
+200 öğrenci, kendi tüm DEV kayıtları birlikte tutularak 2.000 kez yeniden
+örneklendi (seed 42). Böylece aynı öğrencinin kelimeleri bağımsız sanılmadı.
+Pozitif fark, aday modelin daha düşük log loss üretmesi demek:
+  Eski - A:   0,01363; keşif amaçlı %95 aralık [0,00778; 0,02048].
+  Eski - B:   0,00231; keşif amaçlı %95 aralık [0,00072; 0,00402].
+  Eski - A+B: 0,01590; keşif amaçlı %95 aralık [0,00969; 0,02307].
+  A - A+B:    0,00227; keşif amaçlı %95 aralık [0,00058; 0,00405].
+Aralıklar bu DEV örnekleminde iyileşmeyi destekliyor. Bunlar model seçimi yapılan
+DEV'deki keşif hesapları; nihai kör test ve çoklu karşılaştırma düzeltmeli kesin
+kanıt yerine geçmez. Yeni öğrenci/dağılım başarısı garantisi değildir.
+
+10. OLASILIK UYUMU VE ANLATIMI
+10 sabit olasılık aralığındaki ağırlıklı mutlak uyum farkı:
+  eski 0,00973; A 0,00446; B 0,01058; A+B 0,00542.
+Bu tanısal ölçütte A daha iyi; B tek başına eski modelden biraz daha kötü.
+Dolayısıyla "daha çok özellik her ölçütte iyileştirir" demiyoruz.
+Uyum ölçüsü seçilen aralıklara ve kayıt sayılarına bağlıdır; düşük olasılık
+aralıklarında az kayıt olabilir. Her olasılığın güvenilir olduğu veya uygulamanın
+Türkçe sorularında kalibrasyonunun doğrulandığı anlamına gelmez.
+
+Gerçek ilk DEV alıştırmasının "good" hedefi için cevap öncesi:
+  403 eski hedef; düzeltilmiş genel oran %94,57.
+  Bu biçimde 301 eski hedef; düzeltilmiş oran %94,39.
+  "good" için 8 eski hedef; düzeltilmiş oran %90.
+  "good" + metin için 5 eski hedef; düzeltilmiş oran %85,71.
+  Son 10 tamamlanmış alıştırmada 27 hedef; düzeltilmiş oran %93,10.
+  Eski tahmin %97,88; A+B tahmini %98,16; gerçek sonuç doğru.
+Aynı alıştırmadaki "night" için 403, 301 ve 27 sayaçları aynıdır;
+kelimeye ait sayaçlar 0'dır. "good" cevabı henüz o satıra eklenmemiştir.
+Bu ilk alıştırmalar başarı göstermek için seçilmedi; veri sırasındaki ilk altı
+alıştırma kaydedildi. Örneğin sonraki "over" hedefi gerçekten yanlış olmasına
+rağmen A+B olasılığı eski modele göre yükseltiyor. Model her hedefte iyileşmez.
+
+11. NE KARAR VERELİM?
+DEV log loss'a göre en iyi aday A+B'dir. Yalnız iki ek pencere özelliğiyle,
+yeni bir algoritma eklemeden A'nın üzerine küçük ama bu örneklemde desteklenen
+bir kazanç sağlıyor. Kontrollü geliştirme için A+B, uygulamaya entegrasyon adayıdır.
+Eski 6 özellikli model karşılaştırma referansı olarak korunmuştur.
+Bu görevde çalışan prototipin modeli, K-Means, arayüz ve soru havuzu değiştirilmedi.
+Yeni modeller yalnız bu deney klasöründe ayrı dosyalarda bulunuyor.
+
+SINIRLAR
+Sonuçlar aynı öğrencilerin ilerleyen SLAM kayıtları içindir; yeni öğrenci deneyi
+veya Türkçe ipuçlu prototipte öğretim etkisi değerlendirmesi değildir.
+Son 10 kaynak alıştırmada bazen çok sayıda kelime var; uygulamanın tek hedefli
+alıştırmalarında aynı pencere daha az hedef içerebilir. Aktarım ayrıca kontrol edilmeli.
+Model hâlâ toplamsal lojistik regresyon. Bir öğrenci için hiç görülmemiş kelimeler
+aynı biçimde karşılaştırıldığında biçim/yakın dönem özellikleri adaylar arasında
+ortaktır. Bu eklemeler, yeni kelime sıralamasının öğrenciler arasında değişmemesi
+sınırını çözmez. Genel DEV AUC'si kişisel öneri sıralamasının doğrudan kanıtı değildir.
+Katsayıların işaretlerinden nedensel öğrenme etkileri çıkarılmamalı; genel,
+biçim, kelime ve yakın dönem oranları birbiriyle ilişkilidir.
+
+DOĞRULAMA VE DOSYALAR
+Altı özellik sınır testi geçti. CSV'deki 23.583 hedefin tümü ham geçmişten bağımsız
+olarak tekrar sorgulandı; toplam 235.830 sayısal geçmiş değeri doğrulandı.
+Dört modelin CSV metrikleri bağımsız formüllerle aynı bulundu.
+Orijinal model dosyasının SHA256 değeri değişmedi.
+experiment_plan.json: sonuç öncesi sabitlenen özellikler ve eğitim kuralları.
+comparison.json: ana metrikler ve alt gruplar.
+training_audit.json ve verification.json: kaynak, ön işleme ve geçmiş kontrolleri.
+paired_uncertainty.json: öğrenci bazında eşleştirilmiş yeniden örnekleme sonuçları.
+dev_predictions.csv: her hedefin özellikleri, gerçek sonucu ve dört olasılık.
+first_exercise_examples.json: veri sırasındaki ilk altı alıştırma.
+format_history_model.joblib, recent_history_model.joblib,
+format_and_recent_model.joblib: ayrı kaydedilen üç aday.
+ozellik_karsilastirmasi.png ve olasilik_uyumu.png: grafikler.
+src/experimental_features.py ve src/run_dev_feature_experiments.py: deney kodu.

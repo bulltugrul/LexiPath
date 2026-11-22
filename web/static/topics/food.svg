@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc"><title id="title">Yiyecek ve içecekler</title><desc id="desc">Bir tabakta kırmızı elma, ekmek ve bir bardak su.</desc>
+<rect width="640" height="400" rx="32" fill="#fff4ec"/><circle cx="110" cy="94" r="44" fill="#ffe1b4"/><circle cx="539" cy="111" r="67" fill="#ffe8d8"/>
+<ellipse cx="316" cy="324" rx="223" ry="27" fill="#edd9c8"/><ellipse cx="285" cy="301" rx="179" ry="36" fill="#ffffff"/><ellipse cx="285" cy="297" rx="150" ry="23" fill="#f5ebe2"/>
+<path d="M200 170Q151 141 130 189Q108 236 153 282Q175 310 202 293Q234 310 257 283Q301 233 280 190Q261 150 220 169Z" fill="#df6e67"/>
+<path d="M201 174Q195 138 210 119" fill="none" stroke="#855d42" stroke-width="12" stroke-linecap="round"/>
+<path d="M212 144Q231 105 271 124Q251 155 212 144Z" fill="#68a68d"/>
+<path d="M155 194Q139 222 154 246" stroke="#f8b3a5" stroke-width="10" fill="none" stroke-linecap="round"/>
+<path d="M287 240Q302 190 363 204Q416 216 407 273L397 295H286Z" fill="#dba66f"/>
+<path d="M299 242Q308 211 353 220Q386 226 389 259L386 277H303Z" fill="#f6d59d"/>
+<path d="M323 236L319 255M350 235L347 255M375 244L371 263" stroke="#e4ba81" stroke-width="6" stroke-linecap="round"/>
+<path d="M435 135H530L521 292Q481 311 444 292Z" fill="#ffffff" stroke="#8eb9c4" stroke-width="5"/>
+<path d="M441 198Q482 186 524 198L518 285Q482 300 447 285Z" fill="#91c6d8"/>
+<path d="M452 208L456 273" stroke="#d5eff4" stroke-width="7" stroke-linecap="round"/><ellipse cx="483" cy="135" rx="47" ry="10" fill="#e8f5f8" stroke="#8eb9c4" stroke-width="5"/>
+<g fill="#81b59b"><path d="M91 294Q69 274 69 259Q94 262 91 294Z"/><path d="M94 298Q93 274 114 270Q119 288 94 298Z"/></g></svg>

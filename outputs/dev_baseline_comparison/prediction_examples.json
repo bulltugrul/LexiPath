@@ -1,0 +1,114 @@
+[
+  {
+    "selection": "Illustrative middle probability disagreement >0.05; not a representative performance sample",
+    "direction": "lr_higher",
+    "trace": {
+      "learner_id": "QH5GFjTA",
+      "exercise_id": "vkSEhTp701",
+      "instance_id": "vkSEhTp70102",
+      "day": 13.137
+    },
+    "features": {
+      "target_word": "architect",
+      "format": "reverse_translate",
+      "prior_target_count": 728,
+      "prior_accuracy_smoothed": 0.810958904109589,
+      "prior_word_count": 0,
+      "prior_word_accuracy_smoothed": 0.5
+    },
+    "actual_correct": 0,
+    "strongest_simple_method": "word_format_train",
+    "predictions": {
+      "constant_train": 0.8357209130929741,
+      "learner_history": 0.810958904109589,
+      "word_train": 0.4,
+      "word_format_train": 0.5,
+      "learner_word_history": 0.810958904109589,
+      "logistic": 0.6080597159853227
+    }
+  },
+  {
+    "selection": "Illustrative middle probability disagreement >0.05; not a representative performance sample",
+    "direction": "simple_higher",
+    "trace": {
+      "learner_id": "i+e1HhUt",
+      "exercise_id": "LoEN379k05",
+      "instance_id": "LoEN379k0503",
+      "day": 11.017
+    },
+    "features": {
+      "target_word": "a",
+      "format": "reverse_translate",
+      "prior_target_count": 438,
+      "prior_accuracy_smoothed": 0.8568181818181818,
+      "prior_word_count": 10,
+      "prior_word_accuracy_smoothed": 0.4166666666666667
+    },
+    "actual_correct": 0,
+    "strongest_simple_method": "word_format_train",
+    "predictions": {
+      "constant_train": 0.8357209130929741,
+      "learner_history": 0.8568181818181818,
+      "word_train": 0.8290282902829028,
+      "word_format_train": 0.8564949789439585,
+      "learner_word_history": 0.4166666666666667,
+      "logistic": 0.7302716702884723
+    }
+  },
+  {
+    "selection": "Illustrative middle probability disagreement >0.05; not a representative performance sample",
+    "direction": "lr_higher",
+    "trace": {
+      "learner_id": "hLLmiR5N",
+      "exercise_id": "l6mStxpI03",
+      "instance_id": "l6mStxpI0302",
+      "day": 25.254
+    },
+    "features": {
+      "target_word": "helps",
+      "format": "reverse_translate",
+      "prior_target_count": 1541,
+      "prior_accuracy_smoothed": 0.7984445884640311,
+      "prior_word_count": 0,
+      "prior_word_accuracy_smoothed": 0.5
+    },
+    "actual_correct": 1,
+    "strongest_simple_method": "word_format_train",
+    "predictions": {
+      "constant_train": 0.8357209130929741,
+      "learner_history": 0.7984445884640311,
+      "word_train": 0.7142857142857143,
+      "word_format_train": 0.6,
+      "learner_word_history": 0.7984445884640311,
+      "logistic": 0.6886381074219913
+    }
+  },
+  {
+    "selection": "Illustrative middle probability disagreement >0.05; not a representative performance sample",
+    "direction": "simple_higher",
+    "trace": {
+      "learner_id": "pOhVhnOT",
+      "exercise_id": "UZbtozn101",
+      "instance_id": "UZbtozn10104",
+      "day": 12.052
+    },
+    "features": {
+      "target_word": "wear",
+      "format": "listen",
+      "prior_target_count": 1289,
+      "prior_accuracy_smoothed": 0.8133230054221534,
+      "prior_word_count": 0,
+      "prior_word_accuracy_smoothed": 0.5
+    },
+    "actual_correct": 1,
+    "strongest_simple_method": "word_format_train",
+    "predictions": {
+      "constant_train": 0.8357209130929741,
+      "learner_history": 0.8133230054221534,
+      "word_train": 0.5357142857142857,
+      "word_format_train": 0.5714285714285714,
+      "learner_word_history": 0.8133230054221534,
+      "logistic": 0.47334870493521
+    }
+  }
+]

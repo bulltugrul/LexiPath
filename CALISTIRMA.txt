@@ -1,0 +1,52 @@
+LEXIPATH - KURULUM VE ÇALIŞTIRMA
+
+Windows / Python 3.13 (eğitimde kullanılan sürüm: 3.13.2).
+1. ZIP'in tamamını yazılabilir bir klasöre çıkarın.
+2. Python yoksa resmi Python dağıtımını kurun. Kurulum.cmd'yi çalıştırın.
+   Bu adım internete erişerek requirements-lock.txt bağımlılıklarını kurar.
+3. Baslat.cmd -> http://127.0.0.1:8765
+   Öğretim döngüsü: http://127.0.0.1:8765/pilot -> Yeni pilot.
+4. Arşiv kişisel öğrenci veritabanı içermez. İlk açılışta SQLite dosyaları
+   data/prototype altında otomatik oluşur. Mevcut kayıtlar çalışma sırasında saklanır.
+
+Elle çalıştırma (Windows):
+  py -3.13 -m venv .venv
+  .venv\Scripts\python.exe -m pip install -r requirements-lock.txt
+  .venv\Scripts\python.exe src/app_server.py --port 8765
+Linux/macOS: python3.13 -m venv .venv; ardından .venv/bin/python ile aynı dosyalar.
+Uygulama localhost ile sınırlıdır; internet yayını yapılmaz.
+
+Model eğitimi uygulamayı açmak için gerekli değildir. LR12 ve K-Means dosyaları,
+katalog, ses, resim ve kaynak grup karşılaştırması arşivde yer alır.
+Doğru cevabı yazıp gönderin; pilot ses kayıtlarında resim/harf ipucu verilmez.
+Gecikmeli kontrol gerçek 24 saatten önce açılmaz; arayüzde atlatma düğmesi yoktur.
+
+SENTETİK SUNUM ÖRNEĞİ (kişisel geçmişten ayrı)
+  .venv\Scripts\python.exe src/demo_scenario.py
+  set TUTOR_DB=data/demo/demo.sqlite3
+  .venv\Scripts\python.exe src/app_server.py --port 8766
+Demo çıktısındaki /pilot?run=... yolunu http://127.0.0.1:8766 adresine ekleyin.
+Bu örnek gerçek öğrenme kazanımı değildir. Otomatik test saati demo arayüzünü açmaz.
+
+YENİDEN ÜRETİM
+Hazırlanmış, kamuya açık SLAM 200 öğrenci alt kümesi data/prepared/slam200'dedir.
+  python src/train_logistic.py        (ilk LR6; tarihsel protokol DEV ve TEST içerir)
+  python src/compare_dev_baselines.py (DEV karşılaştırması)
+  python src/run_dev_feature_experiments.py (LR12 seçimi; yalnız TRAIN/DEV)
+  python src/prepare_profiles.py
+  python src/train_kmeans.py         (yalnız TRAIN profilleri)
+Bu komutlar çıktı/model dosyalarını yeniden üretir; değerlendirme için çalıştırma
+zorunluluğu yoktur. Geliştirme sırasında TEST sonuçları model seçimine açılmamalıdır.
+Ham kaynaktan hazırlama: Harvard Dataverse DOI 10.7910/DVN/8SWHNO, İngilizce
+data_en_es.tar.gz arşivini data/raw/slam içine koyun; src/prepare_slam_subset.py.
+Kaynak erişimi form gerektirebilir. Arşiv ham veri veya erişim formu bilgisi içermez.
+Veri atfı ve CC BY-NC 4.0 metni LICENSES klasöründedir; alt küme eğitim amaçlıdır.
+
+DOĞRULAMA
+  python -m unittest discover -s src -p "test_*.py"
+Güncel çalışma ağacında 56 test geçmiştir. Paket doğrulaması teslim raporunda
+ve TESLIM_KONTROLU.json dosyasında ayrıca açıklanır. İnternetten taze bağımlılık
+kurulumunun durumu bu dosyada dürüstçe belirtilir.
+
+Raporu yeniden oluşturmak uygulama kurulumu için gerekli değildir.
+Rapor üreticisi ayrıca reportlab, pypdfium2, pypdf ve Pillow gerektirir.

@@ -1,0 +1,57 @@
+{
+  "type": "read-only audit; synthetic probes are not validation samples",
+  "cold_start_writing_probabilities": {
+    "cat": 0.7834107602859114,
+    "dog": 0.7939824451454405,
+    "apple": 0.7436933861255982,
+    "book": 0.8358572830977427
+  },
+  "after_four_correct_writing_probabilities": {
+    "cat": 0.9668373864368126,
+    "dog": 0.9688124673880436,
+    "apple": 0.9589955984521297,
+    "book": 0.9762160811606373
+  },
+  "teaching_and_supported_success_alone_change_probability": false,
+  "thirty_day_elapsed_time_alone_changes_probability": false,
+  "pilot_native_history_count": 4,
+  "pilot_profile": {
+    "status": "insufficient_history",
+    "counts": {
+      "reverse_translate": 4,
+      "listen": 0
+    },
+    "features": null,
+    "group": null
+  },
+  "dev_feature_quantiles": {
+    "prior_target_count": {
+      "0.0": 128.0,
+      "0.25": 611.0,
+      "0.5": 941.0,
+      "0.75": 1419.0,
+      "1.0": 3208.0
+    },
+    "prior_format_target_count": {
+      "0.0": 16.0,
+      "0.25": 320.0,
+      "0.5": 474.0,
+      "0.75": 802.0,
+      "1.0": 2539.0
+    },
+    "prior_recent_target_count": {
+      "0.0": 16.0,
+      "0.25": 33.0,
+      "0.5": 36.0,
+      "0.75": 40.0,
+      "1.0": 69.0
+    }
+  },
+  "frozen_model_hashes": {
+    "lr12": "e70888379ad7de867bb965718309caab4326a2f384f60ee13757129d7c7653d7",
+    "kmeans": "3170768cbcc80872c9533b681a8abf4c93eea761b22090c10f026d2ac147b83d"
+  },
+  "model_fit_performed": false,
+  "test_data_accessed": false,
+  "learner_database_accessed": false
+}

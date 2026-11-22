@@ -1,0 +1,14 @@
+{
+  "executed_code_cells": 7,
+  "errors": 0,
+  "models_refitted": false,
+  "test_accessed": false,
+  "plots": [
+    "baseline_loss_en.png",
+    "kmeans_selection_en.png",
+    "lr12_confusion_en.png",
+    "lr_run_metrics_en.png",
+    "student_profile_en.png",
+    "technical_architecture_en.png"
+  ]
+}

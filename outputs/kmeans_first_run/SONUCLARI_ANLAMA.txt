@@ -1,0 +1,125 @@
+İlk K-Means deneyi ve öğrenci profillerinin anlamı
+
+Bu adımın amacı
+
+Tamamlanan alıştırmalardaki gerçek sonuçlardan benzer yakın dönem performansı
+gösteren öğrencileri gruplamak. Lojistik regresyon yeni bir cevabın olasılığını
+tahmin ederken bu blok bir öğrenci profilinin hangi merkeze yakın olduğunu bulur.
+Gruplar soru seçimini otomatik değiştirmiyor; açıklayıcı raporlama sağlıyor.
+
+Profil nasıl hazırlanıyor
+
+Yalnız TRAIN bölümündeki 44.174 alıştırma kullanıldı. Her öğrenci için zaman
+sırası korunarak son 6 metin ve son 6 dinleme alıştırması alındı.
+
+SLAM cevapları birden fazla kelime içerebilir. Her alıştırmadan tek hedef seçildi:
+önce alfabetik sözcükler arasındaki ilk NOUN/PROPN (isim/özel isim); bunlar yoksa
+ilk alfabetik sözcük. Seçim sırasında doğruluk etiketine bakılmıyor. Sonra seçilen
+hedefin gerçek doğru/yanlış sonucu kullanılıyor. Bu kural kaynak veriyi tek hedef
+kelimelik uygulama sorularımıza yaklaştırıyor; iki görevi birebir eşitlemiyor.
+
+Profilde iki sayı var:
+- Metin: seçilen son 6 hedefin doğru sayısı / 6.
+- Dinleme: seçilen son 6 hedefin doğru sayısı / 6.
+
+Eksik geçmiş %0 başarı yapılmıyor. Her iki biçimden altışar gözlem yoksa profil
+durumu insufficient_history kalıyor ve gruba atanmıyor. Eşik bilimsel yeterlilik
+garantisi değildir; başlangıç uygulama kuralıdır.
+
+Gerçek örnekler
+
+Öğrenci   Metin    Dinleme   Profil             Seçilen modelde grup
+S001      6/6      6/6       [1,00; 1,00]       4
+S006      6/6      3/6       [1,00; 0,50]       3
+S003      3/6      5/6       [0,50; 0,8333]     2
+S011      2/6      2/6       [0,3333; 0,3333]   1
+
+Toplam 200 öğrenci eşik koşulunu karşılıyor. İki boyutta 29 farklı profil var.
+Her boyut 0/6 ile 6/6 arasında olduğundan en çok 7x7=49 farklı konum olabilir.
+Aynı konumdaki öğrencileri veri setinden çıkarmadık: 200 öğrencinin tamamı model
+ve puan hesabında tutuldu. Grafikte balon alanı aynı profildeki öğrenci sayısıdır.
+
+Neden denetimsiz öğrenme
+
+Girdi oranlarını hesaplamak için gözlenen doğru/yanlış sonuçları kullanıyoruz.
+Fakat modele öğrencinin ait olması gereken grup etiketini vermiyoruz. Gruplar,
+iki özellikteki benzerlikten bulunuyor. Bu nedenle bu görev kümelemedir.
+
+Uzaklık ve eğitim
+
+StandardScaler yalnız TRAIN profillerine fit edildi. Ortalama ve ölçekler:
+metin ortalaması 0,780833; standart sapması 0,201093.
+dinleme ortalaması 0,768333; standart sapması 0,237341.
+
+İki sayı da oran olsa bile bu dönüşüm uzaklıklardaki göreli ağırlığı değiştirir.
+Buradaki tercih iki boyutun TRAIN değişkenliğini dengelemektir. K-Means ve
+silhouette aynı ölçeklenmiş uzayda hesaplandı. Tablolardaki merkezler yeniden
+özgün oran ölçeğine dönüştürüldü.
+
+K-Means noktaları en yakın merkeze atar; merkezleri atanan noktaların ortalaması
+olarak yeniler ve yakınsayana kadar tekrarlar. K-Means++ başlangıç merkezlerini
+seçme yöntemidir. Her k için n_init=10 ve random_state=42 kullanıldı. On başlangıç
+içinde düşük inertia sağlayan çözüm tutuldu; k değerlerini ise silhouette ile
+karşılaştırdık.
+
+Karşılaştırma
+
+Küme sayısı   Silhouette    Grup büyüklükleri       Geçerli
+2             0,388596      77 / 123                Evet
+3             0,456914      40 / 68 / 92             Evet
+4             0,473781      18 / 64 / 42 / 76        Evet
+
+Her adayda istenen sayıda grup oluştu; her grupta en az 5 öğrenci vardı.
+Önceden belirlediğimiz en yüksek silhouette kuralıyla k=4 seçildi.
+
+Silhouette bir doğruluk yüzdesi değildir. Noktaların kendi grubuna yakınlığını
+diğer gruplarla karşılaştıran iç ayrışma ölçüsüdür. 0,473781, %47,38 doğruluk
+demek değildir. 4 küme ile 3 küme arasındaki fark yaklaşık 0,0169'dur.
+
+Inertia değerleri 252,604 / 141,486 / 107,238 oldu. Daha fazla merkezle inertia
+genellikle azalabileceği için yalnız buna bakıp daha büyük k seçmedik.
+
+İki kümede metin başarısı farkı öne çıkarken dinleme ortalamaları birbirine
+yakındı. Üç kümede metin/dinleme farkları daha görünür oldu. Dört küme bu örnekte
+biraz daha ayrıntılı bir ayrım sundu. Bu yorumlar, karşılaştırma grafiği ve merkez
+değerlerine dayanır; üç kümenin bir grubunun aynen ikiye bölündüğü iddiası değildir.
+
+Seçilen dört grubun merkezleri
+
+Grup   Öğrenci   Metin ortalaması   Dinleme ortalaması
+1      18        %64,81             %29,63
+2      64        %56,25             %85,68
+3      42        %93,65             %54,37
+4      76        %91,01             %92,98
+
+Grup 1: bu kayıtlarda dinleme, metne göre belirgin biçimde daha düşük.
+Grup 2: bu kayıtlarda metin doğruluğu dinlemeye göre daha düşük.
+Grup 3: metin doğruluğu yüksek; dinleme ile belirgin fark var.
+Grup 4: iki alıştırma biçiminde de gözlenen doğruluk yüksek.
+
+Merkez, o gruptaki öğrenci profillerinin ortalamasıdır. Bir öğrencinin 6 cevabından
+tam %93,65 elde edildiği anlamına gelmez. Grup numaraları sunum içindir; öğrenci
+notu veya başarı derecesi değildir.
+
+Kontroller
+
+Üç profil kontrolü geçti: hedef seçiminde etikete bakılmaması, alıştırma başına
+tek gözlem/son-altı penceresi, eksik biçimin sıfır performans yapılmaması.
+Bağımsız kontrolde 200 profil ham TRAIN alıştırmalarından yeniden oluşturularak
+eşleştirildi; atamalar, ölçekleme, merkezler ve silhouette sonucu doğrulandı.
+Kaydedilmiş model yeniden yüklenince atamalar değişmedi.
+Lojistik regresyon modeli ve ölçüm dosyalarının özetleri değişmedi; TEST yeniden
+değerlendirilmedi ve küme seçiminde kullanılmadı.
+
+Sınırlar
+
+Altı cevapta bir sonucun değişmesi ilgili oranı yaklaşık 16,7 yüzde puan oynatır.
+Profiller geçicidir; metin ve dinlemenin son altı kaydı farklı günlere ait olabilir.
+Görev zorluğu ve bağlamı da sonuçları etkileyebilir. Dört kümenin üç aday arasında
+en yüksek iç puanı alması, dört kalıcı öğrenci tipi veya öğrenme stili keşfettiğimiz
+anlamına gelmez. Türkçe yönlendirmeli uygulamaya aktarım ayrıca sınanmalıdır.
+
+Kaynaklar
+https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html
+https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html
+https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html

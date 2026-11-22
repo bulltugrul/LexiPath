@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "raw_splits_read": [
+    "train",
+    "dev"
+  ],
+  "test_predictions_not_computed": true,
+  "model_refit": false,
+  "model_file_sha256": "6446d68071dcd95101774135c2c67e3302b5dd451c7c1d94ef5f2fabc1d72dc7",
+  "model_object_unchanged": true,
+  "train_word_counters_frozen_during_dev": true,
+  "original_dev_metrics_reproduced": true,
+  "threshold_fixed": 0.5,
+  "smoothing_fixed": "add-one / Laplace; no tuning",
+  "current_exercise_labels_observed_only_after_all_feature_rows_and_baseline_predictions": true,
+  "protocol": "Same learners later in time. DEV starts with TRAIN histories and receives feedback only after each completed exercise. Pooled word baselines remain TRAIN-only.",
+  "source_hashes": {
+    "train": "718ffec234b4b29eae0ddbac584c13880340a8d7918bad15658797e8d21698b4",
+    "dev": "a2a4d5a02bce145df1f509e3a07f62104670b548f47631dd2be2d73660d354db"
+  },
+  "script_sha256": "69837122b037602bc694c16a5db391eb58a279c1d064cd2b86986529c6df476f",
+  "train_exercises": 44174,
+  "limits": [
+    "DEV exploratory comparison; no new learner generalization evaluation.",
+    "No custom app data or teaching-effect evaluation.",
+    "Calibration gap depends on fixed bins; it is not a fitted calibration method.",
+    "Baseline selection on DEV is exploratory; no final TEST claim is made."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "numeric_coefficients_per_training_standard_deviation": {
+    "prior_target_count": -0.09530929820171267,
+    "prior_accuracy_smoothed": 0.07785898360319293,
+    "prior_word_count": -0.033455041860655,
+    "prior_word_accuracy_smoothed": 0.1917031049161676,
+    "prior_format_target_count": 0.06572750525143377,
+    "prior_format_accuracy_smoothed": 0.40926475483175156,
+    "prior_word_format_count": -0.0386351244697558,
+    "prior_word_format_accuracy_smoothed": 0.31133739851429554
+  },
+  "intercept": 1.1801219302722368,
+  "interpretation": "Conditional associations; correlated history features prevent simple causal interpretation."
+}

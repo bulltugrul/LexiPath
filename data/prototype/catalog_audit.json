@@ -1,0 +1,597 @@
+{
+  "version": 1,
+  "source": "TRAIN only",
+  "training_data": "data/prepared/slam200/train_exercises.jsonl",
+  "model": "outputs/logistic_first_run/logistic_model.joblib",
+  "model_sha256": "6446d68071dcd95101774135c2c67e3302b5dd451c7c1d94ef5f2fabc1d72dc7",
+  "model_fit_or_retraining_performed": false,
+  "word_matching": "Exact lowercase word_key; no stemming or lemmatization.",
+  "all_in_model_vocab": true,
+  "all_have_train_records": true,
+  "word_count": 24,
+  "words_per_topic": {
+    "animals": 8,
+    "food": 8,
+    "daily": 8
+  },
+  "each_word_minimum_three_train_tokens_per_format": true,
+  "candidate_replacements": {
+    "duck": {
+      "selected": "rabbit",
+      "reason": "duck has no listen TRAIN tokens"
+    },
+    "egg": {
+      "selected": "coffee",
+      "reason": "egg has no listen TRAIN tokens"
+    },
+    "chair": {
+      "selected": "room",
+      "reason": "chair has only one listen TRAIN token"
+    },
+    "bed": {
+      "selected": "coat",
+      "reason": "bed has only two listen TRAIN tokens"
+    }
+  },
+  "catalog_origin": "Authored beginner teaching examples and Turkish glosses, not original SLAM prompts or observed learner responses.",
+  "audio_generation": {
+    "engine": "Windows System.Speech.Synthesis",
+    "voice": "Microsoft Zira Desktop",
+    "culture": "en-US",
+    "rate": -1,
+    "offline": true,
+    "utterance": "target_word only",
+    "audio_format": "PCM 22050 Hz 16-bit mono WAV",
+    "all_files_validated": true
+  },
+  "topic_image_files": [
+    {
+      "path": "/static/topics/animals.svg",
+      "exists": true,
+      "xml_valid": true
+    },
+    {
+      "path": "/static/topics/food.svg",
+      "exists": true,
+      "xml_valid": true
+    },
+    {
+      "path": "/static/topics/daily.svg",
+      "exists": true,
+      "xml_valid": true
+    }
+  ],
+  "missing_listen_training_support": [],
+  "interpretation_note": "TRAIN occurrence supports vocabulary inclusion only; authored exercises and synthesized audio are new content. No modality-specific performance claim follows from these counts.",
+  "words": [
+    {
+      "target_word": "cat",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 193,
+        "listen": 232
+      },
+      "training_token_count": 425,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 30747,
+        "duration_seconds": 1.3944
+      }
+    },
+    {
+      "target_word": "dog",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "listen": 113,
+        "reverse_translate": 67
+      },
+      "training_token_count": 180,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 30967,
+        "duration_seconds": 1.4044
+      }
+    },
+    {
+      "target_word": "bird",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 69,
+        "listen": 9
+      },
+      "training_token_count": 78,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 30085,
+        "duration_seconds": 1.3644
+      }
+    },
+    {
+      "target_word": "horse",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 341,
+        "listen": 92
+      },
+      "training_token_count": 433,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 35708,
+        "duration_seconds": 1.6194
+      }
+    },
+    {
+      "target_word": "fish",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 174,
+        "listen": 25
+      },
+      "training_token_count": 199,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 34055,
+        "duration_seconds": 1.5444
+      }
+    },
+    {
+      "target_word": "rabbit",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "listen": 19,
+        "reverse_translate": 15
+      },
+      "training_token_count": 34,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 33283,
+        "duration_seconds": 1.5094
+      }
+    },
+    {
+      "target_word": "cow",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 15,
+        "listen": 13
+      },
+      "training_token_count": 28,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 27881,
+        "duration_seconds": 1.2644
+      }
+    },
+    {
+      "target_word": "elephant",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 82,
+        "listen": 45
+      },
+      "training_token_count": 127,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 36588,
+        "duration_seconds": 1.6593
+      }
+    },
+    {
+      "target_word": "apple",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "listen": 171,
+        "reverse_translate": 97
+      },
+      "training_token_count": 268,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 30636,
+        "duration_seconds": 1.3894
+      }
+    },
+    {
+      "target_word": "bread",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 275,
+        "listen": 20
+      },
+      "training_token_count": 295,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 31077,
+        "duration_seconds": 1.4094
+      }
+    },
+    {
+      "target_word": "water",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "listen": 300,
+        "reverse_translate": 360
+      },
+      "training_token_count": 660,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 31517,
+        "duration_seconds": 1.4293
+      }
+    },
+    {
+      "target_word": "milk",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 103,
+        "listen": 5
+      },
+      "training_token_count": 108,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 30747,
+        "duration_seconds": 1.3944
+      }
+    },
+    {
+      "target_word": "rice",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 162,
+        "listen": 81
+      },
+      "training_token_count": 243,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 32732,
+        "duration_seconds": 1.4844
+      }
+    },
+    {
+      "target_word": "orange",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 71,
+        "listen": 73
+      },
+      "training_token_count": 144,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 36700,
+        "duration_seconds": 1.6644
+      }
+    },
+    {
+      "target_word": "cheese",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 122,
+        "listen": 74
+      },
+      "training_token_count": 196,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 34055,
+        "duration_seconds": 1.5444
+      }
+    },
+    {
+      "target_word": "coffee",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "listen": 334,
+        "reverse_translate": 93
+      },
+      "training_token_count": 427,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 34825,
+        "duration_seconds": 1.5794
+      }
+    },
+    {
+      "target_word": "book",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 119,
+        "listen": 53
+      },
+      "training_token_count": 172,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 30967,
+        "duration_seconds": 1.4044
+      }
+    },
+    {
+      "target_word": "car",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 20,
+        "listen": 13
+      },
+      "training_token_count": 33,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 30637,
+        "duration_seconds": 1.3894
+      }
+    },
+    {
+      "target_word": "house",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 56,
+        "listen": 128
+      },
+      "training_token_count": 184,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 32842,
+        "duration_seconds": 1.4894
+      }
+    },
+    {
+      "target_word": "table",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 346,
+        "listen": 263
+      },
+      "training_token_count": 609,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 32289,
+        "duration_seconds": 1.4644
+      }
+    },
+    {
+      "target_word": "room",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 128,
+        "listen": 64
+      },
+      "training_token_count": 192,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 31960,
+        "duration_seconds": 1.4494
+      }
+    },
+    {
+      "target_word": "coat",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 28,
+        "listen": 13
+      },
+      "training_token_count": 41,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 30747,
+        "duration_seconds": 1.3944
+      }
+    },
+    {
+      "target_word": "door",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 27,
+        "listen": 15
+      },
+      "training_token_count": 42,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 30526,
+        "duration_seconds": 1.3844
+      }
+    },
+    {
+      "target_word": "shirt",
+      "in_model_vocabulary": true,
+      "training_counts_by_format": {
+        "reverse_translate": 280,
+        "listen": 53
+      },
+      "training_token_count": 333,
+      "supported_training_formats": [
+        "listen",
+        "reverse_translate"
+      ],
+      "audio_exists": true,
+      "audio": {
+        "format": "WAV / PCM",
+        "sample_rate_hz": 22050,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "frame_count": 31627,
+        "duration_seconds": 1.4343
+      }
+    }
+  ],
+  "passed": true
+}

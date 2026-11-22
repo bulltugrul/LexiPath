@@ -1,0 +1,430 @@
+[
+  {
+    "learner_id": "+0UEF02n",
+    "status": "provisional",
+    "observations_in_window": {
+      "reverse_translate": 6,
+      "listen": 6
+    },
+    "total_available_exercises": {
+      "reverse_translate": 97,
+      "listen": 34
+    },
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 1.0
+    },
+    "windows": {
+      "reverse_translate": [
+        {
+          "exercise_id": "j7lgiqPw02",
+          "instance_id": "j7lgiqPw0202",
+          "target_word": "july",
+          "correct": 1,
+          "day": 1.427
+        },
+        {
+          "exercise_id": "j7lgiqPw03",
+          "instance_id": "j7lgiqPw0301",
+          "target_word": "may",
+          "correct": 1,
+          "day": 1.427
+        },
+        {
+          "exercise_id": "qWvS4EMa01",
+          "instance_id": "qWvS4EMa0104",
+          "target_word": "fall",
+          "correct": 1,
+          "day": 1.433
+        },
+        {
+          "exercise_id": "CBN4UIBU01",
+          "instance_id": "CBN4UIBU0102",
+          "target_word": "minute",
+          "correct": 1,
+          "day": 1.443
+        },
+        {
+          "exercise_id": "CBN4UIBU02",
+          "instance_id": "CBN4UIBU0202",
+          "target_word": "century",
+          "correct": 1,
+          "day": 1.443
+        },
+        {
+          "exercise_id": "CBN4UIBU04",
+          "instance_id": "CBN4UIBU0403",
+          "target_word": "moment",
+          "correct": 1,
+          "day": 1.443
+        }
+      ],
+      "listen": [
+        {
+          "exercise_id": "iFVjPM9m03",
+          "instance_id": "iFVjPM9m0302",
+          "target_word": "apple",
+          "correct": 1,
+          "day": 1.393
+        },
+        {
+          "exercise_id": "7BS+GvvY03",
+          "instance_id": "7BS+GvvY0302",
+          "target_word": "banana",
+          "correct": 1,
+          "day": 1.406
+        },
+        {
+          "exercise_id": "ZiPs2uH903",
+          "instance_id": "ZiPs2uH90301",
+          "target_word": "i",
+          "correct": 1,
+          "day": 1.41
+        },
+        {
+          "exercise_id": "ZiPs2uH904",
+          "instance_id": "ZiPs2uH90401",
+          "target_word": "i",
+          "correct": 1,
+          "day": 1.41
+        },
+        {
+          "exercise_id": "CBN4UIBU03",
+          "instance_id": "CBN4UIBU0302",
+          "target_word": "moment",
+          "correct": 1,
+          "day": 1.443
+        },
+        {
+          "exercise_id": "CBN4UIBU05",
+          "instance_id": "CBN4UIBU0502",
+          "target_word": "century",
+          "correct": 1,
+          "day": 1.443
+        }
+      ]
+    },
+    "display_id": "S001"
+  },
+  {
+    "learner_id": "/mG9qkmV",
+    "status": "provisional",
+    "observations_in_window": {
+      "reverse_translate": 6,
+      "listen": 6
+    },
+    "total_available_exercises": {
+      "reverse_translate": 83,
+      "listen": 46
+    },
+    "features": {
+      "text_target_accuracy": 1.0,
+      "listen_target_accuracy": 0.5
+    },
+    "windows": {
+      "reverse_translate": [
+        {
+          "exercise_id": "rfKoPaoR04",
+          "instance_id": "rfKoPaoR0402",
+          "target_word": "moment",
+          "correct": 1,
+          "day": 9.312
+        },
+        {
+          "exercise_id": "Q9oIcRCn01",
+          "instance_id": "Q9oIcRCn0102",
+          "target_word": "night",
+          "correct": 1,
+          "day": 9.314
+        },
+        {
+          "exercise_id": "Q9oIcRCn03",
+          "instance_id": "Q9oIcRCn0301",
+          "target_word": "minutes",
+          "correct": 1,
+          "day": 9.314
+        },
+        {
+          "exercise_id": "O2dA7AdF02",
+          "instance_id": "O2dA7AdF0204",
+          "target_word": "career",
+          "correct": 1,
+          "day": 13.003
+        },
+        {
+          "exercise_id": "O2dA7AdF03",
+          "instance_id": "O2dA7AdF0304",
+          "target_word": "director",
+          "correct": 1,
+          "day": 13.003
+        },
+        {
+          "exercise_id": "O2dA7AdF04",
+          "instance_id": "O2dA7AdF0404",
+          "target_word": "director",
+          "correct": 1,
+          "day": 13.003
+        }
+      ],
+      "listen": [
+        {
+          "exercise_id": "h1tA3ClG03",
+          "instance_id": "h1tA3ClG0302",
+          "target_word": "banana",
+          "correct": 1,
+          "day": 7.932
+        },
+        {
+          "exercise_id": "a6t8D3dM03",
+          "instance_id": "a6t8D3dM0301",
+          "target_word": "are",
+          "correct": 0,
+          "day": 7.932
+        },
+        {
+          "exercise_id": "a6t8D3dM05",
+          "instance_id": "a6t8D3dM0501",
+          "target_word": "i",
+          "correct": 1,
+          "day": 7.932
+        },
+        {
+          "exercise_id": "rfKoPaoR03",
+          "instance_id": "rfKoPaoR0302",
+          "target_word": "moment",
+          "correct": 0,
+          "day": 9.312
+        },
+        {
+          "exercise_id": "rfKoPaoR05",
+          "instance_id": "rfKoPaoR0502",
+          "target_word": "century",
+          "correct": 0,
+          "day": 9.312
+        },
+        {
+          "exercise_id": "u4l8llPe01",
+          "instance_id": "u4l8llPe0101",
+          "target_word": "i",
+          "correct": 1,
+          "day": 9.317
+        }
+      ]
+    },
+    "display_id": "S006"
+  },
+  {
+    "learner_id": "+T2RgPr8",
+    "status": "provisional",
+    "observations_in_window": {
+      "reverse_translate": 6,
+      "listen": 6
+    },
+    "total_available_exercises": {
+      "reverse_translate": 162,
+      "listen": 159
+    },
+    "features": {
+      "text_target_accuracy": 0.5,
+      "listen_target_accuracy": 0.8333333333333334
+    },
+    "windows": {
+      "reverse_translate": [
+        {
+          "exercise_id": "qRGS6IBX04",
+          "instance_id": "qRGS6IBX0404",
+          "target_word": "zoo",
+          "correct": 1,
+          "day": 13.824
+        },
+        {
+          "exercise_id": "hmwuR45H01",
+          "instance_id": "hmwuR45H0102",
+          "target_word": "checkout",
+          "correct": 0,
+          "day": 15.091
+        },
+        {
+          "exercise_id": "hmwuR45H02",
+          "instance_id": "hmwuR45H0201",
+          "target_word": "i",
+          "correct": 1,
+          "day": 15.091
+        },
+        {
+          "exercise_id": "UaFczgI001",
+          "instance_id": "UaFczgI00101",
+          "target_word": "i",
+          "correct": 1,
+          "day": 15.097
+        },
+        {
+          "exercise_id": "UaFczgI002",
+          "instance_id": "UaFczgI00202",
+          "target_word": "razor",
+          "correct": 0,
+          "day": 15.097
+        },
+        {
+          "exercise_id": "i0lD+RDT02",
+          "instance_id": "i0lD+RDT0202",
+          "target_word": "cabinet",
+          "correct": 0,
+          "day": 15.097
+        }
+      ],
+      "listen": [
+        {
+          "exercise_id": "eE3IweaS03",
+          "instance_id": "eE3IweaS0302",
+          "target_word": "station",
+          "correct": 1,
+          "day": 13.82
+        },
+        {
+          "exercise_id": "Olby2Kw603",
+          "instance_id": "Olby2Kw60302",
+          "target_word": "towns",
+          "correct": 0,
+          "day": 13.823
+        },
+        {
+          "exercise_id": "Olby2Kw604",
+          "instance_id": "Olby2Kw60402",
+          "target_word": "capital",
+          "correct": 1,
+          "day": 13.823
+        },
+        {
+          "exercise_id": "qRGS6IBX03",
+          "instance_id": "qRGS6IBX0302",
+          "target_word": "north",
+          "correct": 1,
+          "day": 13.824
+        },
+        {
+          "exercise_id": "qRGS6IBX05",
+          "instance_id": "qRGS6IBX0502",
+          "target_word": "square",
+          "correct": 1,
+          "day": 13.824
+        },
+        {
+          "exercise_id": "cEadhJq701",
+          "instance_id": "cEadhJq70105",
+          "target_word": "cellphone",
+          "correct": 1,
+          "day": 15.089
+        }
+      ]
+    },
+    "display_id": "S003"
+  },
+  {
+    "learner_id": "0mnl2bU9",
+    "status": "provisional",
+    "observations_in_window": {
+      "reverse_translate": 6,
+      "listen": 6
+    },
+    "total_available_exercises": {
+      "reverse_translate": 237,
+      "listen": 192
+    },
+    "features": {
+      "text_target_accuracy": 0.3333333333333333,
+      "listen_target_accuracy": 0.3333333333333333
+    },
+    "windows": {
+      "reverse_translate": [
+        {
+          "exercise_id": "X7v7aNyI03",
+          "instance_id": "X7v7aNyI0302",
+          "target_word": "steak",
+          "correct": 0,
+          "day": 7.812
+        },
+        {
+          "exercise_id": "M/a7FyHA02",
+          "instance_id": "M/a7FyHA0201",
+          "target_word": "october",
+          "correct": 0,
+          "day": 7.852
+        },
+        {
+          "exercise_id": "M/a7FyHA03",
+          "instance_id": "M/a7FyHA0303",
+          "target_word": "moment",
+          "correct": 1,
+          "day": 7.852
+        },
+        {
+          "exercise_id": "1XF75khg01",
+          "instance_id": "1XF75khg0104",
+          "target_word": "calendar",
+          "correct": 1,
+          "day": 7.858
+        },
+        {
+          "exercise_id": "1XF75khg02",
+          "instance_id": "1XF75khg0201",
+          "target_word": "minutes",
+          "correct": 0,
+          "day": 7.858
+        },
+        {
+          "exercise_id": "AxlYm3kS03",
+          "instance_id": "AxlYm3kS0302",
+          "target_word": "police",
+          "correct": 0,
+          "day": 7.861
+        }
+      ],
+      "listen": [
+        {
+          "exercise_id": "5IRrhqsN02",
+          "instance_id": "5IRrhqsN0204",
+          "target_word": "boyfriend",
+          "correct": 1,
+          "day": 7.219
+        },
+        {
+          "exercise_id": "5IRrhqsN04",
+          "instance_id": "5IRrhqsN0407",
+          "target_word": "boyfriend",
+          "correct": 1,
+          "day": 7.219
+        },
+        {
+          "exercise_id": "Tn+oe2NE02",
+          "instance_id": "Tn+oe2NE0202",
+          "target_word": "oil",
+          "correct": 0,
+          "day": 7.233
+        },
+        {
+          "exercise_id": "3FzUfhZ401",
+          "instance_id": "3FzUfhZ40102",
+          "target_word": "nose",
+          "correct": 0,
+          "day": 7.721
+        },
+        {
+          "exercise_id": "3GlGToN901",
+          "instance_id": "3GlGToN90102",
+          "target_word": "apple",
+          "correct": 0,
+          "day": 7.732
+        },
+        {
+          "exercise_id": "M/a7FyHA01",
+          "instance_id": "M/a7FyHA0101",
+          "target_word": "minutes",
+          "correct": 0,
+          "day": 7.852
+        }
+      ]
+    },
+    "display_id": "S011"
+  }
+]

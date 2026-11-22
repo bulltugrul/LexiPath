@@ -1,0 +1,190 @@
+{
+  "words": 48,
+  "new_words": 24,
+  "counts_per_topic": {
+    "animals": 14,
+    "food": 16,
+    "daily": 18
+  },
+  "new_word_support": [
+    {
+      "word": "tiger",
+      "train_counts": {
+        "listen": 11,
+        "reverse_translate": 15
+      }
+    },
+    {
+      "word": "pig",
+      "train_counts": {
+        "listen": 14,
+        "reverse_translate": 13
+      }
+    },
+    {
+      "word": "chicken",
+      "train_counts": {
+        "listen": 40,
+        "reverse_translate": 30
+      }
+    },
+    {
+      "word": "turtle",
+      "train_counts": {
+        "reverse_translate": 136,
+        "listen": 6
+      }
+    },
+    {
+      "word": "spider",
+      "train_counts": {
+        "reverse_translate": 27,
+        "listen": 6
+      }
+    },
+    {
+      "word": "animal",
+      "train_counts": {
+        "reverse_translate": 61,
+        "listen": 19
+      }
+    },
+    {
+      "word": "banana",
+      "train_counts": {
+        "reverse_translate": 181,
+        "listen": 195
+      }
+    },
+    {
+      "word": "tomato",
+      "train_counts": {
+        "reverse_translate": 71,
+        "listen": 6
+      }
+    },
+    {
+      "word": "potato",
+      "train_counts": {
+        "listen": 64,
+        "reverse_translate": 12
+      }
+    },
+    {
+      "word": "salt",
+      "train_counts": {
+        "reverse_translate": 140,
+        "listen": 17
+      }
+    },
+    {
+      "word": "sugar",
+      "train_counts": {
+        "reverse_translate": 122,
+        "listen": 165
+      }
+    },
+    {
+      "word": "juice",
+      "train_counts": {
+        "reverse_translate": 78,
+        "listen": 7
+      }
+    },
+    {
+      "word": "cake",
+      "train_counts": {
+        "reverse_translate": 64,
+        "listen": 40
+      }
+    },
+    {
+      "word": "lemon",
+      "train_counts": {
+        "listen": 21,
+        "reverse_translate": 18
+      }
+    },
+    {
+      "word": "computer",
+      "train_counts": {
+        "reverse_translate": 232,
+        "listen": 240
+      }
+    },
+    {
+      "word": "shoe",
+      "train_counts": {
+        "reverse_translate": 48,
+        "listen": 14
+      }
+    },
+    {
+      "word": "hat",
+      "train_counts": {
+        "reverse_translate": 162,
+        "listen": 31
+      }
+    },
+    {
+      "word": "skirt",
+      "train_counts": {
+        "reverse_translate": 27,
+        "listen": 8
+      }
+    },
+    {
+      "word": "dress",
+      "train_counts": {
+        "reverse_translate": 156,
+        "listen": 74
+      }
+    },
+    {
+      "word": "bag",
+      "train_counts": {
+        "listen": 7,
+        "reverse_translate": 6
+      }
+    },
+    {
+      "word": "pen",
+      "train_counts": {
+        "reverse_translate": 53,
+        "listen": 114
+      }
+    },
+    {
+      "word": "key",
+      "train_counts": {
+        "listen": 8,
+        "reverse_translate": 13
+      }
+    },
+    {
+      "word": "kitchen",
+      "train_counts": {
+        "listen": 7,
+        "reverse_translate": 8
+      }
+    },
+    {
+      "word": "bathroom",
+      "train_counts": {
+        "reverse_translate": 22,
+        "listen": 8
+      }
+    }
+  ],
+  "train_only": true,
+  "new_words_minimum_five_targets_each_format": true,
+  "no_refit": true,
+  "answer_policy": "One authored target word; text adds first letter and length to disambiguate intended translation. Not a universal synonym grader.",
+  "excluded_examples": {
+    "duck": "no listen support",
+    "monkey": "no text support",
+    "tea": "only one listen target",
+    "chocolate": "absent"
+  },
+  "scope": "Training vocabulary support, not validation of accuracy on custom exercises."
+}

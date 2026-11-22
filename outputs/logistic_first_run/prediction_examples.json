@@ -1,0 +1,90 @@
+[
+  {
+    "split": "dev",
+    "selection": "One illustrative record from each available actual/predicted class combination",
+    "learner_id": "MXjwP/ab",
+    "exercise_id": "yQ4ELLHQ03",
+    "instance_id": "yQ4ELLHQ0305",
+    "day": 21.912,
+    "features": {
+      "target_word": "loves",
+      "format": "reverse_translate",
+      "prior_target_count": 1210,
+      "prior_accuracy_smoothed": 0.7920792079207921,
+      "prior_word_count": 4,
+      "prior_word_accuracy_smoothed": 0.3333333333333333
+    },
+    "p_correct": 0.3423986128794132,
+    "p_error": 0.6576013871205868,
+    "actual_correct": 0,
+    "predicted_correct_at_0_5": 0,
+    "linear_score": -0.6526233600185916,
+    "sigmoid_reproduces_probability": true
+  },
+  {
+    "split": "dev",
+    "selection": "One illustrative record from each available actual/predicted class combination",
+    "learner_id": "OttJEbJd",
+    "exercise_id": "0MMXkfWJ03",
+    "instance_id": "0MMXkfWJ0304",
+    "day": 25.127,
+    "features": {
+      "target_word": "to",
+      "format": "reverse_translate",
+      "prior_target_count": 2080,
+      "prior_accuracy_smoothed": 0.6945244956772334,
+      "prior_word_count": 23,
+      "prior_word_accuracy_smoothed": 0.72
+    },
+    "p_correct": 0.6492173805920569,
+    "p_error": 0.3507826194079431,
+    "actual_correct": 0,
+    "predicted_correct_at_0_5": 1,
+    "linear_score": 0.6156008939217971,
+    "sigmoid_reproduces_probability": true
+  },
+  {
+    "split": "dev",
+    "selection": "One illustrative record from each available actual/predicted class combination",
+    "learner_id": "OttJEbJd",
+    "exercise_id": "i62c4S6p05",
+    "instance_id": "i62c4S6p0502",
+    "day": 26.23,
+    "features": {
+      "target_word": "opened",
+      "format": "reverse_translate",
+      "prior_target_count": 2276,
+      "prior_accuracy_smoothed": 0.6997366110623354,
+      "prior_word_count": 1,
+      "prior_word_accuracy_smoothed": 0.6666666666666666
+    },
+    "p_correct": 0.47914098653007203,
+    "p_error": 0.520859013469928,
+    "actual_correct": 1,
+    "predicted_correct_at_0_5": 0,
+    "linear_score": -0.083484508350538,
+    "sigmoid_reproduces_probability": true
+  },
+  {
+    "split": "dev",
+    "selection": "One illustrative record from each available actual/predicted class combination",
+    "learner_id": "P/wE79fx",
+    "exercise_id": "1iKe5F9D03",
+    "instance_id": "1iKe5F9D0302",
+    "day": 13.198,
+    "features": {
+      "target_word": "love",
+      "format": "reverse_translate",
+      "prior_target_count": 1064,
+      "prior_accuracy_smoothed": 0.7720450281425891,
+      "prior_word_count": 8,
+      "prior_word_accuracy_smoothed": 0.7
+    },
+    "p_correct": 0.9021946754886678,
+    "p_error": 0.09780532451133217,
+    "actual_correct": 1,
+    "predicted_correct_at_0_5": 1,
+    "linear_score": 2.2218513048445794,
+    "sigmoid_reproduces_probability": true
+  }
+]

@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "topics": [
+    {
+      "id": "animals",
+      "title": "Hayvanlar",
+      "description": "Kedi, kuş ve diğer hayvanlarla İngilizce kelime çalış.",
+      "image": "/static/topics/animals.svg"
+    },
+    {
+      "id": "food",
+      "title": "Yiyecek ve içecekler",
+      "description": "Günlük yiyecek ve içeceklerin İngilizcesini öğren.",
+      "image": "/static/topics/food.svg"
+    },
+    {
+      "id": "daily",
+      "title": "Günlük yaşam",
+      "description": "Evde ve çevrende gördüğün eşyalarla kelime çalış.",
+      "image": "/static/topics/daily.svg"
+    }
+  ],
+  "words": [
+    {
+      "id": "cat",
+      "target_word": "cat",
+      "topic_id": "animals",
+      "turkish": "kedi",
+      "example": "The cat is small.",
+      "audio": "/static/audio/cat.wav"
+    },
+    {
+      "id": "dog",
+      "target_word": "dog",
+      "topic_id": "animals",
+      "turkish": "köpek",
+      "example": "The dog is happy.",
+      "audio": "/static/audio/dog.wav"
+    },
+    {
+      "id": "bird",
+      "target_word": "bird",
+      "topic_id": "animals",
+      "turkish": "kuş",
+      "example": "The bird is blue.",
+      "audio": "/static/audio/bird.wav"
+    },
+    {
+      "id": "horse",
+      "target_word": "horse",
+      "topic_id": "animals",
+      "turkish": "at",
+      "example": "The horse is big.",
+      "audio": "/static/audio/horse.wav"
+    },
+    {
+      "id": "fish",
+      "target_word": "fish",
+      "topic_id": "animals",
+      "turkish": "balık",
+      "example": "The fish is in the water.",
+      "audio": "/static/audio/fish.wav"
+    },
+    {
+      "id": "rabbit",
+      "target_word": "rabbit",
+      "topic_id": "animals",
+      "turkish": "tavşan",
+      "example": "The rabbit is small.",
+      "audio": "/static/audio/rabbit.wav"
+    },
+    {
+      "id": "cow",
+      "target_word": "cow",
+      "topic_id": "animals",
+      "turkish": "inek",
+      "example": "The cow eats grass.",
+      "audio": "/static/audio/cow.wav"
+    },
+    {
+      "id": "elephant",
+      "target_word": "elephant",
+      "topic_id": "animals",
+      "turkish": "fil",
+      "example": "The elephant is big.",
+      "audio": "/static/audio/elephant.wav"
+    },
+    {
+      "id": "apple",
+      "target_word": "apple",
+      "topic_id": "food",
+      "turkish": "elma",
+      "example": "I eat an apple.",
+      "audio": "/static/audio/apple.wav"
+    },
+    {
+      "id": "bread",
+      "target_word": "bread",
+      "topic_id": "food",
+      "turkish": "ekmek",
+      "example": "I eat bread.",
+      "audio": "/static/audio/bread.wav"
+    },
+    {
+      "id": "water",
+      "target_word": "water",
+      "topic_id": "food",
+      "turkish": "su",
+      "example": "I drink water.",
+      "audio": "/static/audio/water.wav"
+    },
+    {
+      "id": "milk",
+      "target_word": "milk",
+      "topic_id": "food",
+      "turkish": "süt",
+      "example": "I drink milk.",
+      "audio": "/static/audio/milk.wav"
+    },
+    {
+      "id": "rice",
+      "target_word": "rice",
+      "topic_id": "food",
+      "turkish": "pirinç",
+      "example": "I eat rice.",
+      "audio": "/static/audio/rice.wav"
+    },
+    {
+      "id": "orange",
+      "target_word": "orange",
+      "topic_id": "food",
+      "turkish": "portakal",
+      "example": "I eat an orange.",
+      "audio": "/static/audio/orange.wav"
+    },
+    {
+      "id": "cheese",
+      "target_word": "cheese",
+      "topic_id": "food",
+      "turkish": "peynir",
+      "example": "I like cheese.",
+      "audio": "/static/audio/cheese.wav"
+    },
+    {
+      "id": "coffee",
+      "target_word": "coffee",
+      "topic_id": "food",
+      "turkish": "kahve",
+      "example": "I drink coffee.",
+      "audio": "/static/audio/coffee.wav"
+    },
+    {
+      "id": "book",
+      "target_word": "book",
+      "topic_id": "daily",
+      "turkish": "kitap",
+      "example": "I read a book.",
+      "audio": "/static/audio/book.wav"
+    },
+    {
+      "id": "car",
+      "target_word": "car",
+      "topic_id": "daily",
+      "turkish": "araba",
+      "example": "The car is red.",
+      "audio": "/static/audio/car.wav"
+    },
+    {
+      "id": "house",
+      "target_word": "house",
+      "topic_id": "daily",
+      "turkish": "ev",
+      "example": "The house is small.",
+      "audio": "/static/audio/house.wav"
+    },
+    {
+      "id": "table",
+      "target_word": "table",
+      "topic_id": "daily",
+      "turkish": "masa",
+      "example": "The book is on the table.",
+      "audio": "/static/audio/table.wav"
+    },
+    {
+      "id": "room",
+      "target_word": "room",
+      "topic_id": "daily",
+      "turkish": "oda",
+      "example": "The room is small.",
+      "audio": "/static/audio/room.wav"
+    },
+    {
+      "id": "coat",
+      "target_word": "coat",
+      "topic_id": "daily",
+      "turkish": "mont",
+      "example": "My coat is blue.",
+      "audio": "/static/audio/coat.wav"
+    },
+    {
+      "id": "door",
+      "target_word": "door",
+      "topic_id": "daily",
+      "turkish": "kapı",
+      "example": "The door is open.",
+      "audio": "/static/audio/door.wav"
+    },
+    {
+      "id": "shirt",
+      "target_word": "shirt",
+      "topic_id": "daily",
+      "turkish": "gömlek",
+      "example": "My shirt is blue.",
+      "audio": "/static/audio/shirt.wav"
+    }
+  ]
+}

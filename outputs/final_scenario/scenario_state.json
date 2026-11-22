@@ -1,0 +1,2369 @@
+{
+  "id": "7d3406a64d4f47b9b69a4bac62357248",
+  "name": "Ayşe · Sentetik sunum senaryosu",
+  "created_at": 1795373197.5415733,
+  "stage": "waiting",
+  "cycle": 1,
+  "attempts": [
+    {
+      "id": "7294cbb0dbc74467a4bb00b2677a9d81",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "cat",
+      "topic_id": "animals",
+      "format": "reverse_translate",
+      "correct": 0,
+      "day": 8.409028803860699e-07,
+      "timestamp": "2026-11-22T18:46:37.614227+00:00",
+      "kind": "pilot_measurement",
+      "pilot_skill": "writing",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.7834107602859114,
+      "features_before": {
+        "target_word": "cat",
+        "format": "reverse_translate",
+        "prior_target_count": 0,
+        "prior_accuracy_smoothed": 0.5,
+        "prior_word_count": 0,
+        "prior_word_accuracy_smoothed": 0.5,
+        "prior_format_target_count": 0,
+        "prior_format_accuracy_smoothed": 0.5,
+        "prior_word_format_count": 0,
+        "prior_word_format_accuracy_smoothed": 0.5,
+        "prior_recent_target_count": 0,
+        "prior_recent_accuracy_smoothed": 0.5
+      }
+    },
+    {
+      "id": "055014c7e26e42878dddb318a3c36629",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "dog",
+      "topic_id": "animals",
+      "format": "reverse_translate",
+      "correct": 1,
+      "day": 8.934405114915636e-07,
+      "timestamp": "2026-11-22T18:46:37.618767+00:00",
+      "kind": "pilot_measurement",
+      "pilot_skill": "writing",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.6187048913437988,
+      "features_before": {
+        "target_word": "dog",
+        "format": "reverse_translate",
+        "prior_target_count": 1,
+        "prior_accuracy_smoothed": 0.3333333333333333,
+        "prior_word_count": 0,
+        "prior_word_accuracy_smoothed": 0.5,
+        "prior_format_target_count": 1,
+        "prior_format_accuracy_smoothed": 0.3333333333333333,
+        "prior_word_format_count": 0,
+        "prior_word_format_accuracy_smoothed": 0.5,
+        "prior_recent_target_count": 1,
+        "prior_recent_accuracy_smoothed": 0.3333333333333333
+      }
+    },
+    {
+      "id": "748b7f2a265d4be88639a9de2a3c8b30",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "apple",
+      "topic_id": "food",
+      "format": "reverse_translate",
+      "correct": 1,
+      "day": 9.44532178066395e-07,
+      "timestamp": "2026-11-22T18:46:37.623181+00:00",
+      "kind": "pilot_measurement",
+      "pilot_skill": "writing",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.7361215120468876,
+      "features_before": {
+        "target_word": "apple",
+        "format": "reverse_translate",
+        "prior_target_count": 2,
+        "prior_accuracy_smoothed": 0.5,
+        "prior_word_count": 0,
+        "prior_word_accuracy_smoothed": 0.5,
+        "prior_format_target_count": 2,
+        "prior_format_accuracy_smoothed": 0.5,
+        "prior_word_format_count": 0,
+        "prior_word_format_accuracy_smoothed": 0.5,
+        "prior_recent_target_count": 2,
+        "prior_recent_accuracy_smoothed": 0.5
+      }
+    },
+    {
+      "id": "a39a96e4527745f3979b50ef6efec6ca",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "book",
+      "topic_id": "daily",
+      "format": "reverse_translate",
+      "correct": 1,
+      "day": 9.91663999027676e-07,
+      "timestamp": "2026-11-22T18:46:37.627253+00:00",
+      "kind": "pilot_measurement",
+      "pilot_skill": "writing",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.8885408511067464,
+      "features_before": {
+        "target_word": "book",
+        "format": "reverse_translate",
+        "prior_target_count": 3,
+        "prior_accuracy_smoothed": 0.6,
+        "prior_word_count": 0,
+        "prior_word_accuracy_smoothed": 0.5,
+        "prior_format_target_count": 3,
+        "prior_format_accuracy_smoothed": 0.6,
+        "prior_word_format_count": 0,
+        "prior_word_format_accuracy_smoothed": 0.5,
+        "prior_recent_target_count": 3,
+        "prior_recent_accuracy_smoothed": 0.6
+      }
+    },
+    {
+      "id": "c7a00387b2814c0f9f4901fd3aef6248",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "apple",
+      "topic_id": "food",
+      "format": "listen",
+      "correct": 1,
+      "day": 1.043978112715262e-06,
+      "timestamp": "2026-11-22T18:46:37.631773+00:00",
+      "kind": "pilot_measurement",
+      "pilot_skill": "listen_write",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.7783756589953279,
+      "features_before": {
+        "target_word": "apple",
+        "format": "listen",
+        "prior_target_count": 4,
+        "prior_accuracy_smoothed": 0.6666666666666666,
+        "prior_word_count": 1,
+        "prior_word_accuracy_smoothed": 0.6666666666666666,
+        "prior_format_target_count": 0,
+        "prior_format_accuracy_smoothed": 0.5,
+        "prior_word_format_count": 0,
+        "prior_word_format_accuracy_smoothed": 0.5,
+        "prior_recent_target_count": 4,
+        "prior_recent_accuracy_smoothed": 0.6666666666666666
+      }
+    },
+    {
+      "id": "da726c1df98143cb88c083151b7ac8e1",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "dog",
+      "topic_id": "animals",
+      "format": "listen",
+      "correct": 0,
+      "day": 1.0934196136615894e-06,
+      "timestamp": "2026-11-22T18:46:37.636045+00:00",
+      "kind": "pilot_measurement",
+      "pilot_skill": "listen_write",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.904935334055904,
+      "features_before": {
+        "target_word": "dog",
+        "format": "listen",
+        "prior_target_count": 5,
+        "prior_accuracy_smoothed": 0.7142857142857143,
+        "prior_word_count": 1,
+        "prior_word_accuracy_smoothed": 0.6666666666666666,
+        "prior_format_target_count": 1,
+        "prior_format_accuracy_smoothed": 0.6666666666666666,
+        "prior_word_format_count": 0,
+        "prior_word_format_accuracy_smoothed": 0.5,
+        "prior_recent_target_count": 5,
+        "prior_recent_accuracy_smoothed": 0.7142857142857143
+      }
+    },
+    {
+      "id": "a2773e3452dc4d2ab96e5fcbf2f02f35",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "book",
+      "topic_id": "daily",
+      "format": "listen",
+      "correct": 0,
+      "day": 1.141106088956197e-06,
+      "timestamp": "2026-11-22T18:46:37.640165+00:00",
+      "kind": "pilot_measurement",
+      "pilot_skill": "listen_write",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.8506849059802112,
+      "features_before": {
+        "target_word": "book",
+        "format": "listen",
+        "prior_target_count": 6,
+        "prior_accuracy_smoothed": 0.625,
+        "prior_word_count": 1,
+        "prior_word_accuracy_smoothed": 0.6666666666666666,
+        "prior_format_target_count": 2,
+        "prior_format_accuracy_smoothed": 0.5,
+        "prior_word_format_count": 0,
+        "prior_word_format_accuracy_smoothed": 0.5,
+        "prior_recent_target_count": 6,
+        "prior_recent_accuracy_smoothed": 0.625
+      }
+    },
+    {
+      "id": "54350b1230d947deb60b80f76c7ab720",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "cat",
+      "topic_id": "animals",
+      "format": "listen",
+      "correct": 1,
+      "day": 1.1900122518892642e-06,
+      "timestamp": "2026-11-22T18:46:37.644390+00:00",
+      "kind": "pilot_measurement",
+      "pilot_skill": "listen_write",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.6294063187164859,
+      "features_before": {
+        "target_word": "cat",
+        "format": "listen",
+        "prior_target_count": 7,
+        "prior_accuracy_smoothed": 0.5555555555555556,
+        "prior_word_count": 1,
+        "prior_word_accuracy_smoothed": 0.3333333333333333,
+        "prior_format_target_count": 3,
+        "prior_format_accuracy_smoothed": 0.4,
+        "prior_word_format_count": 0,
+        "prior_word_format_accuracy_smoothed": 0.5,
+        "prior_recent_target_count": 7,
+        "prior_recent_accuracy_smoothed": 0.5555555555555556
+      }
+    },
+    {
+      "id": "f6537d9c663243c89c344d40dc23d34a",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "dog",
+      "topic_id": "animals",
+      "format": "reverse_translate",
+      "correct": 1,
+      "day": 0.0005973146552288973,
+      "timestamp": "2026-11-22T18:47:29.149559+00:00",
+      "kind": "pilot_independent",
+      "pilot_skill": "writing",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.9057232914121748,
+      "features_before": {
+        "target_word": "dog",
+        "format": "reverse_translate",
+        "prior_target_count": 8,
+        "prior_accuracy_smoothed": 0.6,
+        "prior_word_count": 2,
+        "prior_word_accuracy_smoothed": 0.5,
+        "prior_format_target_count": 4,
+        "prior_format_accuracy_smoothed": 0.6666666666666666,
+        "prior_word_format_count": 1,
+        "prior_word_format_accuracy_smoothed": 0.6666666666666666,
+        "prior_recent_target_count": 8,
+        "prior_recent_accuracy_smoothed": 0.6
+      }
+    },
+    {
+      "id": "2b8bfc66b3234694ab6eaedafffbbf21",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "apple",
+      "topic_id": "food",
+      "format": "reverse_translate",
+      "correct": 1,
+      "day": 0.0005973691934788669,
+      "timestamp": "2026-11-22T18:47:29.154272+00:00",
+      "kind": "pilot_independent",
+      "pilot_skill": "writing",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.9218348569771649,
+      "features_before": {
+        "target_word": "apple",
+        "format": "reverse_translate",
+        "prior_target_count": 9,
+        "prior_accuracy_smoothed": 0.6363636363636364,
+        "prior_word_count": 2,
+        "prior_word_accuracy_smoothed": 0.75,
+        "prior_format_target_count": 5,
+        "prior_format_accuracy_smoothed": 0.7142857142857143,
+        "prior_word_format_count": 1,
+        "prior_word_format_accuracy_smoothed": 0.6666666666666666,
+        "prior_recent_target_count": 9,
+        "prior_recent_accuracy_smoothed": 0.6363636363636364
+      }
+    },
+    {
+      "id": "b4026967ad564ffa8a77ae6803c0a67b",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "book",
+      "topic_id": "daily",
+      "format": "reverse_translate",
+      "correct": 1,
+      "day": 0.0005974178319727933,
+      "timestamp": "2026-11-22T18:47:29.158474+00:00",
+      "kind": "pilot_independent",
+      "pilot_skill": "writing",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.9482755391289192,
+      "features_before": {
+        "target_word": "book",
+        "format": "reverse_translate",
+        "prior_target_count": 10,
+        "prior_accuracy_smoothed": 0.6666666666666666,
+        "prior_word_count": 2,
+        "prior_word_accuracy_smoothed": 0.5,
+        "prior_format_target_count": 6,
+        "prior_format_accuracy_smoothed": 0.75,
+        "prior_word_format_count": 1,
+        "prior_word_format_accuracy_smoothed": 0.6666666666666666,
+        "prior_recent_target_count": 10,
+        "prior_recent_accuracy_smoothed": 0.6666666666666666
+      }
+    },
+    {
+      "id": "53f1063ef1d545949e3de63ffe8201da",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "cat",
+      "topic_id": "animals",
+      "format": "reverse_translate",
+      "correct": 1,
+      "day": 0.0005974670968673847,
+      "timestamp": "2026-11-22T18:47:29.162730+00:00",
+      "kind": "pilot_independent",
+      "pilot_skill": "writing",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.9034613564402466,
+      "features_before": {
+        "target_word": "cat",
+        "format": "reverse_translate",
+        "prior_target_count": 11,
+        "prior_accuracy_smoothed": 0.6923076923076923,
+        "prior_word_count": 2,
+        "prior_word_accuracy_smoothed": 0.5,
+        "prior_format_target_count": 7,
+        "prior_format_accuracy_smoothed": 0.7777777777777778,
+        "prior_word_format_count": 1,
+        "prior_word_format_accuracy_smoothed": 0.3333333333333333,
+        "prior_recent_target_count": 10,
+        "prior_recent_accuracy_smoothed": 0.75
+      }
+    },
+    {
+      "id": "124f971b65e6487d86c603ad590bb272",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "book",
+      "topic_id": "daily",
+      "format": "listen",
+      "correct": 0,
+      "day": 0.0005975174131216826,
+      "timestamp": "2026-11-22T18:47:29.167078+00:00",
+      "kind": "pilot_independent",
+      "pilot_skill": "listen_write",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.8093171776848432,
+      "features_before": {
+        "target_word": "book",
+        "format": "listen",
+        "prior_target_count": 12,
+        "prior_accuracy_smoothed": 0.7142857142857143,
+        "prior_word_count": 3,
+        "prior_word_accuracy_smoothed": 0.6,
+        "prior_format_target_count": 4,
+        "prior_format_accuracy_smoothed": 0.5,
+        "prior_word_format_count": 1,
+        "prior_word_format_accuracy_smoothed": 0.3333333333333333,
+        "prior_recent_target_count": 10,
+        "prior_recent_accuracy_smoothed": 0.75
+      }
+    },
+    {
+      "id": "7f5838c7077b486a932787b59bb17a28",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "apple",
+      "topic_id": "food",
+      "format": "listen",
+      "correct": 1,
+      "day": 0.0005975655769860303,
+      "timestamp": "2026-11-22T18:47:29.171239+00:00",
+      "kind": "pilot_independent",
+      "pilot_skill": "listen_write",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.7824663251170825,
+      "features_before": {
+        "target_word": "apple",
+        "format": "listen",
+        "prior_target_count": 13,
+        "prior_accuracy_smoothed": 0.6666666666666666,
+        "prior_word_count": 3,
+        "prior_word_accuracy_smoothed": 0.8,
+        "prior_format_target_count": 5,
+        "prior_format_accuracy_smoothed": 0.42857142857142855,
+        "prior_word_format_count": 1,
+        "prior_word_format_accuracy_smoothed": 0.6666666666666666,
+        "prior_recent_target_count": 10,
+        "prior_recent_accuracy_smoothed": 0.6666666666666666
+      }
+    },
+    {
+      "id": "5bfe26a519cd440383013bd8b43f876c",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "cat",
+      "topic_id": "animals",
+      "format": "listen",
+      "correct": 1,
+      "day": 0.0005976140250762304,
+      "timestamp": "2026-11-22T18:47:29.175425+00:00",
+      "kind": "pilot_independent",
+      "pilot_skill": "listen_write",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.8249217270201243,
+      "features_before": {
+        "target_word": "cat",
+        "format": "listen",
+        "prior_target_count": 14,
+        "prior_accuracy_smoothed": 0.6875,
+        "prior_word_count": 3,
+        "prior_word_accuracy_smoothed": 0.6,
+        "prior_format_target_count": 6,
+        "prior_format_accuracy_smoothed": 0.5,
+        "prior_word_format_count": 1,
+        "prior_word_format_accuracy_smoothed": 0.6666666666666666,
+        "prior_recent_target_count": 10,
+        "prior_recent_accuracy_smoothed": 0.6666666666666666
+      }
+    },
+    {
+      "id": "507b94aceb594457a18ddf03baaad205",
+      "learner_id": "7d3406a64d4f47b9b69a4bac62357248",
+      "word_id": "dog",
+      "topic_id": "animals",
+      "format": "listen",
+      "correct": 0,
+      "day": 0.0005976663502278151,
+      "timestamp": "2026-11-22T18:47:29.179946+00:00",
+      "kind": "pilot_independent",
+      "pilot_skill": "listen_write",
+      "model_version": "lr12-format-recent10-v1",
+      "p_correct_before": 0.7745652429691732,
+      "features_before": {
+        "target_word": "dog",
+        "format": "listen",
+        "prior_target_count": 15,
+        "prior_accuracy_smoothed": 0.7058823529411765,
+        "prior_word_count": 3,
+        "prior_word_accuracy_smoothed": 0.6,
+        "prior_format_target_count": 7,
+        "prior_format_accuracy_smoothed": 0.5555555555555556,
+        "prior_word_format_count": 1,
+        "prior_word_format_accuracy_smoothed": 0.3333333333333333,
+        "prior_recent_target_count": 10,
+        "prior_recent_accuracy_smoothed": 0.6666666666666666
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "7294cbb0dbc74467a4bb00b2677a9d81",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "cat",
+      "skill": "writing",
+      "correct": 0,
+      "submitted": "ca",
+      "at": 1795373197.6142273,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.7834107602859114,
+        "features": {
+          "target_word": "cat",
+          "format": "reverse_translate",
+          "prior_target_count": 0,
+          "prior_accuracy_smoothed": 0.5,
+          "prior_word_count": 0,
+          "prior_word_accuracy_smoothed": 0.5,
+          "prior_format_target_count": 0,
+          "prior_format_accuracy_smoothed": 0.5,
+          "prior_word_format_count": 0,
+          "prior_word_format_accuracy_smoothed": 0.5,
+          "prior_recent_target_count": 0,
+          "prior_recent_accuracy_smoothed": 0.5
+        },
+        "history": {
+          "general": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "word": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "format": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "word_format": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "recent": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5,
+            "exercises": 0
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 1,
+          "correct": 0,
+          "smoothed_rate": 0.3333333333333333
+        },
+        "word": {
+          "count": 1,
+          "correct": 0,
+          "smoothed_rate": 0.3333333333333333
+        },
+        "format": {
+          "count": 1,
+          "correct": 0,
+          "smoothed_rate": 0.3333333333333333
+        },
+        "word_format": {
+          "count": 1,
+          "correct": 0,
+          "smoothed_rate": 0.3333333333333333
+        },
+        "recent": {
+          "count": 1,
+          "correct": 0,
+          "smoothed_rate": 0.3333333333333333,
+          "exercises": 1
+        }
+      }
+    },
+    {
+      "id": "055014c7e26e42878dddb318a3c36629",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "dog",
+      "skill": "writing",
+      "correct": 1,
+      "submitted": "dog",
+      "at": 1795373197.6187665,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.6187048913437988,
+        "features": {
+          "target_word": "dog",
+          "format": "reverse_translate",
+          "prior_target_count": 1,
+          "prior_accuracy_smoothed": 0.3333333333333333,
+          "prior_word_count": 0,
+          "prior_word_accuracy_smoothed": 0.5,
+          "prior_format_target_count": 1,
+          "prior_format_accuracy_smoothed": 0.3333333333333333,
+          "prior_word_format_count": 0,
+          "prior_word_format_accuracy_smoothed": 0.5,
+          "prior_recent_target_count": 1,
+          "prior_recent_accuracy_smoothed": 0.3333333333333333
+        },
+        "history": {
+          "general": {
+            "count": 1,
+            "correct": 0,
+            "smoothed_rate": 0.3333333333333333
+          },
+          "word": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "format": {
+            "count": 1,
+            "correct": 0,
+            "smoothed_rate": 0.3333333333333333
+          },
+          "word_format": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "recent": {
+            "count": 1,
+            "correct": 0,
+            "smoothed_rate": 0.3333333333333333,
+            "exercises": 1
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 2,
+          "correct": 1,
+          "smoothed_rate": 0.5
+        },
+        "word": {
+          "count": 1,
+          "correct": 1,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "format": {
+          "count": 2,
+          "correct": 1,
+          "smoothed_rate": 0.5
+        },
+        "word_format": {
+          "count": 1,
+          "correct": 1,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "recent": {
+          "count": 2,
+          "correct": 1,
+          "smoothed_rate": 0.5,
+          "exercises": 2
+        }
+      }
+    },
+    {
+      "id": "748b7f2a265d4be88639a9de2a3c8b30",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "apple",
+      "skill": "writing",
+      "correct": 1,
+      "submitted": "apple",
+      "at": 1795373197.6231809,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.7361215120468876,
+        "features": {
+          "target_word": "apple",
+          "format": "reverse_translate",
+          "prior_target_count": 2,
+          "prior_accuracy_smoothed": 0.5,
+          "prior_word_count": 0,
+          "prior_word_accuracy_smoothed": 0.5,
+          "prior_format_target_count": 2,
+          "prior_format_accuracy_smoothed": 0.5,
+          "prior_word_format_count": 0,
+          "prior_word_format_accuracy_smoothed": 0.5,
+          "prior_recent_target_count": 2,
+          "prior_recent_accuracy_smoothed": 0.5
+        },
+        "history": {
+          "general": {
+            "count": 2,
+            "correct": 1,
+            "smoothed_rate": 0.5
+          },
+          "word": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "format": {
+            "count": 2,
+            "correct": 1,
+            "smoothed_rate": 0.5
+          },
+          "word_format": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "recent": {
+            "count": 2,
+            "correct": 1,
+            "smoothed_rate": 0.5,
+            "exercises": 2
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 3,
+          "correct": 2,
+          "smoothed_rate": 0.6
+        },
+        "word": {
+          "count": 1,
+          "correct": 1,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "format": {
+          "count": 3,
+          "correct": 2,
+          "smoothed_rate": 0.6
+        },
+        "word_format": {
+          "count": 1,
+          "correct": 1,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "recent": {
+          "count": 3,
+          "correct": 2,
+          "smoothed_rate": 0.6,
+          "exercises": 3
+        }
+      }
+    },
+    {
+      "id": "a39a96e4527745f3979b50ef6efec6ca",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "book",
+      "skill": "writing",
+      "correct": 1,
+      "submitted": "book",
+      "at": 1795373197.627253,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.8885408511067464,
+        "features": {
+          "target_word": "book",
+          "format": "reverse_translate",
+          "prior_target_count": 3,
+          "prior_accuracy_smoothed": 0.6,
+          "prior_word_count": 0,
+          "prior_word_accuracy_smoothed": 0.5,
+          "prior_format_target_count": 3,
+          "prior_format_accuracy_smoothed": 0.6,
+          "prior_word_format_count": 0,
+          "prior_word_format_accuracy_smoothed": 0.5,
+          "prior_recent_target_count": 3,
+          "prior_recent_accuracy_smoothed": 0.6
+        },
+        "history": {
+          "general": {
+            "count": 3,
+            "correct": 2,
+            "smoothed_rate": 0.6
+          },
+          "word": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "format": {
+            "count": 3,
+            "correct": 2,
+            "smoothed_rate": 0.6
+          },
+          "word_format": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "recent": {
+            "count": 3,
+            "correct": 2,
+            "smoothed_rate": 0.6,
+            "exercises": 3
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 4,
+          "correct": 3,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "word": {
+          "count": 1,
+          "correct": 1,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "format": {
+          "count": 4,
+          "correct": 3,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "word_format": {
+          "count": 1,
+          "correct": 1,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "recent": {
+          "count": 4,
+          "correct": 3,
+          "smoothed_rate": 0.6666666666666666,
+          "exercises": 4
+        }
+      }
+    },
+    {
+      "id": "c7a00387b2814c0f9f4901fd3aef6248",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "apple",
+      "skill": "listen_write",
+      "correct": 1,
+      "submitted": "apple",
+      "at": 1795373197.631773,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "assessment_role": "common_control",
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.7783756589953279,
+        "features": {
+          "target_word": "apple",
+          "format": "listen",
+          "prior_target_count": 4,
+          "prior_accuracy_smoothed": 0.6666666666666666,
+          "prior_word_count": 1,
+          "prior_word_accuracy_smoothed": 0.6666666666666666,
+          "prior_format_target_count": 0,
+          "prior_format_accuracy_smoothed": 0.5,
+          "prior_word_format_count": 0,
+          "prior_word_format_accuracy_smoothed": 0.5,
+          "prior_recent_target_count": 4,
+          "prior_recent_accuracy_smoothed": 0.6666666666666666
+        },
+        "history": {
+          "general": {
+            "count": 4,
+            "correct": 3,
+            "smoothed_rate": 0.6666666666666666
+          },
+          "word": {
+            "count": 1,
+            "correct": 1,
+            "smoothed_rate": 0.6666666666666666
+          },
+          "format": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "word_format": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "recent": {
+            "count": 4,
+            "correct": 3,
+            "smoothed_rate": 0.6666666666666666,
+            "exercises": 4
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 5,
+          "correct": 4,
+          "smoothed_rate": 0.7142857142857143
+        },
+        "word": {
+          "count": 2,
+          "correct": 2,
+          "smoothed_rate": 0.75
+        },
+        "format": {
+          "count": 1,
+          "correct": 1,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "word_format": {
+          "count": 1,
+          "correct": 1,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "recent": {
+          "count": 5,
+          "correct": 4,
+          "smoothed_rate": 0.7142857142857143,
+          "exercises": 5
+        }
+      }
+    },
+    {
+      "id": "da726c1df98143cb88c083151b7ac8e1",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "dog",
+      "skill": "listen_write",
+      "correct": 0,
+      "submitted": "wrong",
+      "at": 1795373197.6360447,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "assessment_role": "common_control",
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.904935334055904,
+        "features": {
+          "target_word": "dog",
+          "format": "listen",
+          "prior_target_count": 5,
+          "prior_accuracy_smoothed": 0.7142857142857143,
+          "prior_word_count": 1,
+          "prior_word_accuracy_smoothed": 0.6666666666666666,
+          "prior_format_target_count": 1,
+          "prior_format_accuracy_smoothed": 0.6666666666666666,
+          "prior_word_format_count": 0,
+          "prior_word_format_accuracy_smoothed": 0.5,
+          "prior_recent_target_count": 5,
+          "prior_recent_accuracy_smoothed": 0.7142857142857143
+        },
+        "history": {
+          "general": {
+            "count": 5,
+            "correct": 4,
+            "smoothed_rate": 0.7142857142857143
+          },
+          "word": {
+            "count": 1,
+            "correct": 1,
+            "smoothed_rate": 0.6666666666666666
+          },
+          "format": {
+            "count": 1,
+            "correct": 1,
+            "smoothed_rate": 0.6666666666666666
+          },
+          "word_format": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "recent": {
+            "count": 5,
+            "correct": 4,
+            "smoothed_rate": 0.7142857142857143,
+            "exercises": 5
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 6,
+          "correct": 4,
+          "smoothed_rate": 0.625
+        },
+        "word": {
+          "count": 2,
+          "correct": 1,
+          "smoothed_rate": 0.5
+        },
+        "format": {
+          "count": 2,
+          "correct": 1,
+          "smoothed_rate": 0.5
+        },
+        "word_format": {
+          "count": 1,
+          "correct": 0,
+          "smoothed_rate": 0.3333333333333333
+        },
+        "recent": {
+          "count": 6,
+          "correct": 4,
+          "smoothed_rate": 0.625,
+          "exercises": 6
+        }
+      }
+    },
+    {
+      "id": "a2773e3452dc4d2ab96e5fcbf2f02f35",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "book",
+      "skill": "listen_write",
+      "correct": 0,
+      "submitted": "wrong",
+      "at": 1795373197.6401649,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "assessment_role": "common_control",
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.8506849059802112,
+        "features": {
+          "target_word": "book",
+          "format": "listen",
+          "prior_target_count": 6,
+          "prior_accuracy_smoothed": 0.625,
+          "prior_word_count": 1,
+          "prior_word_accuracy_smoothed": 0.6666666666666666,
+          "prior_format_target_count": 2,
+          "prior_format_accuracy_smoothed": 0.5,
+          "prior_word_format_count": 0,
+          "prior_word_format_accuracy_smoothed": 0.5,
+          "prior_recent_target_count": 6,
+          "prior_recent_accuracy_smoothed": 0.625
+        },
+        "history": {
+          "general": {
+            "count": 6,
+            "correct": 4,
+            "smoothed_rate": 0.625
+          },
+          "word": {
+            "count": 1,
+            "correct": 1,
+            "smoothed_rate": 0.6666666666666666
+          },
+          "format": {
+            "count": 2,
+            "correct": 1,
+            "smoothed_rate": 0.5
+          },
+          "word_format": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "recent": {
+            "count": 6,
+            "correct": 4,
+            "smoothed_rate": 0.625,
+            "exercises": 6
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 7,
+          "correct": 4,
+          "smoothed_rate": 0.5555555555555556
+        },
+        "word": {
+          "count": 2,
+          "correct": 1,
+          "smoothed_rate": 0.5
+        },
+        "format": {
+          "count": 3,
+          "correct": 1,
+          "smoothed_rate": 0.4
+        },
+        "word_format": {
+          "count": 1,
+          "correct": 0,
+          "smoothed_rate": 0.3333333333333333
+        },
+        "recent": {
+          "count": 7,
+          "correct": 4,
+          "smoothed_rate": 0.5555555555555556,
+          "exercises": 7
+        }
+      }
+    },
+    {
+      "id": "54350b1230d947deb60b80f76c7ab720",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "cat",
+      "skill": "listen_write",
+      "correct": 1,
+      "submitted": "cat",
+      "at": 1795373197.6443903,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "assessment_role": "common_control",
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.6294063187164859,
+        "features": {
+          "target_word": "cat",
+          "format": "listen",
+          "prior_target_count": 7,
+          "prior_accuracy_smoothed": 0.5555555555555556,
+          "prior_word_count": 1,
+          "prior_word_accuracy_smoothed": 0.3333333333333333,
+          "prior_format_target_count": 3,
+          "prior_format_accuracy_smoothed": 0.4,
+          "prior_word_format_count": 0,
+          "prior_word_format_accuracy_smoothed": 0.5,
+          "prior_recent_target_count": 7,
+          "prior_recent_accuracy_smoothed": 0.5555555555555556
+        },
+        "history": {
+          "general": {
+            "count": 7,
+            "correct": 4,
+            "smoothed_rate": 0.5555555555555556
+          },
+          "word": {
+            "count": 1,
+            "correct": 0,
+            "smoothed_rate": 0.3333333333333333
+          },
+          "format": {
+            "count": 3,
+            "correct": 1,
+            "smoothed_rate": 0.4
+          },
+          "word_format": {
+            "count": 0,
+            "correct": 0,
+            "smoothed_rate": 0.5
+          },
+          "recent": {
+            "count": 7,
+            "correct": 4,
+            "smoothed_rate": 0.5555555555555556,
+            "exercises": 7
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 8,
+          "correct": 5,
+          "smoothed_rate": 0.6
+        },
+        "word": {
+          "count": 2,
+          "correct": 1,
+          "smoothed_rate": 0.5
+        },
+        "format": {
+          "count": 4,
+          "correct": 2,
+          "smoothed_rate": 0.5
+        },
+        "word_format": {
+          "count": 1,
+          "correct": 1,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "recent": {
+          "count": 8,
+          "correct": 5,
+          "smoothed_rate": 0.6,
+          "exercises": 8
+        }
+      }
+    },
+    {
+      "id": "d054d5e9e4c14705a3b9af511b2d458b",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "cat",
+      "skill": "recognition",
+      "correct": 1,
+      "submitted": "39877ecb684747ceba092e7f92db6cef",
+      "at": 1795373197.6444983,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "selected_word": "cat"
+    },
+    {
+      "id": "3e13224d505648b69363e9c3eb3f1057",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "book",
+      "skill": "recognition",
+      "correct": 1,
+      "submitted": "0bd16dd6d2794b8e8b697bf0bf12fd28",
+      "at": 1795373197.6445184,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "selected_word": "book"
+    },
+    {
+      "id": "1f90ec989ab44205a55d1f3723e7ae7f",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "dog",
+      "skill": "recognition",
+      "correct": 1,
+      "submitted": "24dc6fb9c3f148ce86a84b243a67f3ef",
+      "at": 1795373197.6445332,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "selected_word": "dog"
+    },
+    {
+      "id": "96c7f19aaea9482d9616c6884875ca39",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "apple",
+      "skill": "recognition",
+      "correct": 1,
+      "submitted": "e4cdb524f9cb472fa89b3494ef9c6ae9",
+      "at": 1795373197.644547,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "selected_word": "apple"
+    },
+    {
+      "id": "1994133ff6934a85aaf2a79383eabc2f",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "cat",
+      "skill": "listening",
+      "correct": 0,
+      "submitted": "e4cdb524f9cb472fa89b3494ef9c6ae9",
+      "at": 1795373197.6445622,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "selected_word": "apple"
+    },
+    {
+      "id": "82583ac1aaf24909b8eed0c84c277cbe",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "dog",
+      "skill": "listening",
+      "correct": 1,
+      "submitted": "24dc6fb9c3f148ce86a84b243a67f3ef",
+      "at": 1795373197.6445758,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "selected_word": "dog"
+    },
+    {
+      "id": "89652792fbf242ec89e9fadad37ffcd5",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "book",
+      "skill": "listening",
+      "correct": 1,
+      "submitted": "0bd16dd6d2794b8e8b697bf0bf12fd28",
+      "at": 1795373197.6445882,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "selected_word": "book"
+    },
+    {
+      "id": "3d5c7dd49fde4ec4a0ff3f41eac93ba4",
+      "stage": "measurement",
+      "cycle": 1,
+      "word": "apple",
+      "skill": "listening",
+      "correct": 1,
+      "submitted": "e4cdb524f9cb472fa89b3494ef9c6ae9",
+      "at": 1795373197.6446006,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "selected_word": "apple"
+    },
+    {
+      "id": "15ef20734f1a4b4194ebc1615a04039a",
+      "stage": "teaching",
+      "cycle": 1,
+      "target_epoch": 1,
+      "word": "cat",
+      "skill": "writing",
+      "at": 1795373234.3510535,
+      "native_history_used": false
+    },
+    {
+      "id": "84d9961350f4451a9b81ef6420925d63",
+      "stage": "assisted",
+      "cycle": 1,
+      "word": "cat",
+      "skill": "writing",
+      "correct": 0,
+      "submitted": "ca",
+      "at": 1795373234.4859803,
+      "assisted": true,
+      "native_history_used": false,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "support_decision": "retry"
+    },
+    {
+      "id": "f00056b7f8284166947653f91d99f81e",
+      "stage": "assisted",
+      "cycle": 1,
+      "word": "cat",
+      "skill": "writing",
+      "correct": 1,
+      "submitted": "cat",
+      "at": 1795373249.07907,
+      "assisted": true,
+      "native_history_used": false,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "support_decision": "supported_success"
+    },
+    {
+      "id": "0771a521e8e24942927b7598cac05014",
+      "stage": "teaching",
+      "cycle": 1,
+      "target_epoch": 1,
+      "word": "cat",
+      "skill": "listening",
+      "at": 1795373249.0791366,
+      "native_history_used": false
+    },
+    {
+      "id": "aaca947d51724e72abed6b31d74cb957",
+      "stage": "assisted",
+      "cycle": 1,
+      "word": "cat",
+      "skill": "listening",
+      "correct": 1,
+      "submitted": "b25c3c677fb34b6cbafa7619559bb08c",
+      "at": 1795373249.0791667,
+      "assisted": true,
+      "native_history_used": false,
+      "batch_id": "1721a664f25044be87f2a929204d4deb",
+      "target_epoch": 1,
+      "selected_word": "cat",
+      "support_decision": "supported_success"
+    },
+    {
+      "id": "f6537d9c663243c89c344d40dc23d34a",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "dog",
+      "skill": "writing",
+      "correct": 1,
+      "submitted": "dog",
+      "at": 1795373249.1495595,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "target_epoch": 1,
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.9057232914121748,
+        "features": {
+          "target_word": "dog",
+          "format": "reverse_translate",
+          "prior_target_count": 8,
+          "prior_accuracy_smoothed": 0.6,
+          "prior_word_count": 2,
+          "prior_word_accuracy_smoothed": 0.5,
+          "prior_format_target_count": 4,
+          "prior_format_accuracy_smoothed": 0.6666666666666666,
+          "prior_word_format_count": 1,
+          "prior_word_format_accuracy_smoothed": 0.6666666666666666,
+          "prior_recent_target_count": 8,
+          "prior_recent_accuracy_smoothed": 0.6
+        },
+        "history": {
+          "general": {
+            "count": 8,
+            "correct": 5,
+            "smoothed_rate": 0.6
+          },
+          "word": {
+            "count": 2,
+            "correct": 1,
+            "smoothed_rate": 0.5
+          },
+          "format": {
+            "count": 4,
+            "correct": 3,
+            "smoothed_rate": 0.6666666666666666
+          },
+          "word_format": {
+            "count": 1,
+            "correct": 1,
+            "smoothed_rate": 0.6666666666666666
+          },
+          "recent": {
+            "count": 8,
+            "correct": 5,
+            "smoothed_rate": 0.6,
+            "exercises": 8
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 9,
+          "correct": 6,
+          "smoothed_rate": 0.6363636363636364
+        },
+        "word": {
+          "count": 3,
+          "correct": 2,
+          "smoothed_rate": 0.6
+        },
+        "format": {
+          "count": 5,
+          "correct": 4,
+          "smoothed_rate": 0.7142857142857143
+        },
+        "word_format": {
+          "count": 2,
+          "correct": 2,
+          "smoothed_rate": 0.75
+        },
+        "recent": {
+          "count": 9,
+          "correct": 6,
+          "smoothed_rate": 0.6363636363636364,
+          "exercises": 9
+        }
+      }
+    },
+    {
+      "id": "2b8bfc66b3234694ab6eaedafffbbf21",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "apple",
+      "skill": "writing",
+      "correct": 1,
+      "submitted": "apple",
+      "at": 1795373249.1542716,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "target_epoch": 1,
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.9218348569771649,
+        "features": {
+          "target_word": "apple",
+          "format": "reverse_translate",
+          "prior_target_count": 9,
+          "prior_accuracy_smoothed": 0.6363636363636364,
+          "prior_word_count": 2,
+          "prior_word_accuracy_smoothed": 0.75,
+          "prior_format_target_count": 5,
+          "prior_format_accuracy_smoothed": 0.7142857142857143,
+          "prior_word_format_count": 1,
+          "prior_word_format_accuracy_smoothed": 0.6666666666666666,
+          "prior_recent_target_count": 9,
+          "prior_recent_accuracy_smoothed": 0.6363636363636364
+        },
+        "history": {
+          "general": {
+            "count": 9,
+            "correct": 6,
+            "smoothed_rate": 0.6363636363636364
+          },
+          "word": {
+            "count": 2,
+            "correct": 2,
+            "smoothed_rate": 0.75
+          },
+          "format": {
+            "count": 5,
+            "correct": 4,
+            "smoothed_rate": 0.7142857142857143
+          },
+          "word_format": {
+            "count": 1,
+            "correct": 1,
+            "smoothed_rate": 0.6666666666666666
+          },
+          "recent": {
+            "count": 9,
+            "correct": 6,
+            "smoothed_rate": 0.6363636363636364,
+            "exercises": 9
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 10,
+          "correct": 7,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "word": {
+          "count": 3,
+          "correct": 3,
+          "smoothed_rate": 0.8
+        },
+        "format": {
+          "count": 6,
+          "correct": 5,
+          "smoothed_rate": 0.75
+        },
+        "word_format": {
+          "count": 2,
+          "correct": 2,
+          "smoothed_rate": 0.75
+        },
+        "recent": {
+          "count": 10,
+          "correct": 7,
+          "smoothed_rate": 0.6666666666666666,
+          "exercises": 10
+        }
+      }
+    },
+    {
+      "id": "b4026967ad564ffa8a77ae6803c0a67b",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "book",
+      "skill": "writing",
+      "correct": 1,
+      "submitted": "book",
+      "at": 1795373249.158474,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "target_epoch": 1,
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.9482755391289192,
+        "features": {
+          "target_word": "book",
+          "format": "reverse_translate",
+          "prior_target_count": 10,
+          "prior_accuracy_smoothed": 0.6666666666666666,
+          "prior_word_count": 2,
+          "prior_word_accuracy_smoothed": 0.5,
+          "prior_format_target_count": 6,
+          "prior_format_accuracy_smoothed": 0.75,
+          "prior_word_format_count": 1,
+          "prior_word_format_accuracy_smoothed": 0.6666666666666666,
+          "prior_recent_target_count": 10,
+          "prior_recent_accuracy_smoothed": 0.6666666666666666
+        },
+        "history": {
+          "general": {
+            "count": 10,
+            "correct": 7,
+            "smoothed_rate": 0.6666666666666666
+          },
+          "word": {
+            "count": 2,
+            "correct": 1,
+            "smoothed_rate": 0.5
+          },
+          "format": {
+            "count": 6,
+            "correct": 5,
+            "smoothed_rate": 0.75
+          },
+          "word_format": {
+            "count": 1,
+            "correct": 1,
+            "smoothed_rate": 0.6666666666666666
+          },
+          "recent": {
+            "count": 10,
+            "correct": 7,
+            "smoothed_rate": 0.6666666666666666,
+            "exercises": 10
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 11,
+          "correct": 8,
+          "smoothed_rate": 0.6923076923076923
+        },
+        "word": {
+          "count": 3,
+          "correct": 2,
+          "smoothed_rate": 0.6
+        },
+        "format": {
+          "count": 7,
+          "correct": 6,
+          "smoothed_rate": 0.7777777777777778
+        },
+        "word_format": {
+          "count": 2,
+          "correct": 2,
+          "smoothed_rate": 0.75
+        },
+        "recent": {
+          "count": 10,
+          "correct": 8,
+          "smoothed_rate": 0.75,
+          "exercises": 10
+        }
+      }
+    },
+    {
+      "id": "53f1063ef1d545949e3de63ffe8201da",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "cat",
+      "skill": "writing",
+      "correct": 1,
+      "submitted": "cat",
+      "at": 1795373249.1627305,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "target_epoch": 1,
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.9034613564402466,
+        "features": {
+          "target_word": "cat",
+          "format": "reverse_translate",
+          "prior_target_count": 11,
+          "prior_accuracy_smoothed": 0.6923076923076923,
+          "prior_word_count": 2,
+          "prior_word_accuracy_smoothed": 0.5,
+          "prior_format_target_count": 7,
+          "prior_format_accuracy_smoothed": 0.7777777777777778,
+          "prior_word_format_count": 1,
+          "prior_word_format_accuracy_smoothed": 0.3333333333333333,
+          "prior_recent_target_count": 10,
+          "prior_recent_accuracy_smoothed": 0.75
+        },
+        "history": {
+          "general": {
+            "count": 11,
+            "correct": 8,
+            "smoothed_rate": 0.6923076923076923
+          },
+          "word": {
+            "count": 2,
+            "correct": 1,
+            "smoothed_rate": 0.5
+          },
+          "format": {
+            "count": 7,
+            "correct": 6,
+            "smoothed_rate": 0.7777777777777778
+          },
+          "word_format": {
+            "count": 1,
+            "correct": 0,
+            "smoothed_rate": 0.3333333333333333
+          },
+          "recent": {
+            "count": 10,
+            "correct": 8,
+            "smoothed_rate": 0.75,
+            "exercises": 10
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 12,
+          "correct": 9,
+          "smoothed_rate": 0.7142857142857143
+        },
+        "word": {
+          "count": 3,
+          "correct": 2,
+          "smoothed_rate": 0.6
+        },
+        "format": {
+          "count": 8,
+          "correct": 7,
+          "smoothed_rate": 0.8
+        },
+        "word_format": {
+          "count": 2,
+          "correct": 1,
+          "smoothed_rate": 0.5
+        },
+        "recent": {
+          "count": 10,
+          "correct": 8,
+          "smoothed_rate": 0.75,
+          "exercises": 10
+        }
+      }
+    },
+    {
+      "id": "ac2d00e755124b21821052e7121b3f03",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "apple",
+      "skill": "recognition",
+      "correct": 1,
+      "submitted": "fe004bee72da44cab0bcd03cb0f25308",
+      "at": 1795373249.1628525,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "target_epoch": 1,
+      "selected_word": "apple"
+    },
+    {
+      "id": "b796740652ab4f088e29e04541e81a56",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "cat",
+      "skill": "recognition",
+      "correct": 1,
+      "submitted": "b25c3c677fb34b6cbafa7619559bb08c",
+      "at": 1795373249.16287,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "target_epoch": 1,
+      "selected_word": "cat"
+    },
+    {
+      "id": "b62cc3860f3e4ffe8c7051cd9b84ce50",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "dog",
+      "skill": "recognition",
+      "correct": 1,
+      "submitted": "f4bd7d4ddbe547468440d4b7967b3b5b",
+      "at": 1795373249.162884,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "target_epoch": 1,
+      "selected_word": "dog"
+    },
+    {
+      "id": "3fb1967ff23b414bae20408a1b740aed",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "book",
+      "skill": "recognition",
+      "correct": 1,
+      "submitted": "43cd20ab8cb4419284b01119a9dc8a14",
+      "at": 1795373249.1628973,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "target_epoch": 1,
+      "selected_word": "book"
+    },
+    {
+      "id": "55868df31e044ce381d50bcfcda36842",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "dog",
+      "skill": "listening",
+      "correct": 1,
+      "submitted": "f4bd7d4ddbe547468440d4b7967b3b5b",
+      "at": 1795373249.1629107,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "target_epoch": 1,
+      "selected_word": "dog"
+    },
+    {
+      "id": "2b2779dc142048749f8c1ed85ef5d9ba",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "cat",
+      "skill": "listening",
+      "correct": 1,
+      "submitted": "b25c3c677fb34b6cbafa7619559bb08c",
+      "at": 1795373249.162923,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "target_epoch": 1,
+      "selected_word": "cat"
+    },
+    {
+      "id": "33bfe742debf44e5824f46b43d324341",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "apple",
+      "skill": "listening",
+      "correct": 1,
+      "submitted": "fe004bee72da44cab0bcd03cb0f25308",
+      "at": 1795373249.1629357,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "target_epoch": 1,
+      "selected_word": "apple"
+    },
+    {
+      "id": "063a4d4df8634035bfa6b40fb80f6ad4",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "book",
+      "skill": "listening",
+      "correct": 1,
+      "submitted": "43cd20ab8cb4419284b01119a9dc8a14",
+      "at": 1795373249.1629481,
+      "assisted": false,
+      "native_history_used": false,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "target_epoch": 1,
+      "selected_word": "book"
+    },
+    {
+      "id": "124f971b65e6487d86c603ad590bb272",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "book",
+      "skill": "listen_write",
+      "correct": 0,
+      "submitted": "wrong",
+      "at": 1795373249.1670778,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "assessment_role": "common_control",
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.8093171776848432,
+        "features": {
+          "target_word": "book",
+          "format": "listen",
+          "prior_target_count": 12,
+          "prior_accuracy_smoothed": 0.7142857142857143,
+          "prior_word_count": 3,
+          "prior_word_accuracy_smoothed": 0.6,
+          "prior_format_target_count": 4,
+          "prior_format_accuracy_smoothed": 0.5,
+          "prior_word_format_count": 1,
+          "prior_word_format_accuracy_smoothed": 0.3333333333333333,
+          "prior_recent_target_count": 10,
+          "prior_recent_accuracy_smoothed": 0.75
+        },
+        "history": {
+          "general": {
+            "count": 12,
+            "correct": 9,
+            "smoothed_rate": 0.7142857142857143
+          },
+          "word": {
+            "count": 3,
+            "correct": 2,
+            "smoothed_rate": 0.6
+          },
+          "format": {
+            "count": 4,
+            "correct": 2,
+            "smoothed_rate": 0.5
+          },
+          "word_format": {
+            "count": 1,
+            "correct": 0,
+            "smoothed_rate": 0.3333333333333333
+          },
+          "recent": {
+            "count": 10,
+            "correct": 8,
+            "smoothed_rate": 0.75,
+            "exercises": 10
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 13,
+          "correct": 9,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "word": {
+          "count": 4,
+          "correct": 2,
+          "smoothed_rate": 0.5
+        },
+        "format": {
+          "count": 5,
+          "correct": 2,
+          "smoothed_rate": 0.42857142857142855
+        },
+        "word_format": {
+          "count": 2,
+          "correct": 0,
+          "smoothed_rate": 0.25
+        },
+        "recent": {
+          "count": 10,
+          "correct": 7,
+          "smoothed_rate": 0.6666666666666666,
+          "exercises": 10
+        }
+      }
+    },
+    {
+      "id": "7f5838c7077b486a932787b59bb17a28",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "apple",
+      "skill": "listen_write",
+      "correct": 1,
+      "submitted": "apple",
+      "at": 1795373249.1712391,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "assessment_role": "common_control",
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.7824663251170825,
+        "features": {
+          "target_word": "apple",
+          "format": "listen",
+          "prior_target_count": 13,
+          "prior_accuracy_smoothed": 0.6666666666666666,
+          "prior_word_count": 3,
+          "prior_word_accuracy_smoothed": 0.8,
+          "prior_format_target_count": 5,
+          "prior_format_accuracy_smoothed": 0.42857142857142855,
+          "prior_word_format_count": 1,
+          "prior_word_format_accuracy_smoothed": 0.6666666666666666,
+          "prior_recent_target_count": 10,
+          "prior_recent_accuracy_smoothed": 0.6666666666666666
+        },
+        "history": {
+          "general": {
+            "count": 13,
+            "correct": 9,
+            "smoothed_rate": 0.6666666666666666
+          },
+          "word": {
+            "count": 3,
+            "correct": 3,
+            "smoothed_rate": 0.8
+          },
+          "format": {
+            "count": 5,
+            "correct": 2,
+            "smoothed_rate": 0.42857142857142855
+          },
+          "word_format": {
+            "count": 1,
+            "correct": 1,
+            "smoothed_rate": 0.6666666666666666
+          },
+          "recent": {
+            "count": 10,
+            "correct": 7,
+            "smoothed_rate": 0.6666666666666666,
+            "exercises": 10
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 14,
+          "correct": 10,
+          "smoothed_rate": 0.6875
+        },
+        "word": {
+          "count": 4,
+          "correct": 4,
+          "smoothed_rate": 0.8333333333333334
+        },
+        "format": {
+          "count": 6,
+          "correct": 3,
+          "smoothed_rate": 0.5
+        },
+        "word_format": {
+          "count": 2,
+          "correct": 2,
+          "smoothed_rate": 0.75
+        },
+        "recent": {
+          "count": 10,
+          "correct": 7,
+          "smoothed_rate": 0.6666666666666666,
+          "exercises": 10
+        }
+      }
+    },
+    {
+      "id": "5bfe26a519cd440383013bd8b43f876c",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "cat",
+      "skill": "listen_write",
+      "correct": 1,
+      "submitted": "cat",
+      "at": 1795373249.175425,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "assessment_role": "common_control",
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.8249217270201243,
+        "features": {
+          "target_word": "cat",
+          "format": "listen",
+          "prior_target_count": 14,
+          "prior_accuracy_smoothed": 0.6875,
+          "prior_word_count": 3,
+          "prior_word_accuracy_smoothed": 0.6,
+          "prior_format_target_count": 6,
+          "prior_format_accuracy_smoothed": 0.5,
+          "prior_word_format_count": 1,
+          "prior_word_format_accuracy_smoothed": 0.6666666666666666,
+          "prior_recent_target_count": 10,
+          "prior_recent_accuracy_smoothed": 0.6666666666666666
+        },
+        "history": {
+          "general": {
+            "count": 14,
+            "correct": 10,
+            "smoothed_rate": 0.6875
+          },
+          "word": {
+            "count": 3,
+            "correct": 2,
+            "smoothed_rate": 0.6
+          },
+          "format": {
+            "count": 6,
+            "correct": 3,
+            "smoothed_rate": 0.5
+          },
+          "word_format": {
+            "count": 1,
+            "correct": 1,
+            "smoothed_rate": 0.6666666666666666
+          },
+          "recent": {
+            "count": 10,
+            "correct": 7,
+            "smoothed_rate": 0.6666666666666666,
+            "exercises": 10
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 15,
+          "correct": 11,
+          "smoothed_rate": 0.7058823529411765
+        },
+        "word": {
+          "count": 4,
+          "correct": 3,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "format": {
+          "count": 7,
+          "correct": 4,
+          "smoothed_rate": 0.5555555555555556
+        },
+        "word_format": {
+          "count": 2,
+          "correct": 2,
+          "smoothed_rate": 0.75
+        },
+        "recent": {
+          "count": 10,
+          "correct": 7,
+          "smoothed_rate": 0.6666666666666666,
+          "exercises": 10
+        }
+      }
+    },
+    {
+      "id": "507b94aceb594457a18ddf03baaad205",
+      "stage": "independent",
+      "cycle": 1,
+      "word": "dog",
+      "skill": "listen_write",
+      "correct": 0,
+      "submitted": "wrong",
+      "at": 1795373249.179946,
+      "assisted": false,
+      "native_history_used": true,
+      "batch_id": "d3939f0aa39e43f9865f15d76b0b91ee",
+      "assessment_role": "common_control",
+      "model_version": "lr12-format-recent10-v1",
+      "model_before": {
+        "p_correct": 0.7745652429691732,
+        "features": {
+          "target_word": "dog",
+          "format": "listen",
+          "prior_target_count": 15,
+          "prior_accuracy_smoothed": 0.7058823529411765,
+          "prior_word_count": 3,
+          "prior_word_accuracy_smoothed": 0.6,
+          "prior_format_target_count": 7,
+          "prior_format_accuracy_smoothed": 0.5555555555555556,
+          "prior_word_format_count": 1,
+          "prior_word_format_accuracy_smoothed": 0.3333333333333333,
+          "prior_recent_target_count": 10,
+          "prior_recent_accuracy_smoothed": 0.6666666666666666
+        },
+        "history": {
+          "general": {
+            "count": 15,
+            "correct": 11,
+            "smoothed_rate": 0.7058823529411765
+          },
+          "word": {
+            "count": 3,
+            "correct": 2,
+            "smoothed_rate": 0.6
+          },
+          "format": {
+            "count": 7,
+            "correct": 4,
+            "smoothed_rate": 0.5555555555555556
+          },
+          "word_format": {
+            "count": 1,
+            "correct": 0,
+            "smoothed_rate": 0.3333333333333333
+          },
+          "recent": {
+            "count": 10,
+            "correct": 7,
+            "smoothed_rate": 0.6666666666666666,
+            "exercises": 10
+          }
+        }
+      },
+      "history_after": {
+        "general": {
+          "count": 16,
+          "correct": 11,
+          "smoothed_rate": 0.6666666666666666
+        },
+        "word": {
+          "count": 4,
+          "correct": 2,
+          "smoothed_rate": 0.5
+        },
+        "format": {
+          "count": 8,
+          "correct": 4,
+          "smoothed_rate": 0.5
+        },
+        "word_format": {
+          "count": 2,
+          "correct": 0,
+          "smoothed_rate": 0.25
+        },
+        "recent": {
+          "count": 10,
+          "correct": 7,
+          "smoothed_rate": 0.6666666666666666,
+          "exercises": 10
+        }
+      }
+    }
+  ],
+  "position": 0,
+  "order": [
+    "dog",
+    "apple",
+    "book",
+    "cat"
+  ],
+  "teaching_words": [
+    "cat"
+  ],
+  "assisted_index": 0,
+  "common_control_version": 1,
+  "due_at": 1795459649.179946,
+  "pending": null,
+  "target_epochs": {
+    "cat:writing": 1,
+    "cat:recognition": 1,
+    "cat:listening": 1,
+    "dog:writing": 1,
+    "dog:recognition": 1,
+    "dog:listening": 1,
+    "apple:writing": 1,
+    "apple:recognition": 1,
+    "apple:listening": 1,
+    "book:writing": 1,
+    "book:recognition": 1,
+    "book:listening": 1
+  },
+  "target_due": {
+    "cat:writing": 1795459649.179946,
+    "cat:recognition": 1795459649.179946,
+    "cat:listening": 1795459649.179946,
+    "dog:writing": 1795459649.179946,
+    "dog:recognition": 1795459649.179946,
+    "dog:listening": 1795459649.179946,
+    "apple:writing": 1795459649.179946,
+    "apple:recognition": 1795459649.179946,
+    "apple:listening": 1795459649.179946,
+    "book:writing": 1795459649.179946,
+    "book:recognition": 1795459649.179946,
+    "book:listening": 1795459649.179946
+  },
+  "control_targets": [
+    {
+      "word": "cat",
+      "skill": "writing"
+    },
+    {
+      "word": "cat",
+      "skill": "recognition"
+    },
+    {
+      "word": "cat",
+      "skill": "listening"
+    },
+    {
+      "word": "dog",
+      "skill": "writing"
+    },
+    {
+      "word": "dog",
+      "skill": "recognition"
+    },
+    {
+      "word": "dog",
+      "skill": "listening"
+    },
+    {
+      "word": "apple",
+      "skill": "writing"
+    },
+    {
+      "word": "apple",
+      "skill": "recognition"
+    },
+    {
+      "word": "apple",
+      "skill": "listening"
+    },
+    {
+      "word": "book",
+      "skill": "writing"
+    },
+    {
+      "word": "book",
+      "skill": "recognition"
+    },
+    {
+      "word": "book",
+      "skill": "listening"
+    }
+  ],
+  "control_batch": "d3939f0aa39e43f9865f15d76b0b91ee",
+  "plan_key": "independent-1",
+  "task_orders": {
+    "writing": [
+      "dog",
+      "apple",
+      "book",
+      "cat"
+    ],
+    "listen_write": [
+      "book",
+      "apple",
+      "cat",
+      "dog"
+    ],
+    "recognition": [
+      "apple",
+      "cat",
+      "dog",
+      "book"
+    ],
+    "listening": [
+      "dog",
+      "cat",
+      "apple",
+      "book"
+    ]
+  },
+  "assessment_key": "independent-1",
+  "assessment_tasks": [
+    {
+      "word": "dog",
+      "skill": "writing"
+    },
+    {
+      "word": "apple",
+      "skill": "writing"
+    },
+    {
+      "word": "book",
+      "skill": "writing"
+    },
+    {
+      "word": "cat",
+      "skill": "writing"
+    },
+    {
+      "word": "apple",
+      "skill": "recognition"
+    },
+    {
+      "word": "cat",
+      "skill": "recognition"
+    },
+    {
+      "word": "dog",
+      "skill": "recognition"
+    },
+    {
+      "word": "book",
+      "skill": "recognition"
+    },
+    {
+      "word": "dog",
+      "skill": "listening"
+    },
+    {
+      "word": "cat",
+      "skill": "listening"
+    },
+    {
+      "word": "apple",
+      "skill": "listening"
+    },
+    {
+      "word": "book",
+      "skill": "listening"
+    },
+    {
+      "word": "book",
+      "skill": "listen_write"
+    },
+    {
+      "word": "apple",
+      "skill": "listen_write"
+    },
+    {
+      "word": "cat",
+      "skill": "listen_write"
+    },
+    {
+      "word": "dog",
+      "skill": "listen_write"
+    }
+  ],
+  "selection_note": "Yazma hatası olan kelimeler LR metin tahminiyle sıralandı; yalnız tanıma/dinleme hataları gerçek sonuçlara dayalı kuralla eklendi.",
+  "support_feedback": {
+    "word": "cat",
+    "skill": "listening",
+    "correct": 1,
+    "wrong_count": 0,
+    "decision": "supported_success",
+    "explanation": "Doğru cevap; bu yalnız destekli başarıdır."
+  }
+}
